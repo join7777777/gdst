@@ -7,3 +7,5 @@ vendor/
 Gemfile.lock
 .DS_Store
 Thumbs.db
+jekyll.log
+jekyll_err.log
