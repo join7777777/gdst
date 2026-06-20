@@ -1,0 +1,17 @@
+title: gdst
+description: 恩典在召唤 · 灵修与默想
+baseurl: ""
+url: ""
+
+theme: minima
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
