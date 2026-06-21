@@ -9,16 +9,10 @@ title: 首页
 
 ## Posts
 
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <span>{{ post.date | date: "%b %d, %Y" }}</span>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    {% if post.image %}
-    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width:300px;">
-    {% endif %}
-  </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+- **{{ post.date | date: "%b %d, %Y" }}** — [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
+
+---
 
 subscribe [via RSS]({{ "/feed.xml" | relative_url }})
