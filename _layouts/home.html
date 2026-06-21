@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  {% include auth.html %}
+
+  <header>
+    <nav>
+      <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Following the Light</h1>
+    <p>随光前行 · 灵修与默想</p>
+
+    <h2>Posts</h2>
+
+    <ul>
+    {% for post in site.posts %}
+      <li>
+        <span>{{ post.date | date: "%b %d, %Y" }}</span>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      </li>
+    {% endfor %}
+    </ul>
+
+    <p>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+
+  <script src="{{ "/assets/auth.js" | relative_url }}"></script>
+</body>
+</html>
