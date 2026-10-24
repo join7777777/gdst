@@ -31,8 +31,12 @@ color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
 input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
 border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
 input.search:focus{border-color:var(--accent)}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
-.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.chips.collapsed{max-height:112px;overflow:hidden}
+.chips-toggle{margin:2px 0 10px;padding:5px 16px;border-radius:999px;border:1px solid var(--line);
+background:var(--surface);color:var(--accent);font-size:13px;cursor:pointer}
+.chips-toggle:hover{border-color:var(--accent)}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:14px;cursor:pointer;
 border:1px solid var(--line);color:var(--muted)}
 .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
@@ -40,20 +44,20 @@ padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
 transition:transform .15s ease,box-shadow .15s ease}
 .card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
 .card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
-.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card h2{font-size:20px;font-weight:700;margin:0 0 6px;color:var(--head)}
 .card:hover h2{color:var(--accent)}
-.card p{font-size:14px;color:var(--muted);margin:0}
+.card p{font-size:15px;color:var(--muted);margin:0}
 .tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
 .empty{color:var(--muted);text-align:center;padding:40px 0}
 footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
 article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
-padding:34px 38px;margin:26px 0}
-@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
-.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
-.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding:34px 38px;margin:26px 0;font-size:18px;line-height:1.85}
+@media(max-width:640px){article.post{padding:24px 20px;font-size:17.5px}.banner{padding:26px 22px}}
+.post h1{font-size:29px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:14px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:22px;font-weight:700;color:var(--head);margin:30px 0 10px;
 padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
-.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post h3{font-size:18.5px;font-weight:700;color:var(--head);margin:24px 0 8px}
 .post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
 .post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
 padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
@@ -128,5 +132,5 @@ padding:1px 6px;border-radius:6px;color:var(--accent)}
 </article>
 <a class="back" href="../index.html">← 返回首页</a>
 </main>
-<footer>© 2026 jim · 静态博客</footer>
+<footer>© 2026 · 静态博客</footer>
 </body></html>
