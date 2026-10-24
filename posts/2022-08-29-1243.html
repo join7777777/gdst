@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>坚城铁柱-主仆王明道见证 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>坚城铁柱-主仆王明道见证</h1>
+<div class="meta"><span>2022-08-29</span><span>主仆见证&amp;amp;文章</span></div>
+<p>▶ <a href="http://3.146.54.178/wp-content/uploads/2022/08/坚城铁柱-王明道见证.mp4">观看视频</a></p>
+<blockquote></blockquote>
+<p>主仆王明道先生简介</p>
+<p>王明道 （1900年7月25日-1991年7月28日），北京人， 十四岁时重生成为基督徒；十五岁时立志当政治家，及至属灵生命日渐成长，他又期望成为传道人。1920年，他顺服神的旨意，放弃从政的意念，竭力追求真理的上帝；因此，他特别取名「明道」，意谓「明证真道」。在他一生的经历中，足可见证他名符其实。 中国基要派神学的代表人物。</p>
+<p>1900年7月25日，王永盛（王明道）出生在已经被义和团围攻了一个多月的北京东交民巷使馆区内(那里躲避了几千名前来避难的中国基督徒)。王明道出生前不久父亲王子厚在避难期间去世。庚子之乱结束以后，其母带着姐弟三人艰难度日。王明道幼年娇纵任性，但性喜读书。1918年入协和大学，一年后因校际争执而辍学。1919年到保定烈士田学校教书。1920年改名王明道。</p>
+<p>1921年，王明道因受浸被迫离校回家。1924年开始家庭查经班。此后直到1949年，20多年间，每年有半年时间到外地讲道。</p>
+<p>王明道嫉恶如仇，放胆直言。他最认同耶利米先知因为(根据圣经《耶利米书》记载，耶利米在当时的社会里面斥责罪恶，也同时攻击那些假先知。王明道攻击最多最猛烈的，是持自由神学立场的信徒。</p>
+<p>他很注重信徒圣洁的生活，而且除了读圣经以外，也应该“读书，读事，读人”，意思就是也要读一般的书，在一般知识要丰富，然后要“读事情”，对发生的事情认真地去“读”。然后要“读人”，就是对一些人的生平事迹，榜样鉴戒，要去读他们。那些过去管理，治理我们的，要留心看他们的榜样，这些是王明道所强调的。</p>
+<p>1933年2月19日，王明道借隆福寺社交堂开始设立聚会，4月23日迁至炒面胡同，1935年定名基督徒会堂，到1937年8月1日，才正式在史家胡同42、43号建成的基督徒会堂聚会。</p>
+<p>他在教会路线上强调，“教会是重生的团契，所以要生命改变的人，才可以行浸礼”。</p>
+<p>王明道认为教会要尽量地简朴，因此他的聚会没有诗班，没有牧师，不搞募捐，不传奉献袋。也不庆祝圣诞节，他认为庆祝圣诞节是没有意义的。不随便请外人来讲道，不参加社会关怀，不参加教会的合一运动。</p>
+<p>他主张政教分离，无论是日本统治时代，或者1950年代，三自运动在发展的时候，他都不愿意妥协或加入。1942年10月10日，他正式拒绝参加“华北中华基督教团”。因此他也受很多恐吓跟灾难。</p>
+<p>王明道在教会发展上没有很多拓展，他在北京史家胡同的基督徒会堂规模始终不大，受浸的人不多。</p>
+<p>他早在1952年控诉大会的时候就已经有人控诉他了。</p>
+<p>1955年8月7日，在肃反运动中，王明道和妻子刘景文第一次以‘反革命份子’罪名被捕，史家胡同42 、43号的‘基督徒会堂’也遭充。</p>
+<p>一年后，王明道在监狱里写悔过书，被释放出来（1956年9月29日）。</p>
+<p>出来以后极其痛苦，再次声明反对三自运动，1958年4月29日王明道夫妇又再次被捕入狱，王明道后来被判无期徒刑，刘景文被判十五年徒刑。</p>
+<p>1973年，刘景文刑期已满，但直到1977年才被释放返家。1980年1月9日，王明道在入狱22年后被释放，住到上海长子王天铎住所。直到1991年7月28日91岁时去世。</p>
+<p>王明道的《五十年来》是他前半生的自传，而这本《又四十年》是王长新弟兄耗费数年心血，将王明道后半生的四十年经历一一述诸笔端。本书内容大部分取材于王明道本人的口述，因作者曾于1990年到上海访问他，并与他同住三周之久，天天听他的讲述，共录了二十盘录音带，作为本书写作的主要依据；因此，本书的真确性应该是毋庸置疑。</p>
+<p>从《又四十年》中的记述，王明道的后半生约可分为三个时期：</p>
+<p>（一）从五十岁到五十五岁被捕入狱前，这五年是他得胜的时期。他坚持不加入三自会，并经常撰文驳斥他们为「不信派」，并用圣经真理来宣讲福音和建立教会；在在展现他是一位真理的勇士，威武不屈。</p>
+<p>（二）从被捕到判处无期徒刑，共有八年，是他失败的时期。因他的害怕而陷入说谎的罪恶中，连自己都无法想象；他在如此困境中依然呼求神的帮助，至终神为他开路，给他领受神话语的应许。</p>
+<p>（三）从神的话语临到他一直至安息主怀，共廿八年，是他复兴的时期。过往他曾得罪了神，因为他愿意诚心悔改，向神认罪，因而灵命得以大大的复兴。累积这数十年的人生阅历，他晚年的信息重点就是，要多多认识神、倚靠神和等候神；这是王明道先生给我们最重要的训诲！</p>
+<p>王明道先生一生忠心于主的真理，在动荡的中国作时代的先知，传讲福音真理、坚守教会立场、正确解明神的道，实在是中国基督徒的榜样。他的软弱与刚强、受苦与复兴，充分见证神的大能作为。</p>
+<p>毋怪乎内地会宣教士赖恩融（Leslie T. Lyall）将王明道先生称为「中国教会三巨人」之一，王明道在中国基督教教会历史中的地位可见一斑。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

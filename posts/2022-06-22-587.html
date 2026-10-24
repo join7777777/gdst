@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>十五章-上帝的义怒 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>十五章-上帝的义怒</h1>
+<div class="meta"><span>2022-06-22</span><span>福音的大能和信息</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/06/第十五章-上帝的义怒.mp3">收听音频</a></p>
+<p>（ 上帝的义怒（上））</p>
+<p><strong> 上帝是公义的审判者,又是天天向恶人发怒的上帝。</strong><strong> ---</strong> 诗篇7:1</p>
+<p><strong> 狂傲人不能站在你眼前。凡作孽的,都是你所恨恶的。</strong><strong> ---</strong> 诗篇5:5</p>
+<p>尽管上帝的忿怒常在罪人身上,尽管上帝天天向恶人发怒,尽管上帝恨恶一切不义,但上帝的神性让他可以爱那些他所恨恶的人并替他们成就救恩。</p>
+<p><em><strong> 圣经教导我们,上帝不仅恨恶罪,而且他恨恶一切犯罪的人。</strong></em> 教会里充满“上帝恨恶罪但爱罪人”这类投机取巧的庸俗言论,我们已经习以为常,但这种说法并不正确。它直接抵触圣经,因为圣经有许多经文明说上帝恨恶罪人。<strong> 诗篇作者在圣灵的感动下写到上帝不仅痛恨罪,而且痛恨一切作恶的人。</strong> （<strong> 诗5:5</strong> ）</p>
+<p><strong> “</strong> 我们学习的目的不仅是让我们自己有平衡的神学,而且是为了让我们去宣扬这些真理,让上帝的百姓蒙福。<strong> 学习不需要冒险,但宣讲所学到的真理,这常常会带来很大的危险。</strong> 我们所学的真理,如果仅仅摆在书架上,就于我们无害,也于教会无益。<strong> ”</strong></p>
+<p>多数福音派今天彻底忽视这些经文,认为这些经文不值一提。传道人有多少时候是在向罪人讲上帝是公义的,上帝恨恶罪人?教会讲台多少时候提到“义怒”或“神恨恶罪恶”这类主题?这岂不正说明我们不再认真学习圣经?或我们认为某些经文不是上帝默示的,已经过时?或我们向“政治正确”认输,向“文化潮流”投降?或我们认为传讲真理无法使教会增长?</p>
+<p>上帝的义怒是合乎圣经的真理,凡是真正的传福音,必须讲上帝的义怒 。因此,我们必须明白这个教义,以及相关一切真理。我们必须时刻记着,我们不仅要明白这些真理,还要传扬这些真理。<strong> 我们学习的目的不仅是让我们自己有平衡的神学,而且是为了让我们去宣扬这些真理,让上帝的百姓蒙福</strong> 。<strong> 学习不需要冒险,但宣讲所学到的真理,这常常会带来很大的危险。</strong> 我们所学的真理,如果仅仅摆在书架上,就于我们无害,也于教会无益。</p>
+<p><strong> 我们想要一位公义的上帝吗?</strong></p>
+<p>我们必须向听众和我们自己提出的第一个问题是:“<em><strong> 我们真想要一位公义的上帝吗?</strong></em> ”这个问题看似奇怪,好像明知故问,但实际上,这个问题可以让我们看到人类真实的处境,以及我们真正的问题所在。</p>
+<p>一方面,我们想要一位公义的上帝。我们简直不敢想象整个宇宙掌握在一位不公义而又全能的神手里,而且他有绝对的主权!这个世界的希特勒们只能在历史舞台上横行片刻,他们多行不义必自毙,但他们作恶所导致的结果显然会流毒多年。 那么,假如宇宙的统治者是一位永远不死的恶神,那人类生活会多么悲惨?光是想想都让人做噩梦。他不义,所以喜怒无常。他大权在手,所以非常恐怖。即使他过去一直恩待我们,我们也不知道这种状况能持续多久。我们就好像水手航行在平静的海上,整日惊恐地数算致命的风暴何时降临,直到发疯为止。这样我们就没有确据也没有合理的依据来相信上帝。这个世界充满不公义和不道德,没有人可以审判,也没有人敢于挑战,这些邪恶让生命不堪重负,假如没有一位公义的上帝,那我们不仅今生没有指望,来生也不能指望错误可以得到纠正 。因此,<strong> 如果可以投票的话,神经正常的人都会投票支持一位“没有不义”的上帝</strong> （<strong> 代下19:7</strong> ）。<strong> 一位绝对值得相信的上帝要按公义审判世界,按正直判断万民</strong> （<strong> 申7:9；诗9:8</strong> ）。</p>
+<p>一位公义的上帝,这是多数人所想要的上帝。这么多的不公义在世界上泛滥成灾,却看不到上帝干预和审判,无知的人好像野兽奔走狂突,大喊苍天无眼。可是有见识的人静静缩在角落,头埋在手里不敢作声,左右为难。他审视自己里面的良心,知道如果上帝伸张正义,那众人,包括那些要求伸张正义的人,都要下地狱。 如经上所记,“<strong> 没有义人,连一个也没有”</strong> （<strong> 罗3:10</strong> ）。</p>
+<p>那些要求上帝审判别人的人,必须意识到他们也在祈求上帝审判自己。<em><strong> 尽管每个人所犯的罪各有不同,但他们都一样得罪了上帝,同受死的咒诅,同与一位圣洁公义的上帝永远隔绝。任何人若以为自己与罪人中的罪魁有什么分别,他就没有看见自己的败坏和自己所行的恶</strong></em> 。</p>
+<p>这就是人类的两难处境,所以人要问,“我们真想要一位公义的上帝吗?” 我们真想让上帝来鉴察我们生活的每个方面——思想、言语和行为——然后按照我们所行的,给我们应有的判决?<em><strong> 只有那些良心被热铁烙惯的人和天良丧尽的文化才敢站在一位完全公义的上帝面前任由上帝里里外外地遍查自己,接受任何判决。</strong></em></p>
+<p>上帝是公义的,这个真理是一把双刃剑。<em><strong> 假如没有一位永生的、全能的上帝统治世界,我们会松口气。但是,对那些心里还有一丝良知的人,这绝对是一个噩耗。如果上帝真是公义的,如果他用完全的爱来爱一切正直,用完全的恨来恨一切不义,那他会如何对待我们的恶呢？</strong></em></p>
+<p><strong> 上帝会发怒吗</strong> ?</p>
+<p>当代传道人和宣教士常对听众说,上帝不是一位发怒的上帝。但这话并不合乎圣经。说轻点,这句话误导人;说重点儿,这句话是异端。它不能给人带来任何真安慰。 根据圣经,上帝就是一位发怒的上帝,而且这对我们是好事。<strong> 圣经说:“耶和华是忌邪施报的神。耶和华施报大有忿怒。向他的敌人施报,向他的仇敌怀怒”</strong> ;“<strong> 上帝是公义的审判者,又是天天向恶人发怒的上帝”</strong> ;<strong> “惟独你是可畏的。你怒气一发,谁能在你面前站得住呢?”</strong> （<strong> 鸿1:2；诗7:11；76:7</strong> ）</p>
+<p>当这位圣洁、公义、慈爱的上帝遇到败坏、不义、不仁的人类,必然的结果就是上帝的忿怒,诗篇作者感叹上帝的忿怒是何等大:<strong> “谁晓得你怒气的权势?谁按着你该受的敬畏晓得你的忿怒呢?”</strong> （<strong> 诗90:11</strong> ）旧约中“忿怒”一词来自三个希伯来文。第一个是“ qetsep”意思是忿怒。第二个是hema”,忿怒、厌恶、甚至苦毒。第三个是“aph”,直译为“鼻”。这表示上帝的忿怒好像发怒的动物用鼻子发泄怒气。这幅画面并不精致,却很形象。</p>
+<p>在新约里,“忿怒”一词来自两个希腊文。第一个是“orge&quot;,是指“忿怒”。第二个词是“ thumos”,表示愤怒、激动、暴怒。 在整本圣经里,上帝的忿怒是指上帝因自己的圣洁和公义而厌恶和痛恨一切罪人和罪。</p>
+<p>提到上帝的忿怒,我们必须明白上帝的忿怒不像人那样,上帝的忿怒不是失控、不理智、自私的情绪,而是上帝圣洁、公义、仁爱的结果。这也是神圣统治的必要元素。因为上帝是上帝,所以上帝必须反对罪。因此,恶人厌恶上帝,而上帝拒绝与恶人相交。上帝是爱,上帝热爱一切良善。这种对公义的热爱表现为对邪恶的痛恨。爱之深,恨之切。因此,上帝的爱与上帝的忿怒并不矛盾;正好相反,上帝的爱和上帝的忿怒彼此印证。上帝是公义的,因此,上帝必须审判邪恶,谴责邪恶。如果上帝向人发怒,那是因为人先藐视上帝的主权、违抗神圣的旨意、自作自受。</p>
+<p><em><strong> 因他是圣洁、公义和仁爱的,所以上帝恨恶罪,用他忿怒反对罪,他的怒气常常导致难以想象的可怕结果。他一发怒,山崩地裂。列国经不起他发怒,他一恼恨,无人能站立得住。哪怕是最强壮的人,甚至天使,都在他面前熔化,好像高炉面前的蜡像一般。</strong></em></p>
+<p>今天,很多人拒绝这个教义和相关的教导,他们不相信上帝发怒,他们觉得一个仁爱怜悯的上帝不能发怒,认为上帝不能审判人、定人的罪。他们说,这种想法是原始人类的错误结论,因为古代人认为上帝是敌视人类的、复仇的、甚至是残忍的;而我们是基督徒,应当拒绝这种可怕的教义,因为它不谈上帝的怜悯,让上帝显得残酷无情。然而,关于上帝的忿怒和审判,圣经有明确的教导,我们绝对不能视而不见。圣经里多处提到上帝的忿怒,上帝的忿怒和上帝的仁爱、良善、怜悯一样,是圣经的重要主题。</p>
+<p><strong> 耶和华是有怜悯有恩典的神,不轻易发怒,并有丰盛的慈爱和诚实,但他万不以有罪的为无罪,必为他圣名的缘故在他所造的人中间伸张正义追讨罪</strong> （<strong> 出34:6-7</strong> ）。他<strong> 必因自己的美德,践踏一切悖逆的人,用怒火烧灭他们,好像糠秕一样</strong> （<strong> 出15:7</strong> ）。<strong> 连新约也说上帝是烈火,他向人降大怒,恶人向山和岩石说</strong> ,“<strong> 倒在我们身上吧,把我们藏起来,躲避羔羊的忿怒</strong> ”（<strong> 来12:29；罗3:5；启6:16</strong> ）。<strong> 因此,使徒保罗说,不要被人欺哄，要住在真理的光中,要晓得上帝的忿怒必临到悖逆之子</strong> （<strong> 弗5:6</strong> ）。</p>
+<p>很多人常说上帝不是忿怒的上帝。这是假话,不能给人带来任何真安慰!一个见了邪无动于衷的上帝,一个看人作恶也不发怒的上帝能给我们什么安慰?！假如上帝面对奴隶贸易、奥斯维辛集中营、以“免得麻烦”的名义屠杀几百万未出母腹的婴儿这些事情而不怒火中烧，他凭什么是善良、仁爱的？他根本连人都不如！ 我们听见这些惨剧，心里也因伦理而感觉怒火难平。不仅如此，倘若有人面对这些惨无人道的事感觉无所谓，我们就会觉得他和始作俑者一样畜生不如。那么，我们竟然敢腆着脸说上帝是不会发怒的上帝？我们到底在讲什么?我们怎能说我们有权向邪恶发怒,却剥夺上帝的这个权力?</p>
+<p>当代传道人用花俏的语言让上帝迎合那些属肉体的世人,但圣经教导我们,那位无限圣洁、公义、仁慈的上帝是一位忿怒的上帝。 他绝对不会对邪恶无动于衷,他心里的怒火是不灭的。他的怒火向罪人发作,他们每分每秒都在作恶得罪上帝。“<strong> 看哪!耶和华的名从远方来,怒气烧起,密烟上腾。他的嘴唇满有忿恨,他的舌头像吞灭的火。</strong> ”（<strong> 赛30:27</strong> ）“<strong> 锡安中的罪人都惧怕,不敬虔的人被战兢抓住:‘我们中间谁能与吞灭的火同住?我们中间谁能与永火同住呢?</strong> ?”（<strong> 赛33:14</strong> ）“<strong> 看哪!耶和华的忿怒,好像暴风已经发出,是扫灭的暴风,必转到恶人的头上。</strong> ”（<strong> 耶30:23</strong> ）</p>
+<p>我们必须保持清醒，不要自欺,以为上帝不灭的怒火仅仅向最可憎的大罪发作,或仅仅除灭我们当中最可耻的坏人。 在上帝心里,并没有两种截然不同的罪:一种让他发怒,另一种不让他发怒。<strong> 圣经告诉我们,凡犯罪的就是违背律法;悖逆的罪与行邪术的罪相等,顽梗的罪与拜虚神和偶像的罪相同</strong> （<strong> 约一3:4；撒上15:23</strong> ）。<strong> 凡是犯罪的,都招致上帝的忿怒,上帝的忿怒常在悖逆之子身上,而罪的工价乃是死</strong> （<strong> 弗5:6；罗6:23</strong> ）。</p>
+<p><em><strong> 我们祖先的罪,以及它所招致的上帝忿怒,清楚证明一点:不管罪的性质和形式如何,都是罪,都是上帝所憎恶的。</strong></em> 吃一个禁果,与人类历史上此起彼伏的惨剧和晚间新闻骇人听闻的头条新闻相比,看似小事一桩,但这一个悖逆的行为足以招致上帝的忿怒,全世界都受咒诅。<strong> 如果这给我们什么教训,那就是:在一位圣洁公义的上帝面前,一切罪都是可憎的;并且,凡是犯罪的人，都是上帝所憎恨的</strong> （<strong> 弗2:3；5:6；西3:6</strong> ）。</p>
+<p><strong> 上帝会恨人吗</strong> ？</p>
+<p><em><strong> 上帝会恨吗?上帝会恨人吗?很多人从来没有在教会听过这个问题,自己也不会去想这个问题。</strong></em> 这个问题本身已经足以引发争议,让那些信教的温和人士竖起他们背上的刺。“上帝可能恨人”，这种思想直接抵触今天福音派传道人的大部分教导。<em><strong> 然而,在圣经里,上帝的恨和上帝的爱都是真实的。根据圣经,一位圣洁慈爱的上帝也会恨恶、厌恶基至憎恨。不仅如此,上帝所恨恶的对象常常是人,堕落的人。</strong></em></p>
+<p>很多人反对“上帝仇恨罪人”的教导,他们有一种错误的想法，认为上帝是爱,因此上帝不能恨人。 虽然上帝确实是爱,并且他的爱超越人的理解,但我们必须明白上帝爱人正是上帝恨人的原因。 我们不应当说“上帝是爱因此他不能恨人”,而应当说“上帝是爱因此他必须恨人”。 如果一个人真的热爱生命,承认生命都是神圣的,认为一切孩子都是上帝的恩赐,那么他就必定恨恶堕胎。一个真正热爱孩子的人,不可能眼睁睁看着幼小无助的宝宝在子宫里被摧残至死而无动于衷。</p>
+<p>同样,如果上帝热爱一切正直良善的事,那他必定同样痛恨一切邪恶变态的事。*** 圣经教导我们,上帝不仅恨恶罪,而且他恨恶一切犯罪的人。* 教会里充满“上帝恨恶罪但爱罪人”这类投机取巧的庸俗言论,我们已经习以为常,但这种说法并不正确<strong> 。它直接抵触圣经,因为圣经有许多经文明说上帝恨恶罪人。</strong> 诗篇作者在圣灵的感动下写到上帝不仅痛恨罪,而且痛恨一切作恶的人<strong> （</strong> 诗5:5** ）。</p>
+<p>我们必须明白:<em><strong> 罪和罪人是联合的,不能分开。上帝不惩罚罪,但惩罚犯罪的人。被打入地狱的不是罪,而是犯罪的人</strong></em> 。因此,诗篇作者说:<strong> “狂傲人不能站在你眼前。凡作孽的,都是你所恨恶的。”</strong> （<strong> 诗5:5</strong> ）还有,“<strong> 耶和华在他的圣殿里,耶和华的宝座在天上他的慧眼察看世人,耶和华试验义人。惟有恶人和喜爱强暴的人,他心里恨恶,他要向恶人密布网罗,有烈火、硫磺、热风、作他们杯中的分。因为耶和华是公义的,他喜爱公义</strong> ”（<strong> 诗11:4-7</strong> ）。</p>
+<p><em><strong> 我们必须明白,上面的经文并非断章取义,这些经文得到许多其他经文的印证,它们都证明圣洁的上帝确实恨恶罪人。</strong></em> 在利未记里,上帝警告以色列人不可随从他在他们面前所要赶出之人的风俗,然后说,“<strong> 因为他们行了这一切的事,所以我厌恶他们</strong> ”（<strong> 利20:23</strong> ）。然后,在申命记里,他又警告百姓,迦南人被赶出去是因为“<strong> 他们是耶和华所憎恶的人</strong> ”,<strong> 并且,凡和他们一样行“可憎”之事的,都要被赶出去</strong> （<strong> 申18:12；25:16</strong> ）。在诗篇里,上帝说他恨恶那些拒绝进入应许之地的、悖逆上帝的以色列人,说“<strong> 四十年之久,我厌烦那世代,说,这是心里迷糊的百姓,竟不晓得我的作为</strong> ”（<strong> 诗95:10</strong> ）。最后,在提多书里,保罗说<strong> 那些心口不一、轻浮肤浅地宣告信仰的人在上帝面前是“可憎的”</strong> ;使徒约翰说<strong> “可憎”之人要永远住在烧着硫磺的火湖里。</strong> （<strong> 多1:16；启21:8</strong> ）</p>
+<p><strong> 什么是“上帝的恨”</strong></p>
+<p>圣经说上帝恨恶罪人,这是什么意思呢? 第一,韦氏词典说，恨是对人怀有强烈的故意,敌视某人,或强烈地反感某人:厌恶讨厌、恨恶、憎恨。 尽管这些词很难让人接受,但圣经确实用这些词来描述上帝与罪的关系,以及上帝和罪人的关系。 第二,我们必须明白,上帝的恨,与上帝的其他属性完美共存,并行不悖 。 第三,我们必须明白,上帝的恨不是否认上帝的爱 。 诗篇5章5节不是否认约翰福音3章16节或马太福音5章44节至45节 。<strong> 尽管上帝的忿怒常在罪人身上,尽管上帝天天向恶人发怒,尽管上帝恨恶一切不义,但上帝的神性让他可以爱那些他所恨恶的人并替他们成就救恩</strong> （<strong> 约3:36；诗7:11；5:5</strong> ）。 第四,尽管上帝恒久忍耐罪人,忍住他的怒气不向人发作,并且伸手将白白的救恩赐给他们,但时候将到,他要收回这宝贵的礼物,到时候,人再也不能与上帝和好,必自己承受与上帝为仇的后果（罗10:21）。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

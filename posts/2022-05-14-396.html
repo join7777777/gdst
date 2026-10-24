@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>末世浩劫-简介及序言（大卫-韦克森） · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>末世浩劫-简介及序言（大卫-韦克森）</h1>
+<div class="meta"><span>2022-05-14</span><span>《末世浩劫》大卫-韦克森</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/05/末世浩劫简介序言.mp3">收听音频</a></p>
+<p>（ 末世浩劫-简介及序言）</p>
+<blockquote></blockquote>
+<p>大卫-韦克森简介</p>
+<p>大卫-韦克森(David WiLkerson)生於美国印地安纳州哈蒙德(Hammond)，幼时就订於宾夕法尼亚州，他的父亲即在该州任牧师职。大卫年十二岁时，他的父亲罹病极危，他诚心祷告，父亲因而得以痊愈，所以他决心事奉主以感神恩。一九五二年大卫在密苏里春田中央圣经学院受过神学训练后就被按牧。之后他与其夫人格文-韦克森(Gwen Wilkerson)移居宾夕法尼亚州腓利比斯堡，一直到后来被派往纽约。抵纽约后，他经常在该区劳苦大众及贫民窟传布福音，并使用俚语传扬信息，而特别看重少年人的工作。他负责主持一项&quot;青年挑战&quot;（Teen Challenge）的工作， 主要是针对那些少年犯。</p>
+<p>韦克森决意向那些城市中的少年人展开工作，是一九五八年某个晚上所引起的动机。当时他正在看一本杂志，而就在那本杂志上，他看到七位谋杀罪的少年犯受审时的照片。当他看到那七副沮丧绝望的脸孔时，即想到必须到纽约而去帮助那些孩子们。经过他的努力，美国各城市贫民窟里的少年们对福音和属属方面急需协助的事实，乃引起了广泛的注意。今天他分别设在芝加哥、洛杉矶和宾州等地的少年工作中心，已成为世人瞩目的人类信仰胜过恶魔势力的坚强堡垒。</p>
+<p>大卫．韦克森的着作，众所周知的有&quot;穷途末路&quot;(种籽出版社)，&quot;虎穴亡魂&quot;(道声出版社)，另外一本书&quot;逃&quot;的作者：尼基古兹，就是&quot;虎穴亡魂&quot;的主角人物之一，他不仅由太保变为传道人， 他本人的见证，更是让许多无法自拔的青年人走上自新之路。</p>
+<p>&quot;末世浩劫&quot;(The ViSion)是大卫．韦克森的另一本着作，这本书也是作者亲身经历的异象，<strong> 其乃</strong><em><strong> 迫使他不得不忠实地写下来，以让每一位基督徒儆醒数算在世的年日。</strong></em></p>
+<p>附：大卫-韦克森与 2001 年 8 月中旬得到上帝的异象，关闭了时代广场教堂的所有事工，静静准备将要到来的 911 灾难。911 当天，时代广场教堂作为第一个到达世贸的救援组织，受到了纽约市政府和纽约警局的最高表彰。具体故事记录在 2012 年出版的 Carter Conlon- &lt;180 Degree Christian&gt;里面。</p>
+<p>目录如下： 自序<strong> 末世浩劫简介及序言</strong> 1-2<strong> 1经济紊乱-2天候异常</strong> 3-4<strong> 3道德堕落-4青少年叛乱</strong> 5-6<strong> 5疯狂逼迫-6神给还未预备之人的信息</strong> 7-结语<strong> 7神给已预备之人的信息</strong> -结语</p>
+<p><strong> 自序</strong></p>
+<p>我一生迄今看过两次异象。第一次是在一九五八年，由於神的异象，把我从宾夕法尼亚州的一个小镇带到纽约，在太保帮和吸毒者的地区工作(详见&quot;虎穴亡魂&quot;)。那并不是一个假的异象， 数年后的今天，这异象已藉着遍布世界的青年中心(医治吸毒及感化中心)见证为事实。那些太保们不仅悔改信耶稣，他们中间有许多人甚且在国内和国外传福音。</p>
+<p>第二次的异象是在一九七叁年夏天临到我的。它是有关将临及人类五个悲剧性灾难的远景。我并没有看见令人眼瞎的强光，也没有听到或听得儿的声响，我不是从天使听到的;而是当我在深夜祷告的时候，这些有关世界灾难的景象临到了我，那是何等大的冲击，以致我不得不跪下来，且被它吓呆了，我遂将它全部承受下来。</p>
+<p>起初，我不相信我所看到和所听到的。这异象的信息太令人害怕了，那确实是从上面来的启示， 且叫我这属人的心感到不安。然而这异象一夜又一夜的再叁临及我，使我无法将它抛掉。那异象在我心灵的深处，使我不得不相信其乃来自神，是真实无可置疑的，且日后定会逐一的实现。</p>
+<p>这异象还迫使我十分认真地鉴察我里面心灵的光景。我怕大多数的人不会相信这异象，而且我也怕被污为迷信、宗教狂的人;我把这个异象和我的挚友与同工们分享，他们警告我不要轻易将它公诸於世。</p>
+<p>在这升平富裕的世代，谁愿意听见关於经济混乱的消息呢？当许多人甚至应付日常生活都忙不过来时，又有谁愿意听到神的审判将要来到呢？当我们处於享有&quot;宗教自由&quot;的时候，又有谁会相信信仰自由会受到威胁呢？谁又想到&quot;耶稣运动&quot;会演变成厌恶耶稣运动呢？</p>
+<p>不管我自己是如何害怕和忧虑，但总无法驱除这个异象必须公诸於世的信念。就过去我所接受圣神的引导，我确信，神已叫我讲这个信息。我把所看见的异象与神的话及它有关的经文相印证，这异象的一部份将在最近的将来应验，也许有的事情要稍久一些，但我深信所有提到的事情都会於我们这一世代发生。</p>
+<p>我相信我们已处於圣经里所提到&quot;灾难起头&quot;的时刻，这世代正面对着难以置信的灾难，而在神怒气头一遭的冲击下，就已经叫人类动汤不已。似乎每一个人都为大自然将有的异动、人类的道德标准、社会的变迁发出疑问，它将继缤有怎样的演变呢？我深信目前所发生的事已经超过起初人类所能控制的，而是属於超自然的影响。</p>
+<p>在这被好日子熏昏了头的时代，许多读过本书的人，很容易会忘掉书中的信息。当你躺在温暖的海滩上作日光浴的时代，很难想到神的审判。当你乘快艇飞驰过翠湖之上时，饥荒、洪水及其他天灾人祸看起来是那麽的遥远。当金钱流畅无阻、财源滚滚而来、自由被认为是理所当然、电视剧硬生活看起来如此自由和惬意时，很难想到困苦时悲惨的日子。</p>
+<p>在你把这异象看成是宗教狂者的&quot;扯谈&quot;，而把它搁在一边之前，请注意：如果这异象是确实的， 你又将如何呢？假如笔者确实是从神那里得来的，你又将如何呢？这异象确实是从神所发出的</p>
+<p>真实警告-- 藉着一个人向这个闲散、沉睡的世界宣告。 请记着，圣经说：&quot;在末后的日子，你们少年人要见异象. &quot;果真如此的话，朋友：现在是开始准备的时候了，时候已经不早了，且已愈来愈近* 。<strong> 请</strong>**<strong> 用敞开的心来读这本书，直到最后一章，以便查其究竟。</strong>*</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

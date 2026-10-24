@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>我们的罪（莱尔） · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>我们的罪（莱尔）</h1>
+<div class="meta"><span>2022-08-14</span><span>福音信息</span><span class="tag">莱尔牧师</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/08/0我们的罪.mp3">收听音频</a></p>
+<p>（ 我们的罪）</p>
+<p><strong> “求祢叫我知道我的过犯与罪愆”。——伯</strong><strong> 13</strong><strong> ：</strong><strong> 23</strong></p>
+<p><strong> “罪恶作见证告我们”。——赛</strong><strong> 59</strong><strong> ：</strong><strong> 12</strong></p>
+<p><strong> “求祢将我的罪孽洗除净尽”。——诗</strong><strong> 51</strong><strong> ：</strong><strong> 2</strong></p>
+<p><strong> “祂儿子耶稣的血也洗净我们一切的罪”。——约壹</strong><strong> 1</strong><strong> ：</strong><strong> 7</strong></p>
+<p><em><strong> 本章标题中的这几个字，应当激励我们彻底省察自己的内心。这关乎世界上的所有人，包括每一个男女</strong></em> 。 我们的信仰是救赎性的，第一件事就是认识“我们的罪”。明白我们在上帝眼中的光景，是迈向天国的第一步 。 良知得享平安的真实奥秘，在于感到“自己的罪”被拿走了。*<strong> 如果我们热爱生命，就当直面这个问题：</strong>** 我的罪在哪里？不找到令人满意的答案，就不停歇。*</p>
+<p><em><strong> 亲爱的读者，我请求你今天直面这个简单问题。因为我们必须做出回答的时候近了；其他问题与它比起来，不过沧海一粟。</strong></em> 我们将不再能说，“我的钱在哪儿？”或者，“我的地在哪儿？”或者，“我的财产在哪儿？”我们那时唯一的问题将是，“我的罪！我的罪！——我的罪在哪儿？”</p>
+<p><em><strong> 摆在我们眼前的这个问题特别重大，所以我想就此说几句话，希望能帮助你更深地理解它。</strong></em> 凡有机会读到这卷书的朋友，但愿这些话能够帮助你的灵魂。这是我心所渴望的，也是我向上帝的祈求！我恳求你认真读一读它。读下去，一定要读下去！直到读完为止！也许圣灵正要借着这些话来拯救你的灵魂！</p>
+<ol><li>我的头一句话是：你有许多罪。</li></ol>
+<p><em><strong> 我放胆说出这句话，没有丝毫犹豫。我不晓得你是谁，也不知道你过往的生命如何。但我从上帝的话语中知道，在祂眼中，亚当的每个儿女都是大罪人。人人如此，绝无例外。</strong></em> 罪遍布全球，乃是整个人类的通病。从宝座上的君王，到马路边的乞丐；从安歇高楼大厦的地主，到蜗居茅屋草舍的雇工；从闲坐于厅堂的贵妇，到忙碌在厨房的仆婢；从站在讲坛上的牧师，到主日学校里的孩童——就本性而言，我们在上帝眼中都一概有罪，有罪，有罪！ “<strong> 原来我们在许多事上都有过失</strong> ”（<strong> 雅3：2</strong> ）。“<strong> 没有义人，连一个也没有</strong> ”（<strong> 罗3：10</strong> ）。“<strong> 众人都犯了罪</strong> ”（<strong> 罗5：12</strong> ）。“<strong> 我们若说自己无罪，便是自欺，真理不在我们心里了</strong> 。”（<strong> 约壹1：8</strong> ）<em><strong> 否认毫无用处。我们都犯了许多的罪！</strong></em></p>
+<p>*** 有人对这些话的真理性质疑吗？如果有的话，请你细细考察上帝的律法，以及上帝儿子自己的解释。<em> 请读《马太福音》第五章。看看上帝的诫命如何应用于我们的言语行为、思想动机，以及我们口中所出的话<strong> 。</strong></em> 要知道*<strong> ：“</strong> 耶和华不像人看人，人是看外貌，耶和华是看内心<strong> ”（</strong> 撒上16：7<strong> ）。</strong> 在上帝眼中，<strong> “</strong> 愚妄人的思念乃是罪恶<strong> ”（</strong> 箴24：9** ）。</p>
+<p><em><strong> 现在回头看一下你自己生活的历史，并用这圣洁律法的标准衡量一下。</strong></em> 想想你儿提时代所有的悖逆、自私、恶习、任性，甚至拒绝为善。回忆一下你少年时的自我中心、骄傲、各种媚俗的倾向、不愿受管教、追逐违禁的事。再回顾你成人以后的行为，多少次偏离正道，而且年年如此。实在地说，面对你一生的历史，你根本无法昂首说：“我没犯过罪！”</p>
+<p><em><strong> 接下来看看你自己心灵的历史。</strong></em> 想一下那里曾闪过多少邪恶的念头，虽然世人对此一无所知。即使你从外表来看，是那样良善有德，受人尊敬，但在心底里，你却充满了成千上万的罪恶幻想和败坏主意，甚至沉醉其中 。<em><strong> 这些你都没忘记吧！</strong></em> 想想那些邪恶的念头，诡诈的计划，伪善的动机，还有恶毒、嫉妒、恶意的情感，这些罪念就在你里面上下翻动，而你身边的人却做梦都猜不到。<em> 实在地说，面对你心灵的历史，你根本无法昂首说：“我没犯过罪！”</em></p>
+<p><em><strong> 我再次问本文的每一个读者，你还怀疑我所说的吗？你还怀疑自己是否真的犯过许多罪吗？如果是这样，那就请你查考《马太福音》的第二十五章</strong></em> 。<strong> 请读一读这一章的结尾，那里描述了审判之日的情形。请格外注意那些在左边的人，看看这些恶人为什么被定罪，遭受永火的刑罚。那里并没有提到他们公开犯了什么大罪</strong> 。 没有人指控他们谋杀、偷窃，或做了假见证、犯了奸淫。事实上，他们被定罪，乃是因为疏忽！他们只是没有做那些当做的事。<em> 仅此就足以永远摧毁他们的灵魂。简言之，单凭一个人的疏忽之罪，就足以使其落入地狱了！</em></p>
+<p><em><strong> 现在请在这段美好圣经的亮光下，对照一下你自己。</strong></em> 请试着回忆一下你本当做却没有做的事，本该说却没有说的话。你本应该做，却没有做出来的无私善行，有多少啊！<em><strong> 你只要稍花一点功夫，本就可以行出来的善，本就可以带给人的快乐，其数目何其多啊！实在地说，面对我们主有关疏忽之罪的教导，你根本无法昂首说：“我没犯过罪！”</strong></em></p>
+<p><em><strong> 我再次问你，你还怀疑我所说的吗？我想你很可能会。</strong></em> 因为我做基督的仆人已经超过25年，很了解人对自己自然状态的极端盲目。所以，当我尝试用另一条理由来劝服你的良心时，请你再多听一下吧。噢！求上帝开你的眼睛，让你看见自己的真实面目！</p>
+<p><em><strong> 请你坐下来，拿出笔和纸，细细数算你曾经犯过的罪，从你开始分辨善恶的时候算起。</strong></em> 请你坐下来，我说，把它们的总数加一下。先假定在你生命每一天的24个小时中，你保持清醒、活跃，且能够负责任的时间，平均有15个小时。再假定在这15个小时的每一个小时中，你都只犯了两个罪。你肯定不会说这样的假定有违公正吧。因为我们一定要牢记，在思想、言语和行为上，我们都可能犯罪得罪上帝 。<em> 我再说，假定你在醒着的每个小时里只犯两个罪，包括在思想、言语和行为上的罪，这绝非过分。现在，把你一生所犯下的罪加起来，看看总数是多少。</em></p>
+<p><em><strong> 即使按每天15个小时醒着计算，你每天已经犯了30桩罪！按每星期7天算，你每星期所犯的罪数就是210个！按每个月4个星期算，你每个月所犯的罪数就是840个！再按每年有12个月算，你一年所犯的罪数就是10080个！如此算来，就是按最保守的估计，你一生每10年所犯的罪数，也已经超过了10万个！</strong></em></p>
+<p><strong> 我恳请你静下心来思量这样的数目。</strong> 我笃定你不能说它有错。相反，我还要问你：我是否完全低估了你的罪状？我恳求你诚实地面对，在你生命中的多少个日子、多少个时段，你是不是都在不断犯罪？*<strong> 我可以很有信心地问你：把上面这个总数再乘上10倍，岂非更接近你的实际情况？噢，不要再自以为义了！请你抛开“不会这么坏”的假面具，不要再试图以此来遮羞避责。</strong>** 要勇敢面对事实。不可再听从那老骗子魔鬼的谎言。实在地说，面对我刚刚算给你的可怕数字，你怎敢再否认“你有许多的罪！”*</p>
+<p><em><strong> 关于这个话题，先就此告一段落，我们继续往下讨论。</strong></em> 我悲哀地担心，很多读者会对我所说的话翻翻白眼，丝毫不为所动。我已透过悲伤的经历认识到，人最难发觉和理解的事，就是他自己在上帝眼中的光景。圣灵说得好，我们从本性上说，都是“瞎眼”，“耳聋”，“麻木”，“沉睡”，“疯狂”，“死的”！除了圣灵的大能，没有什么能使人信服自己是有罪的 。*<strong> 你把地狱指给他看，他不懂得逃离；你把天堂指给他看，他也不懂得寻求；你警告他，他无动于衷；你刺透他的良知，他还是顽梗不化。只有靠着来自天上的大能才能完成此工。</strong>** 向罪人显明其真实境况，乃上帝圣灵特别的工作。*</p>
+<p><em><strong> 如果有人感觉到了自己的罪性，就当为此感谢上帝。</strong></em> 对自己软弱、罪恶、败坏的感知，或许让你觉得不自在，但却是值得赞美上帝的好现象。成为良善的第一步，就是意识到自己的败坏。进入天堂前的准备，则是明白我们只配进地狱。在被算为义之前，我们必须了解到自己是悲苦的罪人。在内心得享与上帝和好的平安喜乐之前，我们必须懂得为自己累累的过犯感觉羞愧和惊恐。在因切实的盼望喜乐之前，我们必须受教而呼喊：“污秽啊！污秽！上帝啊，求祢怜悯我这个罪人！”</p>
+<p><em><strong> 凡是热爱自己灵魂的人，都要留意不压抑和破坏这种内在的罪恶感。我恳求你，靠着上帝的怜悯，不要践踏它，不要破坏它，不要扼杀它，或对它置若罔闻</strong></em> 。 千万不要在这件事情上听从世人的建议。不要把它当作情绪低落的表现，或是身体不适的结果，以及诸如此类的说法。更不要听从魔鬼的诱导。不要妄想借酒席和宴乐来淹没它，不要企图靠骑马和狩猎之类的户外运动来赶走它，也不要用纸牌、桌球、音乐会之类的聚会来消灭它。噢，如果你爱惜自己的灵魂，请不要，千万不要用这些可悲的方式来对待自己那刚刚萌发的罪恶感！不要在属灵上自杀，不要谋杀你的灵魂！</p>
+<p><em><strong> 你当来求告上帝，求祂向你显明这罪恶感到底意味着什么。求祂差派圣灵来教导你晓得自己是怎样的人，告诉你该做什么。你要研读圣经，看明白自己是否真该这样不自在，是否真该感觉到自己的“邪恶和败坏”。</strong></em> 谁敢说它或许不是来自天上的一粒种子，有一天会在天堂里结出你完全救恩的果实呢？谁敢说它或许不是来自天上的火花，上帝要用它来点燃恒久光明的火焰呢？谁敢说它不可能是一块从上头来的小石头，要击破在你心中的魔鬼国度，并显明它是圣灵荣耀之殿的最初根基呢？所以，无论男女，凡能与我同声说出我的第一句话——“是的，我有许多罪”——之人，这样的人有福了。</p>
+<p>（选自《莱尔传》附录中《莱尔讲道集》，p.302-325。）</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

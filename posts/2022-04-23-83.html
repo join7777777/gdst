@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 创世记18-23章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 创世记18-23章</h1>
+<div class="meta"><span>2022-04-23</span><span>创世纪</span></div>
+<p><img alt="" src="http://3.146.54.178/wp-content/uploads/2022/04/圣经十字架.jpg" loading="lazy"></p>
+<p><strong> 著者：</strong> 本书著者乃上帝忠仆摩西。内中记载，包括二千五百年的历史。新约引本书的话有六十多次。本书每章都有他的故事。书中记载上帝创造世界，而造人为其创造最大的目标。</p>
+<p><strong> 全书分五段:</strong></p>
+<p>（一）一至五章   上帝的爱</p>
+<p>（二）六至十一章   成圣的步骤</p>
+<p>（三）十二至二十三章   信心生活----五个阻挡</p>
+<p>（四）二十四至三十四章   爱心生活</p>
+<p>甲、二十四至二十九章 —— 五种生活</p>
+<p>乙、三十至三十四章 —— 五种烦恼</p>
+<p>（五）三十五至五十章   盼望（得胜）生活 —— 五种得胜秘诀</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/04/创世记18-23章.mp3">收听音频</a></p>
+<p>（<strong> 点击播放：</strong> 创世纪18-23章）</p>
+<p><strong> 第十八章   不看外面当看内心</strong></p>
+<p>一天，亚伯拉罕坐在橡树下，看见三个人来，他看出这三个人外面像人，里面即是神，赶快起来迎接他们到家中去。三人应许撒拉于明年生儿子。撒拉又笑着：“我已衰败，我主亦老迈，岂能有这喜事呢？”上帝说，不要看人，只要看我，靠着我，凡事都能做得到。</p>
+<p>他们叫亚伯拉罕看所多玛俄摩拉，十分肥美，不久要被火烧灭去了。亚伯拉罕求主，有五十义人到十个可否赦免他们，可惜他们坏透了，连五个义人亦没有！上帝看十个人的灵魂比所多玛俄摩拉二城的一切一切更贵重，所以我们不要看外面，要看内心。</p>
+<p><strong> 第十九章   不要看人要看上帝</strong></p>
+<p>罗得坐在城门口，看见两个人来，知道他们是神，起来迎接他们。如果罗得不看他们是神，不久即要同众人被硫磺火焚死了。进家里来，城里人看二人甚美丽，要来犯罪。他们看得是人，不知是神，神起来使他们眼瞎，然后催迫罗得快走。他妻子不肯，爱金钱，爱田产，神虽然催迫她，她舍不得快走，且回过头来，就变成盐柱。所以我们不要看人，只要靠神。</p>
+<p>走到山上去，他的女儿，被魔鬼麻醉，和他犯罪。所以我们更不要看人，只要看上帝。</p>
+<p>上帝救罗得乃是纪念与亚伯拉罕的约，这样更使我们明白，不可看人，只要靠神的道理了。</p>
+<p><strong> 第二十章   不看环境只求和上帝同在</strong></p>
+<p>亚伯拉罕到南方去，又怕了，再犯第二次的罪，称妻为妹，被亚比米勒取进宫中。上帝又怜悯他，拯救他，让亚比米勒害怕，而送还他，且责其撒谎。他说，我怕人家为我妻子的缘故杀死我，他看环境，不看上帝，以为在外邦人中没有上帝，要知外邦亦有上帝，全世界上帝的灵都充满着。</p>
+<p><strong> 第二十一章   不靠自己聪明要靠上帝应许</strong></p>
+<p>撒拉生以撒，上帝应许应验了。她生子了，家庭又分争起来，长子以实玛利和弟弟以撒纷争。上帝告诉亚伯拉罕当赶走夏甲和以实玛利。夏甲和她的儿子带了一袋水到旷野去，在旷野中，水没有了，她们又在等死。天使再出现来安慰她，开她的眼晴，知道前头有一口井，那么她的水可充足了。所以靠自己只有一袋水，靠上帝则有江河般的水，滔滔不竭。可惜人都靠自己的水，不靠上帝江河的水，多么可怜！</p>
+<p>亚比米勒和亚伯拉罕立约，要他善待他。人立的约可靠，上帝的约更十分可靠的。亲爱的兄弟姊妹们，赶快依靠上帝吧！</p>
+<p><strong> 第二十二章   不要失望  要看上帝 上帝有使人复活的大能</strong></p>
+<p>上帝告诉亚伯拉罕携子以撒上山奉献给他。他顺服主，深信上帝的应允，必不落空。若要给他的后裔如星如沙，终必能使他复活，所以他信靠顺服，当他献以撒时，上帝即把羔羊来代替他。我们本是该死，上帝预备羔羊 — 耶稣代我们献上。赞美感谢主！</p>
+<p>亚伯拉罕只有一个儿子，他伯父则有八个儿子。照人看来，是亚伯拉罕当失望，但是上帝应许他的后裔要如天上众星之众，他不失望，信仰主有复活的大能力。</p>
+<p>亲爱的兄弟姊妹们！我们要像以上五章所说的五件事顺服上帝。上帝锻炼亚伯拉罕，亦要同样锻炼我们，要使我们顺服他。这样，我们是不要看人，不看外面的。</p>
+<p><strong> 第二十三章   结束</strong></p>
+<p>亚伯拉罕的妻子死了，还须向迦南人买地埋葬，上帝应许赏赐他的迦南地，已经过六十二年；现在一点点的葬地亦当向人家买，再过八十二年雅各亦须买葬地。这好像上帝忘了前约？但不要凭人眼光，要凭信心，上帝应许决不落空的。</p>
+<p>第十二至二十三章是论全信心的生活，不要看外面，不要看人，不要看环境，不要看自己的聪明，不要看绝望，只要靠信心而已，如像亚伯拉罕称为信心之父。</p>
+<p>我们不但信，又当有爱，是要日日的爱主。（前数章论信，以下数章论爱。）</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

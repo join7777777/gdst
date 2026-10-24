@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>天路历程-六十字架 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>天路历程-六十字架</h1>
+<div class="meta"><span>2022-09-11</span><span>天路历程</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/09/天路历程-六十字架.mp3">收听音频</a></p>
+<p>（ 天路历程-六十字架）</p>
+<p>六、 十字架</p>
+<p>这时我在梦里看见他继续这样走着，后来走到一块洼地上，在那里，也就是在这条路的近旁，有三个人睡得正香，他们的脚踝上全上着脚镣。他们一个叫做愚蠢，一个叫做懒惰，第三个叫做傲慢。</p>
+<p>基督徒看见他们那样躺着，就走过去，心想也许能把他们喊醒，他喊道，你们就像在桅杆顶上睡觉的人[1]，因为你们下面就是死海一个无底的深渊。醒来，走开吧，要是你自己愿意走开，那么我就帮你们除下脚镣。他还对他们说，要是那个如同吼叫的狮子，遍地游行[2]的魔鬼从这里走过，你们一定会成为他的口中物。他们被喊醒听他说完这话，就望着他，开始作如下的回答：愚蠢说，我看不出有什么危险；懒惰说，再睡一会吧；傲慢说，每个人得靠自己。说完他们又躺下去睡觉，基督徒也就继续走他的路。</p>
+<p>不过他一想到这帮人身处险境，他如此仗义要帮助他们， 唤醒他们，劝告他们，自愿帮他们解除脚镣，而他们却一点不把他的好意当一回事，他不免觉得很懊恼。他正在烦闷的时候，看见两个人从他走着的窄路的左边墙上 滚了下来；他们急急忙忙向他走来。其中一个叫做形式主义者，另一个叫做虚伪。就像我刚才说过的，他们来到他跟前，他就同他们攀谈起来。</p>
+<p>基督徒说：先生，你们从哪儿来，要到哪儿去？</p>
+<p>形式主义者和虚伪说：我们生长在高傲之地，现在为了要得嘉奖准备到锡安山去。</p>
+<p>虚 伪</p>
+<p>基督徒说：你们为什么不从这条路开头的那扇门进来？你难道不知道《圣经》里写着不从门进去，倒从别处爬进去，那人就是贼，就是强盗[3]？</p>
+<p>形式主义者和虚伪说，他们的乡邻都认为从那扇门进去路太远；因此他们总是像他们两人刚才那样抄近路越墙而来的。</p>
+<p>基督徒说：不过这样做是违背了我们要去的那地方主人彰明昭著的告诫；这样，岂不是要被认为有意违反他吗？</p>
+<p>形式主义者和虚伪说，至于这一点，他大可不必担心；因为他们是按照惯例行事；并且如果需要的话，还可以拿出证据来证明这习俗已经存在一千多年之久了。</p>
+<p>但是，基督徒说，你们的行为经得起法律的考验吗？</p>
+<p>形式主义者和虚伪说，既然这习俗已经有一千年以上的历史，毫无疑问，任何公正的法官都会认为它是合法的；况且，他们说，如果我们已经走 到这路上来了，当初究竟怎么来的又有什么关系？我们要是已经来到这条路上，不就得啦；你也不过是走在这条路上，虽然据我们晓得，你是从那扇小门进来的；而 我们这两个越墙过来的，岂不是也在这条路上走着；那么，请问你有什么比我们强呢？</p>
+<p>基督徒说：我是按照主人的规则行事的；你们却是依从你们自己不可靠的想法行事。你们已经被这条路的主人认为是贼了；所以即使你们走到这条路的终点，恐怕也不能算数。你们没得到他的指示自己走来，也就会得不到他的怜悯自己离去。</p>
+<p>他们对这番话不作什么答复；只是对他说，请他还是少管闲事吧。然后我看见他们自顾自地走路，不再交谈，那两个人只对基督徒说，对于律法 和仪式，他们敢说他们跟他同样谨慎地遵守。所以，他们说，除了你身上穿的那件衣服以外，我们看不出你和我们有什么区别，那衣服，据我们猜想，是你的邻居给 你遮身体用的。</p>
+<p>形 式 主 义 者</p>
+<p>基督徒说：依靠律法和仪式你们是不会得救的[4]， 因为你们没有从那扇门进来。 至于我身上穿的这件衣服，是我要去的那地方的主人给我的，就像你们说的，给我遮身体用的。我把它看做他对我的恩典，因为过去我除了破衣衫，什么都没有。并 且，一路上我还可以这样安慰自己。我想，我到达城门口的时 候，那儿的主人一定会永远认识我，因为我身上穿的是那天他把我身上的破衣衫脱下来时，白白地赐给我的一件衣服。此外，我前额上还有一个记号，你们也许没有 注意到，它是我主人最亲信的心腹侍从在我的负担从肩上脱落的那天打在我额上的。我还要告诉你们，当时我还拿到一卷打了印的册子，让我在路上看了可以得到安 慰；他还吩咐我到达天门的时候，就把它交出来，作为准可以放我进去的证据；我恐怕这些东西你们都没有，因为你们不是从那扇门进来的。</p>
+<p>他们对这番话都不作答；只是相视而笑。然后我看见他们都往前走去，可是基督徒走在前面，他不再和他们谈话，只顾自言自语着，有时候带着叹息的口吻，有时候露着自慰的语气；他还常常翻阅那发亮的人给他的那本小册子，读过以后，他顿时精神百倍。</p>
+<p>注：</p>
+<p>[1]《旧约全书箴言》第23章第34节：</p>
+<p>你必像躺在海中，或像卧在桅杆上。</p>
+<p>[2]《新约全书彼得前书》第5章第8节：</p>
+<p>务要谨守，警醒；因为你们的仇敌魔鬼，如同吼叫的狮子，遍地游行，寻找可吞吃的人。</p>
+<p>[3]《新约全书约翰福音》第10章第1节：</p>
+<p>我实实在在地告诉你们，人进羊圈，不从门进去，倒从别处爬进去，那人就是贼，就是强盗。</p>
+<p>[4]《新约全书加拉太书》第2章第16节：</p>
+<p>既知道人称义不是因行律法，乃是因信耶稣基督，连我们也信了基督耶稣，使我们因信基督称义，不因行律法称义，因为凡有血气的，没有一个因行律法称义。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

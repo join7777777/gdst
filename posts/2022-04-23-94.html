@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 创世记35-45章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 创世记35-45章</h1>
+<div class="meta"><span>2022-04-23</span><span>创世纪</span></div>
+<p><img alt="" src="http://3.146.54.178/wp-content/uploads/2022/04/圣经十字架.jpg" loading="lazy"></p>
+<p><strong> 著者：</strong> 本书著者乃上帝忠仆摩西。内中记载，包括二千五百年的历史。新约引本书的话有六十多次。本书每章都有他的故事。书中记载上帝创造世界，而造人为其创造最大的目标。</p>
+<p><strong> 全书分五段:</strong></p>
+<p>（一）一至五章   上帝的爱</p>
+<p>（二）六至十一章   成圣的步骤</p>
+<p>（三）十二至二十三章   信心生活----五个阻挡</p>
+<p>（四）二十四至三十四章   爱心生活</p>
+<p>甲、二十四至二十九章 —— 五种生活</p>
+<p>乙、三十至三十四章 —— 五种烦恼</p>
+<p>（五）三十五至五十章   盼望（得胜）生活 —— 五种得胜秘诀</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/04/创世记35-45章.mp3">收听音频</a></p>
+<p>（<strong> 点击播放：</strong> 创世纪35-45章）</p>
+<p><strong> 第五段  盼望（得胜）生活—五种得胜秘诀（三十五至五十章）</strong></p>
+<p><strong> 第三十五章   得胜有五种秘诀（用此五种秘诀为钥以开下面五章）</strong></p>
+<p><strong> 1、宝贵的救主</strong> 一至八节  有祭坛不可忘记神的约，神救他，故当宝贵主。于是雅各到伯特利去献祭给上帝，不忘上帝的大恩，即不忘上帝是伯特利的上帝。其在四处敬拜上帝：①伯特利 一 上帝的殿。②毗努伊勒 一 不但入上帝的殿，还见上帝的面。③伊利伊罗伊以色列 一 不但见上帝的面，上帝乃是我的。④伊勒伯特利 一 即上帝是伯特利的上帝，我成上帝之殿。以上是表明他灵程的进步。</p>
+<p><strong> 2、宝贵的应许</strong> 九至十五节  上帝应许赐福以色列。</p>
+<p><strong> 3、宝贵的信心</strong> 十六至二十二节  拉结因生便雅顺悯而死，她本来求上帝再赏赐她一个儿子，所以临死还为儿子起名便雅悯，意即信心的宝贝。</p>
+<p><strong> 4、宝贵的血</strong> 二十三至二十七节   血在那里，约也在那里，他有十二个儿子，就是他血统的遗传。</p>
+<p><strong> 5、宝贵的试验</strong> 以撒死了，一切完了，完毕了人生的旅途。</p>
+<p><strong> 第三十六章   宝贵的救主不要了（离弃了）</strong></p>
+<p>以东后裔，不承认宝贵救主，靠自己，跑属世的路，娶迦南女子，和他们同化，不要上帝，从世俗的路跑去了。</p>
+<p><strong> 第三十七章   宝贵的应许不要了（不应验）</strong></p>
+<p>约瑟连作二梦，说他梦见所束的禾站立，哥哥们的禾都倒下拜他。又梦着日月和十一颗星都围来拜他。父亲说，你是该死吧，哥哥们要拜你吗？连我亦要拜你吗？哥哥们听着，就怀了嫉妒心。一天，父亲要他把东西带到哥哥们牧羊地方，他们见他来，计议要杀死他，及后就合意把他卖掉。不过宝贵的应许，终必应验。</p>
+<p><strong> 第三十八章   宝贵的信心不要了（失掉了）</strong></p>
+<p>犹大无信心，不敢再把媳妇给第三子。他打算长子死了，次子娶兄妻亦死了，第三子怎可再步后尘？他怕死，没信心。及后则私自犯罪，玷辱她，信心更失掉了，忘了上帝已经把他分别成圣。上帝提醒他，他的媳妇化装来，且把质物为证责备他，这可代表当时人的信心都失去了。</p>
+<p><strong> 第三十九章   宝贵的血不要了（无能力）</strong></p>
+<p>约瑟忠心事主，主母不是好人，再三引诱他，要他犯罪，及至计划不成，反而诬告约瑟，因此约瑟被囚起来。约瑟可代表耶稣，他是卖三十块钱，耶稣亦被卖三十块钱。他被囚而后高举，耶稣亦为人罪被钉十架，上帝高举祂，他的被囚，又如耶稣的流出宝血，人不要宝血，就无能力了。</p>
+<p><strong> 第四十章   宝贵的应许不应验（无盼望）</strong></p>
+<p>约瑟在狱中，又为膳长酒政二人解梦，果然应验，酒政忘记他，他在狱中，好是失望。酒政自己为官去，忘记他在狱中的痛苦，十分失望。</p>
+<p><strong> 第四十一章   宝贵的救主人人要（被高举）</strong></p>
+<p>酒政虽然忘记约瑟，上帝却使法老作梦，无人能解，酒政于是才记起前事，荐之法，法老召他出狱，他不夸自己的智慧，只是高举十字架，赞美主!</p>
+<p><strong> 第四十二章   宝贵的应许应验了（不落空）</strong></p>
+<p>上帝应许十一束禾都要拜他，这宝贝的应许应验了。十个兄弟到埃及去籴（di）粮，约瑟不给他们知道，哥哥们向他下拜，宝贵的应许不落空。</p>
+<p><strong> 第四十三章   宝贵的信心恢复了（有信靠）</strong></p>
+<p>籴的五谷吃完，雅各要叫儿子们再去籴粮，不过他们说已经应许要带弟弟便雅悯去，不然，怕是徒劳无益，终于是犹大以生命为担保，父亲才给便雅悯同他们去。又应验了，十一个兄弟都下拜他，后来父亲亦拜他。（父亲送他礼物,把一切送他,就如拜他）当他们要回来时，约瑟赏赐弟弟特别丰盛——比众人加五倍。</p>
+<p><strong> 第四十四章   宝贵的血非徒然（有功效）</strong></p>
+<p>他们回去时，约瑟教人暗中把银杯放在便雅悯口袋里。去了不远，他叫仆人追上来查，被查出在便雅悯袋中，要把便雅悯当做贼抓去，十个兄弟不得了，亦跟他同返，犹大更欲代弟被囚，甘代流血。这就如耶稣为他们的后裔，流血以赎人罪啊。</p>
+<p><strong> 第四十五章   宝贵的试验不失望（应验了）</strong></p>
+<p>约瑟露出真情，说出真话，与兄弟抱头痛哭，然后约瑟才安慰他们。这是宝贵试验，很是好的。这样看来，宝贵的救主，宝贵的应许，宝贵的信心，宝贵的宝血，宝贵的试验，都应验了。赞美主!</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

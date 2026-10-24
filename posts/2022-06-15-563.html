@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>十三章-罪人的亏欠（下） · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>十三章-罪人的亏欠（下）</h1>
+<div class="meta"><span>2022-06-15</span><span>福音的大能和信息</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/06/第十三章-罪人的亏缺（下）.mp3">收听音频</a></p>
+<p>（ 罪人的亏欠（下）（音频为合成））</p>
+<p><strong> 承受上帝的荣耀</strong></p>
+<p><strong> 上帝创造了人类,让人类多少承受上帝荣耀的形象</strong> （创1:26）。我们不完全明白这个术语的含义, 但我们知道,上帝用他神圣的谕令创造人类,绝不是让人当泥偶而已 一一<em><strong> 上帝造人是让人领受上帝的荣耀并反映上帝的荣耀。</strong></em></p>
+<p><strong> 人领受了极大的特权,是超乎人所能理解、说不出的特权,人可以与上帝相交,“敞着脸”看见上帝,“变成主的形状,荣上加荣”</strong> （<strong> 林后3:18</strong> ）。 然而,亚当自高自大悖逆神,想作自己的主宰,不要无限智慧无限良善的上帝作主,这样一来,人类就放弃了上帝的荣耀。亚当不但没有得到上帝的地位,反而失去了原先丰富的荣耀,变得一无所有,赤身露体 。<strong> 犯罪使人丧失了上帝的形象,前额上写着“以迦博”的名字,因为上帝的荣耀离开了</strong> （<strong> 撒上4:21</strong> ）。<strong> 于是,亚当变为无用,与上帝造他的目的正好相反</strong> （<strong> 罗3:12</strong> ）。<em><strong> 他的内心变成空虚,被罪紧紧包裹起来,外壳坚硬如花岗岩。他外在的人生反映他内在的景况。他变成了一个扭曲的、混乱的弃儿,失去了他应有的地位,连活着的理由也扭曲了</strong></em> 。</p>
+<p><em><strong> 这就是亚当留给儿女的遗产</strong></em> 。事情已经过去了几千年,但人类至今还不能重获幸福。<strong> 每个人生出来都和亚当一样,亏缺了原本受造的荣耀</strong> （<strong> 创5:3</strong> ）。</p>
+<p><strong> 人类如今在咒诅之下苦苦维持性命,但人里面仍然残留着上帝的形象,这让他无法因其他任何东西而感到满足,除非重新回归上帝,就是他极力躲避的那位</strong> （<strong> 创3:16-24；雅3:9</strong> ）。 他可以用这世界的一切名誉和财富装饰自己,但他仍旧是赤身露体的。他可以用自尊心维护自己,让周围的人爱戴自己、赞美自己每个思想和行为,但他仍旧无法逃脱自己良心的严厉指控,一刻也不可安宁。他可以赢得全世界,甚至千万个世界,但他里面真正的贫穷仍时刻啃噬着他的内心 。<em><strong> 上帝就是这样造了人的心,让人心成为上帝的居所,单单以上帝为满足,别的什么都无法填满。</strong></em> 奥古斯丁说,“你让我们喜爱赞美你,因你造我们本是为你自己;我们的心不得安息,直到在你里面找到安息。”（奥古斯丁，《忏悔录》1950）。</p>
+<p><em><strong> 尽管人的现实状况极其阴暗,但这场人造悲剧却有积极的一面。这给教会一个绝佳机会来传扬福音,但教会必须真是基督教会,所传的信息必须真是基督教的福音才行。</strong></em></p>
+<p><em><strong> 第一,我们必须脱离这世代的种种诱惑,不要像世人一样寻找偶像来替代上帝,那是徒劳。</strong></em> 要向一个空虚的世界作见证,就必须让上帝的圣灵充满我们,让我们一心一意地遵行他的旨意 。尽管西方基督徒是教会历史上最富裕的,得到最好的保护,但他们也是最空虚的。这是我们的羞耻。林林总总的基督徒书店都在指控我们。有多少书讲医治内在空虚、实现人生目标、提升自尊?</p>
+<p>然而,耶稣和我们完全不同。虽然他常常疲惫、饥饿、被误解、遭受逼迫、最后被众人弃绝,可是他从来不空虚。<strong> 耶稣满足的理由,正好解释了我们为什么空虚</strong> :<strong> 耶稣说,“我有食物吃,是你们不知道的</strong> 。<strong> 我的食物就是遵行差我来者的旨意,作成他的工</strong> 。”（<strong> 约4:32.34</strong> ）。 西方基督徒空虚,是因为他们有太多世界,太沉迷于自我,只顾自己的意思,只作自己的工。要从空虚走向真满足,就需要彻底扭转:从自我转向上帝,从“只顾自己满意”转向“遵行上帝的旨意”。</p>
+<p><strong> 第二,教会必须努力贴近圣经,而不是努力体贴文化。如果我们一味硏究文化并根据文化调适自己,那我们就不可能对文化产生任何影响。</strong> 我们必须研究上帝圣道并在朝三暮四的文化狂潮中始终忠于圣道,这样才能影响文化,成为引领文化的灯塔。 我们能和世人发生关系,不是因为我们像他们,而是因为我们拒绝他们,我们和他们正好相反!</p>
+<p><strong> 当代的黑暗现实,给教会提供了在地上作光作盐的好机会,但是,如果我们和世人同流合污,沾染那些我们本该揭露的恶行和不洁,那我们就成为无用,只能丢在外面被人践踏,而我们蒙召本是为了去影响他们</strong> （<strong> 太5:13</strong> ）。上帝给我们作山上之城的良机,<strong> 但如果我们的光不过是披着基督教外衣的文化思维和文化欲望,那我们就真和世俗文化所认为的一样一无是处了</strong> （<strong> 太5:14-16</strong> ）。</p>
+<p><strong> 我们必须用合乎圣经的福音来挑战当代的虚空主义,不屈不挠,绝不妥协。我们必须单单以上帝为满足,单单遵行他的旨意,单单效法他的样式。然后,我们才能无可责备,在这弯曲悖谬的世代作上帝的儿女</strong> （<strong> 腓2:15-16</strong> ）。</p>
+<p>这种生活方式需要极大的勇气。我们必须主动站出来,大声疾呼人是彻底败坏的,人的一切追求全是错的,不论是追求自我价值、自我尊严还是自我实现。</p>
+<p>我们必须揭露人本主义和唯物主义的虚假盼望。</p>
+<p>我们也必须揭露各种假基督教,这些假教师用基督教的圣礼裹上人的私欲,试图利用基督教来满足人、医治人、迎合人、抬举人,其实他们和无神论者是一丘之貉。</p>
+<p>我们必须拒绝一切来自魔鬼的试探,它引诱信徒利用耶稣基督来满足人的私欲,以上帝旨意的名义实现自己的人生目标,或以为信主就能过上幸福的生活。这些都是属肉体的空想。</p>
+<p>我们绝对不能采纳世俗的观点,改头换面说这就是基督教。</p>
+<p>我们必须坚持正统的立场并站立得稳,坚持传扬基督和基督的福音。我们必须传讲真理并且活出所传的真理。</p>
+<p><strong> 我们必须认识“基督是主”并因此把万事当作有损的,我们必须为基督丢弃万事,看作粪土,为要得着基督,并且永远住在他里面</strong> （<strong> 腓3:7-9</strong> ）。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

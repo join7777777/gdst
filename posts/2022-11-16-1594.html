@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>谁会去祈祷（祷告）？|视频 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>谁会去祈祷（祷告）？|视频</h1>
+<div class="meta"><span>2022-11-16</span><span>短片讲道视频</span></div>
+<p>▶ <a href="http://3.146.54.178/wp-content/uploads/2022/11/谁会去祈祷？.mp4">观看视频</a></p>
+<p><strong> 视频文字摘要：</strong></p>
+<p>Who is going to pray?</p>
+<p>谁会去祈祷？</p>
+<p>David Wilkerson</p>
+<p>大卫·韦克森（1931.5.19-2011.4.17 ），* 纽约时代广场教会（<strong>[ non-denominational]()</strong>******<strong>[ Times Square Church]() ）的创立牧师，属于非宗派教会，创建于1987年。1958年，他开始街头服侍，帮助那些吸毒的青少年与黑帮，同年创办了青少年挑战（[ Teen Challenge]() ）瘾癖恢复事工。1971年，创立了全球挑战（World Challenge）机构，专门用福音医治那些沉溺吸毒，酒精以及暴力的人。他管辖下的Please Pass the Bread计划惠及全球数以万计有需要的儿童的生命。</strong>**<strong> 他</strong>**<strong> 一生致力于帮助弱势群体和心中失去盼望的人，主要服侍对象包括黑帮青年、无家者、瘾君子、娼妓和病患，饥饿的儿童、寡妇和孤儿等等。</strong><strong> 1962年，他与其他作者合写的《十字架与弹簧刀》（[ The Cross and the Switchblade]() ）</strong>**** 一度成为最畅销的书，发行量超过五千万册，一举成名，1970年被拍成好莱坞电影。*</p>
+<p>I said about television.</p>
+<p>我曾说过对电视的看法。</p>
+<p>Neither shalt thou bring an abomination into thine house,lest thou be a cursed thing like it: but thou shalt utterly detest it, andthou shalt utterly abhor it; for it is a cursed thing. Deuteronomy 7:26</p>
+<p>你不可把可憎之物带进你的家，否则，你就像它一样成为当毁灭的。你要彻底憎恨它，极其厌恶它，因为这是当毁灭的。（申命记7:26）</p>
+<p>What curse is it? Because Satan has used it as number onetool now to destroy the vitality to the church of Jesus of Christ and takeaway the diligence of the coming of the Lord, the diligence of righteousness andit’s put a people to sleep.</p>
+<p>电视的可咒之处是什么？因为撒旦已经利用它作为首要的手段去毁坏耶稣基督教会的生命力，并偷走人们对神的殷勤，对公义的向往，使人沉睡。</p>
+<p>How shall we escape, if we neglect so great salvation. Hebrews2:3</p>
+<p>我们若忽略了这么大的救恩，怎能逃避？（希伯来书2:3）</p>
+<p>That doesn’t mean neglecting prayer. That doesn’t meanneglecting reading the Bible.</p>
+<p>这逃避不是指忽略祷告，也不是指忽略阅读圣经。</p>
+<p>How shall we escape if we neglect the salvation of thelost city? How do we escape if we neglect the salvation of our family? This isa great salvation for the whole world. But how can you even talk aboutit if your heart’s not right?</p>
+<p>我们怎能逃避，倘若我们漠视对失丧之城的救恩？我们怎能逃避，倘若我们漠视对自己家人的救恩？这伟大救恩本属于全世界。倘若你的心没有摆正，你又怎能开口论及它呢？</p>
+<p>Many pastors have destroyed my vineyard, they havetrodden my portion under foot, they have made my pleasant portion a desolatewilderness. Jeremiah. They have made it desolate, and being desolate itmourneth unto me; the whole land is made desolate, because no man layeth it to heart. Jeremiah 12:10,11</p>
+<p>许多牧人毁坏我的葡萄园，践踏我的地产，使我美好的地产变为荒凉的旷野。他们使地荒凉；地既然荒凉，就向我哀哭。全地荒凉，却无人在意。（耶利米书12:10-11）</p>
+<p>No man is diligent about it. No man is upset about it. Noman is concerned about it.</p>
+<p>无人在意，无人担忧，无人关心。</p>
+<p>I was walking down Broadway seventieth street the othernight. And I was weeping, I couldn’t help it. I was looking at all the massesof people coming up from work, and listen to horns and look atthose masses of people. I was thinking about this great salvation and howdo we escape. How do I escape if I neglect this great salvation that’sfree to all?</p>
+<p>有天晚上，我独自走在百老汇第70大街上。我暗自涕泣，无法自控。我望着忙完工作的芸芸众生，听着喇叭轰鸣，看着人群涌动。我思想着，救恩如此伟大，我们怎能逃避。倘若忘记这救恩是白白赐下的，我又怎能逃避？</p>
+<p>“O God, they must be all damned. So many be damned. Sucha small handful of Christians.”</p>
+<p>“噢，神啊，他们都被咒诅了。如此多的人受咒诅！如此少的人信基督。”</p>
+<p>You know what I heard? It’s just broke me. I started to weep. As though He came down and put a finger right on my chest andpointed the finger at me. He stopped me dead in my tracks. I was weeping</p>
+<p>你知道我听到了什么？这声音击碎了我，我开始涕泣。仿佛祂从天而降，用一根手指头放在我的胸膛，并且牢牢指着我。祂阻止我在死路上前行。我在涕泣。</p>
+<p>He said,“David, if not you, who?” Who’s He going to touchthe city with? Who’s going to fast? Who’s gonna pray? If not those who’sheart’s been stirred…If not those who’ve been looking at the Word of theLord and say.</p>
+<p>祂说：“大卫，倘若你不来，谁来？”</p>
+<p>Who’s He going to touchthe city with? Who’s going to fast? Who’s gonna pray? If not those who’sheart’s been stirred…If not those who’ve been looking at the Word of theLord and say.</p>
+<p>祂要使用谁，去触摸这失丧之城？谁将为它禁食？谁将为它祈祷？倘若不是那些心已被激起的人。。。倘若不是那些已经定睛神的话语的人。</p>
+<p>“ Oh God, I can’t live double life. I can’t live a lie.” “I’mnot gonna call &#x27;Lord, Lord&#x27; and go to sit in front of my idols. ”</p>
+<p>“噢神，我不能活在双重生活里，我不能活在谎言中。”“我不想口里喊着‘主，主’，同时肉体却跑去坐在偶像前。”</p>
+<p>If God can’t find us….If not you… Then who? Who’s gonna weep for the city? Who’s gonna topray? If not you praying for your unsaved family? Who? Who’s God gonna get? Where’s He gonna find somebody? If you don’t go topray, who goes?If not you…Who?</p>
+<p>倘若神无法找到我们。。。倘若不是你。。。那么还有谁？谁来为失丧之城哭泣？谁为它祷告？倘若你不去为尚未得救的家人祷告，谁来祷告？神还能得着谁？祂到哪里去找那位祷告之人？倘若你不去祷告，谁去？倘若不是你。。。那是谁？</p>
+<p>It hit me. And ever since then I’ve just a few days now everywaking moment “If not you, David…” “If you won’t seek My face…&quot; “If youwon’t humble yourself…&quot; “If you won’t give yourself to prayer…&quot; “Ifyou won’t give yourself wholly to Me…&quot; “Like Jeremiah, like Isaiah, likeEzekiel…&quot;</p>
+<p>这声音击中了我。自那以后，有好几天，我一醒来，就有声音在耳边想起：“倘若不是你，大卫。。。”“倘若你不来寻求我的面。。。”“倘若你不谦卑自己。。。”“倘若你不愿将自己献在祷告祭坛前。。。”“倘若你不愿将自己完全献给我。。。”“就像耶利米，以赛亚，以西结那样。。。”</p>
+<p>“Brother David, you mean to tell me that after workingall day on the job ” “I’ve got to carry another burden after that. ” “I want togo home and relax. &quot; “You mean to tell me I’ve got to weep over the lost?“ “You mean to tell me I’ve got to live like Jesus did? “ “that I’ve got tobreak away and pray? “ “Even though I’ve been now ministering the people, I’vegot to still break away and pray? “ “And then I’ve got to go to closet andI’ve got to die to self and sin? “</p>
+<p>“大卫弟兄，你是想告诉我，经过一整天的辛苦工作”“我必须扛起又一个重担。。”“我想回家休息。” “你想告诉我，必须为失丧者哭泣？”“你想告诉我，必须效法耶稣去活？”“我必须脱身去祷告？” “哪怕我一向牧养人群，仍然必须脱身去祷告？”“然后，我必须进入内室，向己而死，向罪而死？”</p>
+<p>Yes!Yes!Yes!</p>
+<p>是的！是的！是的！</p>
+<p>It all depends on whether you believe that God’sword’s true or not. It all depends on whether you believe that judgment iscoming. It all depends what do you say.</p>
+<p>一切都取决于，你是否相信神的话语是真的。取决于你是否相信审判将会来临。取决于你说了什么。</p>
+<p>&quot;Things gonna be continuous from the beginning oftime.”(2 Peter 3:4)</p>
+<p>“万物与起初所创造的仍是一样。”（彼得后书3：4）</p>
+<p>No</p>
+<p>不</p>
+<p>God’s saying, “It’s enough. “ How shall we escape if we neglect, if we become careless? We’re not laying it to heart.</p>
+<p>神说：“够了。”倘若我们漠视，倘若事不关己，我们怎能逃避？我们没有将这负担放在心上。</p>
+<p>Heavenly Father, Draw me nearer. Jesus. Draw me nearer toyou. Let my heart burn for You. Let my heart burn after righteousness. Lord,cleanse me. Drive out all the idolatry, and all the adultery and the lust. Fillmy heart with You, Jesus.</p>
+<p>天上的父啊，使我离你更近。耶稣啊，使我离你更近。让我的心为你燃烧。让我的心为公义燃烧。主啊，洁净我。挪去我所有的偶像，所有的淫秽和情欲。主啊，请你填满我的心</p>
+<p>。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

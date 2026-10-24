@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 创世记3-5章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 创世记3-5章</h1>
+<div class="meta"><span>2022-04-23</span><span>创世纪</span></div>
+<p><img alt="" src="http://3.146.54.178/wp-content/uploads/2022/04/cropped-圣经十字架.jpg" loading="lazy"></p>
+<p>** 著者：** 本书著者乃上帝忠仆摩西。内中记载，包括二千五百年的历史。新约引本书的话有六十多次。本书每章都有他的故事。书中记载上帝创造世界，而造人为其创造最大的目标。</p>
+<p><strong> 全书分五段:</strong></p>
+<p>（一）一至五章   上帝的爱</p>
+<p>（二）六至十一章   成圣的步骤</p>
+<p>（三）十二至二十三章   信心生活----五个阻挡</p>
+<p>（四）二十四至三十四章   爱心生活</p>
+<p>甲、二十四至二十九章 —— 五种生活</p>
+<p>乙、三十至三十四章 —— 五种烦恼</p>
+<p>（五）三十五至五十章   盼望（得胜）生活 —— 五种得胜秘诀</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/04/创世记3-5章.mp3">收听音频</a></p>
+<p>（<strong> 点击播放：</strong> 创世纪3-5章）</p>
+<p><strong> 第三章    罪恶使我和上帝断绝</strong></p>
+<p>最狡猾的蛇来了，它先来引诱夏娃。夏娃很爱美观，蛇因她的嗜好来引动她（现在女子亦都好时髦），叫她看见那棵禁果，十分美丽，十分可口。夏娃就越看越好，疑惑上帝的话或者必不一定死。上帝告诉他们，是吃了“必死”，她怀疑“不必死”，给魔鬼留地步，可怜不可怜！蛇的尾巴有点弯曲，如现在标点用“？”记号，乃是叫人起了怀疑。夏娃吃了，亚当亦吃了！魔鬼不必一个一个的引诱，他只须引诱一个人，妇人被引诱，自然丈夫亦跟她被引诱了。</p>
+<p>他们被诱惑后，就知道善恶之分，以前是小孩，现今做了大人，知道赤身露体之羞。他们靠自己的义，制树叶为衣来蔽体，可是靠自己的法子终是没用，上帝呼叫他，他怕上帝，就隐藏起来。本来他俩是爱上帝的，现在怕上帝，这是因为他们的罪——所以罪能使我和上帝断绝。他隐躲不得，上帝问他为何犯禁？亚当推辞是你给我的女人引诱我，女人则推辞是蛇引诱我，一个推辞一个，可是上帝不让他们推辞，要刑罚他们了。</p>
+<p>蛇要吃土——吃亚当。可是上帝还有大应许：“女人的后裔要伤蛇头”，是预备耶稣来打伤魔鬼。他们因为太有空闲而致犯罪，现在要给他们忙碌了（如今富家弟子多有空闲，所以多中魔鬼之计。）上帝不愿他俩长穿树叶，特为他俩制成羔羊皮衣给他俩穿，这是表明不是靠自已行为称义，乃是靠耶稣为羔羊以称义。此后上帝即驱逐他们，免得吃永生果子。于是死亡临到人世，罪使我和上帝断绝了！可怜！</p>
+<p><strong> 第四章    上帝使人知因信称义之道</strong></p>
+<p>亚当生该隐，意即得了，他以为如今可打死老蛇了。可是没有，所以生第二子时即起名为亚伯，意即现在空了，现在蛇不能打死了！</p>
+<p>该隐献土产为祭给上帝，这表明靠自己的能力。亚伯献羔羊为祭给上帝，这表明靠上帝称义。上帝接纳亚伯的祭，该隐心中不乐，而杀死弟弟。上帝来责备他，你怎不效法亚伯？靠自己的罪，罪必管束你。必须靠耶稣宝血，才免被罪辖制。</p>
+<p>他虽然杀死弟弟，又埋葬了他，可是他的血，由地下发声向主哀求。耶稣的血，亦发出声音为我们哀求上帝。死了，血还能出声哀求，上帝听他的哀求而刑罚该隐，叫他从此以后，看不见上帝的面。该隐求赦免：“我的刑罚太重……”求主把记号给他。我(宋氏)想：上帝必以羔羊之血为印，盖在他额上，以为他的记号。</p>
+<p>该隐后裔：以诺——骄傲，该隐造了一座城，将那城叫以诺，表明他为子求名。拉麦娶二妻，表明属肉体。雅八为牧羊者之祖师，表明求家庭。犹八是歌乐祖师，表明求世界之快乐。土八该隐制造铜铁，表明求胜过别人，拉麦更是十分凶恶，这都是不好之父亲所生不好的后裔。</p>
+<p>（如参讲义，他的后裔是求名，求色，求家庭，求报复，求财，求世界快乐——记者注)</p>
+<p>亚伯死后，被提去了，他的义就是我的义。所以亚当又生塞特，意即上帝又赐我儿子，来表明亚伯之义变为塞特。到以挪士时，人才晓得祈求上帝。亚伯后裔是属灵的。(参讲义他的后裔是靠羔羊血，因信称义，靠羔羊救赎代替之福。------记者注)</p>
+<p><strong> 第五章    由信而体贴圣灵</strong></p>
+<p>本章记的是某一个人生了，死了，生了，死了，什么人生了，什么人又死了，都是属肉体的。我们总要靠圣灵来活，不可因顺服肉体而死。</p>
+<p>人渐行早婚，生子也早。最先是百余岁才生子，以后就六七十岁，三四十岁，愈早生子，享寿亦愈短，是属肉体。马土撒拉最缓生子，所以他享寿最高，二十七至二十八节：“玛土撒拉活到一百八十七岁，生了拉麦…玛土撒拉共活了九百六十九岁就死了。但是不论寿高寿短，总须一死，只有一人——-以诺，他是属灵的，和上帝同行到三百六十五岁就被上帝接去了。一年共是三百六十五日，他享三百六十五岁，表明他天天和上帝同行，不过上帝等他生子，才召他同行。他生子名马土撒拉，意即到死之年，则事必验。表明他生子以后，即知世皆虚空，不久快灭，他才明白不可体贴肉体，以求和上帝同行去。</p>
+<p>果然到其子——玛土撒拉死之年，洪水湮灭世界了。(玛士撒拉一百八十七岁生拉麦，拉麦一百八十二岁生挪亚，挪亚六百岁时洪水湮灭地上，三寿数合算起来，恰为九百六十九合玛氏之寿数)。所以属灵者，则有永生。人在重生后，要体贴圣灵的。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

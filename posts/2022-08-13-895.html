@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>罪与福音（保罗·华许） · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>罪与福音（保罗·华许）</h1>
+<div class="meta"><span>2022-08-13</span><span>福音信息</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/08/0罪与福音.mp3">收听音频</a></p>
+<p>（ 罪与福音）</p>
+<p><em><strong> 诊断病情并向病人解释病情的严重程度，这永远是治病的第一步。</strong></em> 人若不知自己得了癌症，断不会寻求医生帮助；人若不知房子着了火，绝不会逃离房子。 同样，人若不晓得自己是失丧的，断不会寻求拯救；而且，人若不晓得除基督之外别无拯救，他绝不会投靠基督。我们必须告诉人他们的罪，然后他们才可能承认自己的罪；他们必须先晓得罪的可怕，然后才可能逃离罪；并且，他们必须首先相信救恩惟独在基督里，然后他们才会抛弃一切自义的盼望，投奔基督。</p>
+<p><em><strong> 明白了这些真理，我们就晓得很多福音派所犯的错误是多么荒谬——他们根本不愿意提到罪。</strong></em> 甚至有很多人故意反对和压制这种方式，说这样传道是消极的、是破坏性的。<strong> 但是，这是圣灵最首要的工作：“祂既来了，就要叫世人为罪、为义、为审判，自己责备自己。为罪，是因他们不信我；为义，是因我往父那里去，你们就不再见我；为审判，是因这世界的王受了审判。”</strong> （<strong> 约16：8-11</strong> ）</p>
+<p><em><strong> 根据主耶稣基督的教导，上帝差遣圣灵进入世界，是要让人知道何为罪、何为义、何为审判。让罪大白天下，迫使罪人悔改，这是圣灵最主要的工作。</strong></em> 我们本是福音的工人，难道不应当有同样的目标吗？我们的讲道难道不应当也让人为罪、为义、为审判，自己责备自己？假如我们在这样重要的工作中不与圣灵合作，那我们怎能靠圣灵的大能传福音？<strong> 尽管圣灵不依赖传道的器皿——人，但上帝已经命令人必须藉着传道来认罪、悔改并得救</strong> （<strong> 参林前1：21</strong> ）。 然而，假如我们窝藏罪恶，假如我们不愿意叫人悔改，圣灵又怎能使用我们作讲道的器皿？<strong> 圣经说，圣灵的宝剑就是上帝的话语，可是，假如上帝的工人不愿意用这把宝剑让人认罪，这岂不会破坏圣灵的工作，让圣灵忧伤？</strong> （<strong> 参弗6：17</strong> ）<em> 我们必须勇敢地效法圣灵对付罪人的榜样。既然圣灵认为必须首先让人认罪，那我们也必须这样做。</em> 那些自以为找到了“更妙的道”的传道人和教会，别妄想圣灵会在他们中间工作，藉着他们领人归向基督。</p>
+<p><em><strong> 我们必须再强调最后一点。我们必须多讲罪，最大的原因是这样可以尊崇福音。</strong></em> 白天看不见星星，因为太阳的光线太强，压过了星星。然而，一旦太阳西沉，天空变得漆黑一片，我们就能看见星星的亮光。 耶稣基督的福音也是同理。我们必须对照自己罪恶的黑暗，才能看到福音的荣美。人越阴暗，福音越光彩。</p>
+<p><em><strong> 显然，人不可能注意基督的荣美，也不会思想自己到底价值何在，除非他们首先看到自己罪大恶极，发现自己一无所有，毫无功劳可言。</strong></em> 历史上有数不清的基督徒见证说，他们从来没把基督放在眼里，直到有一天，圣灵来到他们心里，让他们晓得何为罪、何为义、何为审判。当他们被自己的大罪吞噬的时候，他们才发现基督好像明亮的晨星，是他们的宝贝 （<strong> 参彼后1：19；启22：16</strong> ）。<em><strong> 我们常常看到真基督徒听见关于人之败坏的真道之后，他们脸上洋溢着喜乐，心中渴望跟随基督</strong></em> 。 他们这样不是因为他们轻轻忽忽地看待罪，也不是因为他们喜欢从前犯罪的状况。不，这是因为真理用说不出的大喜乐充满他们，是因为人的罪虽深重，但他们看到基督的恩典大过人的罪！如果我们不愿意让人小看自己，我们就剥夺了他们作基督徒的权利，导致他们无法拓展视野去认识上帝。</p>
+<p>（选自《福音的大能和信息》P93-95，杨基译，改革宗经典出版社，标题另加。）</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

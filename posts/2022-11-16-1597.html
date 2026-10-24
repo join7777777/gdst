@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>受苦的呼喊（A Call to Anguish|视频 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>受苦的呼喊（A Call to Anguish|视频</h1>
+<div class="meta"><span>2022-11-16</span><span>短片讲道视频</span></div>
+<p>▶ <a href="http://3.146.54.178/wp-content/uploads/2022/11/大卫·韋克森牧師的呼喊（A-Call-to-Anguish-_标清.mp4">观看视频</a></p>
+<h2>受苦的呼召</h2>
+<p>今日的教会充满了情欲和人自己发明的侍奉，这些都是毫无能力的，都是不能光照世界的！越来越多属世的东西进入教会，世界正在改变教会，而不是教会改变了世界。我看见世界的音乐淹没了上帝的家；我看见世界的娱乐充满了上帝的家；教会一味地追求感觉和娱乐，却憎恨劝诫与责备……</p>
+<p>为主心灵忧伤（内心极深的痛苦，深深地懊悔，哀恸）的教导在上帝的家中是怎么了？为主心灵忧伤的教导在牧师中是怎么了？你在这被溺爱的世代中再也听不到这样的字眼了，没有人再想听这种教训了。</p>
+<p>我们持守宗教的雄辩和复兴的高谈，但我们变得如此被动。所有真正的热情都是在心灵忧伤、痛苦中产生的，所有对基督的热情都是出于苦楚的洗礼。你查找经文，会发现当上帝决定重整败坏光景的时候，祂会先分享祂自己的忧伤痛苦给那些祂看到的有相同遭遇的教会和人，然后祂会找到一个祷告的人，呼召这个人，并用苦楚为他施洗。</p>
+<p>你会在《尼希米记》中看到，耶路撒冷荒凉了，上帝要如何处理呢？上帝将如何修复这荒凉呢？尼希米不是传道人，他是个有职业的人，他是个专注祷告的人。上帝不是找了一个只有三分钟热度的人，不是那种脑袋突然一热，然后就胎死腹中的人！尼希米说：“不！我忧伤痛悔，我哭泣，我日夜禁食祷告！”为什么在其他人身上看不到这种反应？为什么其他人没有得到上帝的回应？为什么上帝不用他们复兴？为什么他们没有上帝的话语？因为他们身上没有忧伤痛苦的印记！没有哭泣！没有祷告！一片废墟！</p>
+<p>上帝属灵的耶路撒冷，也就是教会，对你来说很重要吗？你关心我们心中的耶路撒冷吗？</p>
+<p>荒凉的迹象就是属灵的力量与热情慢慢地干枯，看不见自己不冷不热的行为，分不清那正在偷偷潜入的混杂物。这就是魔鬼想要的，让你放弃争战，并消灭你的斗志！所以你再也不想努力祷告了，你在上帝面前再也不哀恸了，所以你会安心地坐下看电视，任凭你的家人迈向地狱！</p>
+<p>为孩子哭泣的主日学老师在哪里呢？你明明知道他们正走向地狱！</p>
+<p>若不是在忧伤痛苦中所生的，若不是被圣灵所生的，你就不会被带到忧伤痛苦的洗礼中，因着你听到、看到的荒凉而屈膝祷告寻求上帝。一个真正祷告者的生命始于忧伤痛苦之地，如果你预备祷告的心，上帝就会来和你分享祂的心，你的心会开始哭喊：“哦，上帝啊！祢的名被亵渎，祢的圣灵被轻慢，仇敌试图诋毁祢信实的见证……”</p>
+<p>当你把时间花在上网或看电视时，别说：“我很关心……”有些人需要来到祭坛前向主承认并悔改：“主，我不再是从前的那个我了；我没有在我应该在的那个位置；我不再以祢的心为心；我想要轻松，我只想要快乐……”</p>
+<p>有些事必须被改变，否则将不会有更新、复兴和苏醒，直到我们愿意再一次被祂破碎！真正的喜乐出自心灵忧伤，任何属肉体的事都不能带来喜乐！我不关心你有多少钱，我不关心你有多少房子，这些绝不会给你带来喜乐！惟有上帝的灵才能使我们喜乐！当你顺服上帝，以祂的心为心时，你才有真正的喜乐！在你家的周围砌墙吧，在你心的周围砌墙吧，使你面对仇敌的攻击时，刚强且坚不可摧！</p>
+<p>上帝啊，这才是我们想要的！</p>
+<p>“今日的教会追求的是流行，而不是对上帝的热情。”——雷欧纳牧师</p>
+<p>“当我在圣经里读到新约时代的教会时，他们并没有华丽的教堂，他们并没有很多钱。他们并没有很多组织，他们也没有上电视跟人要钱。但我告诉你他们做了什么：他们把世界翻转了！我是属于现代教会的人，但我认为很丢脸，因为现代的教会正在让一位圣洁的上帝蒙羞！”——雷欧纳牧师</p>
+<p>“今日的基督教并没有在改变世界，反而在被世界改变。今日的基督教没有在提升社会的道德标准，反而下降到社会堕落的道德标准。今日的教会愚拙地以为已经得胜，被社会接纳了，其实是已经投降于这个堕落的社会了。”——陶恕牧师</p>
+<p>“今日的教会需要能够清楚地看见上帝的旨意，我们需要有像施洗约翰的真先知，因为若他们不出现，这个世代就不懂得如何悔改。但是，若他们出现，属世的教会一定会把他们钉死在十字架上。”——陶恕牧师</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

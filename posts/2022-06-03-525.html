@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>第七章-招人讨厌的福音 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>第七章-招人讨厌的福音</h1>
+<div class="meta"><span>2022-06-03</span><span>福音的大能和信息</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/06/第七章-招人讨厌的福音.mp3">收听音频</a></p>
+<p>（ 招人讨厌的福音-保罗·华许（音频为合成））</p>
+<p><strong> 我不以福音为耻。    ——罗马书1:16</strong></p>
+<p>我们已经大概认识了使徒保罗的福音,现在可以来看看为什么福音在那些听见福音的人中间引发这么强的蔑视和敌意。尽管福音本是上帝的大能,要救一切相信的人,但福音对堕落的世界而言,却是招人讨厌的,而且是不可信的。</p>
+<p><strong> 彻底排他</strong></p>
+<p>保罗的肉体有充足理由以福音为耻,因为凡是当时公认为真理和神圣的事,都绝对抵触福音。对犹太人来说,福音是最大的亵渎,因为福音说那位在骷髅地被定罪钉死的拿撒勒人就是弥赛亚。对希腊人来说,福音是最大的愚昧,因为福音说这位犹太人的弥赛亚是道成肉身的上帝。所以,保罗知道,一旦他开始讲福音,肯定要遭人拒绝和嘲讽,除非圣灵亲自干预,打开听众的心灵和思想,打动他们的情感。今天,原始福音仍和当年一样招人讨厌,因为它仍然抵触当代的一切信条、一切“主义”: 租对主义、多元主义和人本主义。</p>
+<p><strong> 我们活在相对主义的时代</strong> 一一这个信仰体系的根基是“我们绝对相信没有绝对”。如果有人追求真理,我们假模假样地赞扬他；但如果有人胆敢说自己找到了真理,我们就会斥之为傲慢,率众讨伐。我们活在一个黑暗的时代,而且是自找的。</p>
+<p>原因很清楚人生来就是堕落的,执意要自己作主,由此注定了走向地狱的命运。人因为上帝是公义的所以恨恶上帝,人因为上帝的律法审查并限制他们的邪恶所以恨恶上帝的律法,人因为上帝的真理暴露了他们的本相，并且让他们残余的一点良心感到不安，而恨恶上帝真理。因此,堕落的人想方设法阻挡真理,尤其是关于上帝的真真理。他们不遗余力地遏制真理,甚至假装没有这种东西存在;即使承认真理存在,也声称真理是不可知的或与实际生活无关。这绝非“上帝向人隐藏”,而是“人向上帝隐藏”。问题不在于智力,而在于意愿。</p>
+<ul><li>当代人喜欢掩耳盗铃,把头埋在沙里躲避横冲直撞的犀牛,他们否认有一位公义的上帝和绝对的道德,妄想用这种方式来使良心安稳,不要去想审判的事;但他们不能不想,因为他们明明知道将来必有审判<em> 。</em><strong> 基督徒的福音是招人讨厌的,也与人的文化格格不入,因为福音所作的事，正是人最想逃避的: 福音唤醒人心,让人从麻痹中惊醒过来,看到他的现实状况,看到他是何等堕著和悖逆;并且福音要求他拒绝自治,悔改信靠耶稣基督，顺服上帝。</strong>*</li></ul>
+<p><strong> 我们活在多元主义的时代</strong> 一一这个信仰体系宣称一切说法都有道理,都是真的,尤其是涉及宗教的时候;这样一来,就废掉了真理。当代基督徒可能很难想象,最初几个世纪的基督徒以“无神论者”著称并因这个罪名而受逼迫。当时,他们所处的文化浸淫于有神论（有神论：当时希腊世界的有神论是异教的有神论，也就是泛神论和多神论，并非亚伯拉罕的独一真神。--译者注）。</p>
+<p>全世界到处都是各种神祗的像,搞宗教是一个红火的生意。（使徒行传19:27）人们不仅容忍别人的神祇,而且相互交换,你拜我的,我拜你的。整个宗教世界一片和谐的声音一一直到基督徒出现并宣称:<strong> “人手所作的不是神”</strong> 。<strong> （使徒行传19:26</strong> ）<strong> 基督徒不拜罗马皇帝,也不向任何所谓的神袛下跪,口称唯独耶稣是万有的主。（罗马书10:9）</strong> 整个世界都认为这些人简直傲慢到极点,基督徒对容忍的不容忍引发众怒,全世界都认定这些人绝不可容忍。</p>
+<p>今天的世界充满了同样荒谬的场面。人们无视最起码的逻辑,声称一切关于宗教和道德的观点都是正确的,不管它们多么不同和彼此对立。最令人震惊的事实是,通过媒体和学术界的不懈努力,多元主义已经成为社会主流观点。然而,多元主义不讨论问题,也不解决问题。多元主义的作用仅仅是麻痹病人,让人不再感到疼痛,不再思考。</p>
+<p>福音招人讨厌,因为福音唤醒人心,让他从麻痹中惊醒过来,不再坚持这样一个不合逻辑的立场。福音迫使人承认一一“<strong> 你们心持两意要到几时呢?若耶和华是上帝,就当顺从耶和华。若巴力是上帝，就当顺从巴力。</strong> ”<strong> （列王纪上18:21）</strong> ，真福音是彻底排他的。 耶稣不是道路之一;耶稣是唯一的道路,其他道路都不是正路 。如果基督教朝着容留异端的“普世基教大联合运动”偏一步,把定冠词(the)改成不定冠词(a),那世界和基督教就能交朋友了。然而,一旦发生这种事,基督教就不是基督教了。基督被拒于教会门外。世界就没有救主了。</p>
+<p><strong> 我们活在人本主义的时代</strong> 一一过去几十年来,人耍尽手腕要把上帝从良心和文化中清洗出去。人已经拆毁了每个敬拜唯一真上帝的有形祭坛,利用宗教狂热为自己树碑立传。</p>
+<p>人已经让自己成为万有的中心、尺度、目的。他赞美自己,坚持自己本身就有价值,要求别人向他的自尊感脱帽致敬,认为自我满足或自我成就就是至善。他说良心的折磨不过是一种过时宗教所鼓吹的内疚感的残留物。周围那些不道德的事情,他觉得过错都在社会(至少是一部分社会,就是尚未被启蒙的那部分社会,比他差的那部分社会),自己没有任何责任。 如果有人敢暗示他的良心足以定他的罪，或暗示他应该对世界上数不清的病态现象负责,他会不可想象。因此,在堕落的人看来,福音是讨厌的,因为福音暴露了他的自欺,暴露了他堕落的状况,使他的罪责大白天下这是福音第一个核心工作,正因为如此,世人特别厌恶真正的福音讲道。 讲道终止人的狂欢,在人得意招摇的时候把他淋成落汤鸡，它暴露人的伪装,指出新皇帝打着光屁股。</p>
+<p><strong> 圣经明说耶稣基督的福音对每个时代每个文化的每个人都是“绊脚石”，都是“愚拙”</strong> 。（<strong> 哥林多前书1:23</strong> ）然而，<strong> 消除福音中讨厌的成分，就是废掉基督的十字架和十字架拯救的大能</strong> 。（<strong> 哥林多前书1:17,23</strong> ）<strong> 我们必须明白:福音不仅招人讨厌一一福音必须招人讨厌!正是借着福音的愚拙,上帝要摧毁聪明人的聪明,显出人类最伟大的思想家也不能自救,破碎众人的骄傲,降卑他们,叫一切从肉身生的,在他面前没有一个能够自夸</strong> 。（<strong> 哥林多前书1:19-20,29</strong> ）<strong> 正如经上所记,“凡夸口的,当指着主夸口。&quot;</strong> （<strong> 哥林多前书1:31</strong> ）。</p>
+<p>保罗的福音不仅抵触当时的宗教、哲学和文化,而且向这些巨人正式宣战。 保罗拒绝和世界签订停战协议,他要求人类文化必须绝对臣服于耶稣基督的主权。我们应当效法保罗的榜样。我们必须小心,拒绝各种向世俗妥协的试探,不可削足适履改变福音去迎合当代潮流或属肉体的人的私欲。我们不能稀释福音讨厌的地方,或把福音装扮成乖巧温柔的样子,阉割福音当中各种彻底的要求,去讨好堕落的世界和属肉体的教会成员。我们没有这个权力 。</p>
+<p>当代美国福音派教会用各种各样的方式让自己变成“受慕道友欢迎的教会”:重新包装福音、挪去绊脚石、磨平棱角免得得罪属肉体的人。我们应该善待慕道友,但我们也应该认识到:只有一个寻求的,（寻求：在英文中，慕道友就是“寻求者”。--译者注）就是上帝。如果我们想让教会和教会的信息得到认可,这种认可应当来自上帝。如果我们想建立教会或事工,这个动力应当来自渴望荣耀上帝、唯恐有损上帝的威严。世人怎么想我们,就让它顺风飘去。我们不当求地上的尊贵,而当求天上的尊贵。</p>
+<p><strong> 不可信的福音</strong></p>
+<p>前面讲过,保罗的肉身有充分的理由以福音为耻,因为福音绝对抵触当时公认的一切真理和神圣的事。 但是,肉体以福音为耻还有一个另一个原因:在聪明的世人看来,福音是绝对不可信的,明显是荒谬的言语。作为基督徒,我们有时候觉得信主是理所当然的,我们忘了人相信福音”是多么石破天惊的事。在某种意义上,福音实在是太离谱,所以,它迅速传遍罗马帝国这件事本身就证明了它本是超自然的 。外邦人一一完全不懂圣经、植根于希腊哲学和异教迷信一一怎么可能相信这样奇怪的、讲一个叫耶稣的犹太人的消息?</p>
+<p>他生在罗马帝国所管辖的一个最不起眼的地区的一个贫困家庭,人怀疑他是私生子,可是福音却说他是永生上帝的儿子,由圣灵感孕,从犹太童女所生。</p>
+<p>他是木匠,后来当了巡游老师,教授宗教知识,他没有受过正式培训,但福音说他的智慧超过古代一切希腊哲学家和罗马智者。</p>
+<p>他很穷,没有地方枕头,但福音说他，行神迹三年之久,曾喂饱几千人,医治各种疾病,甚至让死人复活。</p>
+<p>他被钉死在耶路撒冷城外,罪名是亵渎神和叛国,但福音说他的死是整个人类历史上的转折点,并且人只能靠他，才能洗罪得救,与上帝和好。</p>
+<p>他被安放在一个借来的坟墓里,但福音说他第三天从死里复活且显现给许多门徒看。四十天之后他升天坐在上帝的右边。</p>
+<p>所以,福音说,这样一位贫穷的犹太木匠,被本族人嘲笑为疯子和亵渎神的人,被国家法律钉死的人,现在成了世界的救主,是万王之王，万主之主。万膝都要向他跪拜,包括罗马皇帝。</p>
+<p>若不是上帝的大能,谁会相信这样的信息?没有别的解释 。 若不是上帝命定了如此,福音不可能传出耶路撒冷,更不用说传出罗马帝国,传到全世界每个民族。若不是圣灵做工,假如福音是靠传道人的组织能力、口才或护教能力,福音信息早就天折了。全世界的所有宣教策略加上华尔街最高超的市场营销手段,也不能让人接受这样愚拙的绊脚石。</p>
+<p><strong> 对于我们这些努力传扬基督徒信仰的人,这个真理既给我们安慰,又给我们警告</strong> 。<strong> 第一,</strong> 它安慰我们,因为我们知道只要我们简朴地、忠实地传扬福音,基督徒信仰就可以继续在全世界传播。<strong> 第二,</strong> 它警告我们不可屈服于谎言去传另一个福音,通过我们自己的聪明、口才或宣教策略去扩展上帝的国。这些东西若没有上帝的大能,就不可能让人相信这不可信的消息。（<strong> 哥林多前书1:17-25</strong> ）<strong> 我们必须放弃自己的想法,赶快按照圣经的方式来传福音――勇敢而清楚的传扬这个我们不以为耻的信息，因为“这福音本是神的大能，要就一切相信的”</strong> （<strong> 罗马书1:16</strong> ）</p>
+<p>我们活在一个不信的世代,一个怀疑的世代。文化嘲笑我们的信仰是绝望无助的人所编造的美丽传说,认为我们这些人要么是思想狹隘的偏执狂,要么是白痴,上了宗教的当。他们的嘲笑常让我们不得不反击,基督徒得通过护教的方法来反击他们的观点和表明我们的立场,证明我们的信仰并非天方夜谭。</p>
+<p>尽管护教是相当有用的,也是必须的,但我们必须认识到,真正的能力仍然在于传扬福音。<strong> 我们不可能说服任何人相信福音,正如我们不能使死人复活。这些都是上帝圣灵的工作。只有上帝超自然的工作才能让人信主,并且上帝已经应许他会这样做--不是靠人的聪明或技能,而是靠传扬那位受死又复活的基督</strong> !（<strong> 哥林多前书1:22-24</strong> ）</p>
+<p><em><strong> 我们必须明白一个事实:基督徒的福音是不可信的。倘若上帝圣灵不做他恩慈和大能的工作,我们不应该指望任何人有能力听我们说什么,更不用说相信我们说的话</strong></em> 。<strong> 若没有上帝的大能，讲道是多么无用!传道人真的离不开上帝!倘若上帝不首先感动人心,传道的工作不过是傻子犯傻而已</strong> 。<em><strong> 然而,上帝已经应许：只要我们忠心传讲有救人大能的福音信息,他必亲自为我们开路！</strong></em></p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

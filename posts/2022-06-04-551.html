@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>十一章-多讲上帝（下） · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>十一章-多讲上帝（下）</h1>
+<div class="meta"><span>2022-06-04</span><span>福音的大能和信息</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/06/第十一章-多讲上帝（下）.mp3">收听音频</a></p>
+<p>（ 多讲上帝（下）（音频为合成））</p>
+<p><strong> 上帝是圣洁的</strong></p>
+<p><strong> 圣经新约旧约都说上帝是圣哉、圣哉、圣哉</strong> 。（<strong> 赛6:3，启4章8节</strong> .）这个说法叫“三圣哉”,是希伯来语的最高级形式。（“三圣哉”这个词来自希腊文“trisagion”。奥斯瓦尔特（Johnoswalt）,赛:1章至9章）圣经作者用这种方式来赞美上帝的圣洁属性,超过其他一切属性。上帝的圣洁不仅是一种属性而已,这是上帝一切属性的大背景,其他属性都要由这个属性来界定和解释。</p>
+<p>因此,人必须首先认识上帝是圣洁的!他们对这个属性的认识,决定他们对上帝的认识、对自我的认识、对罪、救赎、以及整个现实的认识。<strong> 箴言告诉我们,认识至圣者便是聪明</strong> 。（<strong> 箴9:10</strong> ）<em><strong> 不认识上帝的圣洁这个最重要属性,就是不认识上帝,人就会因此错误地解释上帝一切属性和行为</strong></em> 。不仅如此,不认识至圣者会导致人肤浅而扭曲的自我认识。<strong> 所以,如果人想认识罪的可怕本质,就必须首先认识上帝的圣洁本性!</strong></p>
+<p>“圣洁”这个词来自于希伯来文“ qalosh”,意思是“分别出来,不用于俗务”。至于上帝的圣洁,这意味着两个重要真理。<strong> 第一,上帝的圣洁是指上帝的超越属性。上帝是创造宇宙万有的,他本身超越一切被造物,与他所造所护佑的万有都截然不同</strong> 。上帝与万有之间的这种分界或分别,不仅是量(上帝更大)的差别,也是质(上帝与万有都截然不同)的区别。不论地上和天上被造物的荣光有什么区别,他们都不过是被造的。<strong> 唯有耶和华才是上帝,除他以外,再无别神;是人所不能靠近的。</strong> （<strong> 申4:35；提前6:16</strong> ）<strong> 在上帝面前侍立的最光彩天使,也不比地上爬行的虫豸更像上帝。只有耶和华为圣。</strong> （<strong> 撒上2:2</strong> ）<strong> 谁也不能和他相提并论!</strong></p>
+<p><strong> 正是因为上帝与我们这些被造物截然不同,所以人类必须敬畏他</strong> 。天上地上最可畏的被造物(天使)都只和我们一样。虽然它们比我们大,比我们强,比我们聪明,比我们美丽,但它们也不过是被造物,我们和他们不过是量的差别。<strong> 但上帝是圣洁的、独一无二的、至高无上的、与我们截然不同的一一他不仅大过我们,而且他的一切完美属性根本与我们不同。因此,摩西和以色列百姓唱:“耶和华啊,众神之中谁能像你?谁能像你至圣至荣、可颂可畏、施行奇事?</strong> ”（<strong> 出15:11</strong> ）</p>
+<p><strong> 第二,“上帝的圣洁”是指上帝超乎万有之上,不受被造物道德敗坏的影响</strong> 。<strong> 上帝与一切污秽罪恶势不两立,黑白分明。他是无可指责,纯洁无瑕的!他是光,在他里面毫无黑暗</strong> 。（<strong> 约一1:5</strong> ）<strong> 他是诸光之父,在他并没有改变,也没有转动的影儿</strong> 。（<strong> 雅1:17</strong> ）<strong> 他不能被邪恶试探,也不试探人</strong> 。（<strong> 雅1:13</strong> ）<strong> 他眼目清洁不看邪僻,不看奸恶。</strong> （<strong> 哈1:13</strong> ）<strong> 一切罪都被他看为可憎。凡行非义之事的人,都是他所憎僧恶的。他向一切恶人变脸</strong> 。（<strong> 申25:16；詩5:4</strong> ）因此,圣经上最圣洁、最敬度的人,一看见上帝,就仆倒在他面前,好像死人,哀叹,<strong> “那时我说,祸哉,我灭亡了!因为我是嘴唇不洁的人,又住在嘴唇不洁的民中。又因我眼见大君王万军之耶和华。</strong> （<strong> 赛6:5</strong> ）</p>
+<p><strong> 人得救有一种逻辑的顺序。他们必须首先明白自己是失丧的,然后才能得救。</strong> 然而,他们必须首先认识到自己是罪人,然后才会知道自己真是失丧的。而且,他们必须首先明自上帝是圣洁的，然后才能完全认识自己的恶本性! 认识了这些真理以后,我们就知道我们闭口不讲他们的罪实在是害了他们,不教导他们认识上帝的圣洁实在是不爱他们。<strong> 主耶稣基督告诉我们,人学会“尊上帝的名为圣”,福音和国度才能扩展。</strong> （<strong> 太6:9</strong> ）因此,传福音务必要多讲上帝的圣洁,否则就是不忠心。</p>
+<p><strong> 上帝是公义的</strong></p>
+<p>英文“义”这个词来自希伯来文“ tsaddik&quot;和希腊文“ dikaios&quot;这两个词都表示上帝的正义、正确、正直或上帝的美德。<strong> 按照圣经,上帝的义不仅关乎他的意志或行为,而且这是他神性的核心。上帝是公义的上帝;他的公义永远长存,且永不改变。</strong> （<strong> 诗7:9；119:142</strong> ）<strong> 他是信实的上帝,不偏离公义。</strong> （<strong> 申32:4；约伯记8:3</strong> ）<strong> 他的所行与他的所是,二者总不矛盾。这样,他的作为完全,他所行的无不公平。</strong> （<strong> 申32:4</strong> ）</p>
+<p><strong> 上帝以公义待一切被造物,这特别显出他的品格。圣经告诉我们,公义和公平是他宝座的根基,他统管万有,丝毫不偏待人。</strong> （<strong> 诗89:14</strong> ）<strong> 耶和华是公义的,他也喜爱公义。凡不公义的,都是他所恨恶的。</strong> （<strong> 诗11:7，5:5</strong> ）<strong> 所以,他对人和天使的态度不是中立的,也不漠视他们的品格和行为，要按公义审判世界，按正直判断万民。</strong> （<strong> 诗9:7-8</strong> ）</p>
+<p>根据这些真理,我们就晓得,有一天,上帝要审判万人,没有一个能够逃脱,连被定罪的也要低头称上帝是公义的!（<strong> 赛5:16</strong> ）无人能说他行得不义,因他是信实的上帝,行为、法度、审判尽都完全。（<strong> 伯36:23</strong> ）</p>
+<p><strong> 上帝既是良善的,又是公义的;这既是福音,又是噩耗</strong> 。 这是好消息,因为我们愿意这位大能主权的上帝是公义的。没什么比一个全能的恶者更可怕。一个不道德的神、一个手握无限权能的恶者,会让地上的希特勒这种人的罪行显得无伤大雅,无关痛痒。如果上帝存在,我们可不希望他不公义!</p>
+<p><strong> 另一方面,一位公义的上帝确实让人不敢走近。实际上,我们可以说上帝的义是人最大的难处。逻辑很简单:</strong></p>
+<p>第一个前提:宇宙的创造主和掌管者是公义的,也是良善的。</p>
+<p>第二个前提:一位公义良善的上帝必反对并审判一切不义和邪恶。</p>
+<p>第三个前提:众人都是邪恶的,都是不义的。</p>
+<p><strong> 结论:因此,上帝必反对并审判众人。</strong></p>
+<p><strong> 上帝是公义的,这对义人是好消息,但对不义的人则是噩耗。箴言的作者这样说:“秉公行义,使义人喜乐,使作孽的人败坏。”</strong> （<strong> 箴21:15</strong> ）</p>
+<p><strong> 如果我们和上帝一样是公义的,那我们就应当为审判而欢呼雀跃。然而,我们不是义人,相反,没有义人,连一个也没有</strong> 。（<strong> 罗3:10</strong> ）</p>
+<p>因此, 上帝公义的审判应当让每个人感到大恐惧,让他寻求辩护 。<em><strong> 可是,多数人听见将来的审判却无动于衷,这只可能有以下几种解释</strong></em> 。<strong> 第一,他们的良心被烙过了,认为将来不会有审判。第二，他们看自己胜过别人,以为自己是义人</strong> ,<strong> 第三,他们小看了上帝的义</strong> 。<strong> 第四,他们根本就是无知,根本不知道将来的审判这回事，因为福音派的讲台很少明说地狱和审判。</strong></p>
+<p>在全世界很多文化里,正义常被描绘为一位蒙眼的女子，手里拿着一座天平。这幅画面是为了表明一个高尚的思想:正义是不偏不倚的,也不接受贿赂;然而,对堕落的人而言,这幅画面却表明了另一层含义,而这层含义一点也不高尚:我们都是瞎眼的,不懂得什么是正义和公平。（<strong> 箴11:1</strong> ）我们说弟兄眼中有刺,却不想自已眼中有梁木。（<strong> 太7:3-4</strong> ）<em><strong> 我们们痛斥政治独裁者压榨百姓,抗议企业高管贪婪无度,却不想我们本性和他们何等相似,只是作恶程度有别</strong></em> 。<strong> 我们也吃偷来的食物,吃完了,嘴巴擦了就说我们没有作恶</strong> 。<strong> 我们不明白一点:当我们呼求上帝审判这世界的罪魁时,也是让审判降在自已头上,经上的话明明是指着我们说的,我们却视而不见:“没有义人,连一个也没有。”</strong> （<strong> 罗3:10</strong> ）</p>
+<p><em><strong> 我们是传道人,必须用上帝的义表明人的不义</strong></em> 。我们必须讲清楚上帝的公义多么严厉,证明人只要偏离他完美的标准一步,就被定罪。<strong> 我们必须明白,我们的祖宗仅仅一个不义的行为就足以令一切后裔受诅咒,让全世界陷入那看似无法挽回的混乱</strong> 。（<strong> 罗5:12-19</strong> ）<em><strong> 只有这样，人才会意识到他们那些数不清的恶行足以让他们与上帝隔绝，他们根本不可能凭自己的品德或功劳让上帝青睐他们。</strong></em> 有人问,不信上帝的世人当如何行才能见上帝的面,我们的回答应当是严厉的,明确的。<strong> 如果有人想顺服上帝渴幕上帝,那上帝对他的要求只有一个:绝对顺服上帝的律法,在整个人生每时每刻每个地方每个行为都必须在道德上完美无缺。（这个思想来自肯塔基州帕杜卡浸信会麦克尔.杜兰（michaeldurham）牧师）听众只能承认这是不可能的,这时候,我们就可以把手指向基督。</strong></p>
+<p><strong> 上帝是仁爱的</strong></p>
+<p><strong> 最能展现人的败坏和罪的,莫过于清楚地,持续地传讲上帝的爱。</strong></p>
+<p><strong> 传道人把这位至高者如此尊责贵的属性与他所造之人对他的冷漠和敌意加以比较,这时候就显出人的败坏,表明人的真是恶极了</strong> 。（<strong> 罗7:13</strong> ）传道人必须用上帝的爱吞没听众。<strong> 人必须明白,不是他们的功德而是上帝的爱让上帝自由地、无私地舍己,使他们因他蒙福</strong> 。（<strong> 申7:7-8</strong> ）<strong> 他们必须明白上帝的爱不仅是一种态度、情绪、或行为。上帝的爱是一种属性,是上帝的本性。上帝不仅会爱——上帝就是爱。</strong> （<strong> 约一4:8，16</strong> ）<strong> 他是那位仁爱的上帝</strong> 。（<strong> 林后13:11</strong> ）<strong> 他是真爱的精髓,一切真爱都从他而出,他是一切爱的源头</strong> 。 人必须明白:上帝的爱无法丈量,也难以描述,与之相比,数算天上的星辰和地上的沙子是容易的。上帝的爱长阔高深，超越一切被造物的想象。</p>
+<p><em><strong> 传道人必须表明上帝的仁慈,由此显明上帝如何爱罪人</strong></em> ——<strong> 他原意施恩于人,祝福他们,善待他们。圣经告诉我们,上帝是慈爱的创造主,他愿意祝福天使、人类和一切动物,让它们全都蒙福。</strong> （<strong> 拿4:11，箴12:10</strong> ）很多人以为上帝吹毛求疵、睚疵必报,喜欢看人遭殃受苦;不,上帝与他们的想法正好相反。<strong> 他善待万民,他的慈悲覆庇他一切所造的。</strong> （<strong> 诗145:9</strong> ）<strong> 他叫日头照好人,也照歹人;降雨给义人也给不义的人。</strong> （<strong> 太5:45</strong> ）<strong> 他以恩慈待那些不懂得感恩的人,甚至是邪恶的人。</strong> （<strong> 路6:35</strong> ）<strong> 一切良善和恩典都来自于他。</strong> （<strong> 雅1:17</strong> ）</p>
+<p><em><strong> 传道人必须解释上帝的怜悯和恩典,彰显上帝的爱</strong></em> 。<strong> 人必须认识上帝的怜悯,就是他对那些最可鄙被造物所怀的仁慈、温柔和同情。</strong> 圣经说上帝是怜悯的主,说他“<strong> 有丰富的怜悯</strong> ”。（<strong> 诗145:8，林后1:3，弗2:4</strong> ）<strong> 人必须认识上帝的恩典,就是他愿意按照自己的仁慈和宽容对待被造物,而不是按被造物的功德或价值对待他们。上帝是赐诸般恩典的上帝。</strong> （<strong> 彼前5:10</strong> ）<strong> 他必然等候,要施恩给你们。必然兴起,好怜悯他们。</strong> （<strong> 赛30:18</strong> ）<strong> 因他的恩典,在人还软弱的时候,他救了他们,要将他极丰富的恩典,就是他在基督耶穌里向我们所施的恩慈,显明给不配的人看。</strong> （<strong> 弗2:7-8</strong> ）</p>
+<p><em><strong> 传道人必须多讲上帝恒久忍耐,显出上帝仁爱的美德</strong></em> 。人必须知道上帝总是愿意“恒久忍耐”被造物的弱点和错误。<strong> 他消自己的怒气,不发尽他的忿怒,因为他想到他们不过是血气,是一阵去而不返的风。</strong> （<strong> 诗78:38-39</strong> ）<strong> 他慢慢发怒,不愿一人沉论,乃愿众人悔改。</strong> （<strong> 出34:6，彼后3:9</strong> ）<strong> 他愿意万人得救,明白真道。</strong> （<strong> 提前2:4</strong> ）<strong> 上帝不喜悦恶人死亡,乃喜悦他回头离开所行的道存活。</strong> （<strong> 结18:23，32</strong> ）</p>
+<p><em><strong> 最后,也是最重要的一点,传道人必须常常宣讲父神舍了独生爱子,用这样的方式显出莫大的恩典</strong></em> 。上帝的爱是超越我们所能理解的,用数不清的方式向一切被造物显明出来。然而, 圣经告诉我们,在这么多方式中,有一种方式最能彰显上帝的爱——为救他的百姓,他舍了自己的独生爱子。圣经说上帝就是爱,甚至赐下独生子,替罪人而死,叫他们可以因他出死入生,上帝的爱就此向我们显明了。我们的情绪和行为都不能界定爱,也不能衡量爱;真正的爱是上帝差遭自己的儿子做了我们的挽回祭,这样我们才知道何为爱。 （<strong> 约一4:8-10</strong> ）<strong> 我们都知道,为义人死,是少有的;为仁人死,或者有敢作的;惟有基督在我们还作罪人的时候、为我们死,基督为不敬虔的人和软弱无助的人而死,上帝的爱就在此向我们显明了。</strong> （<strong> 罗5:6-8</strong> ）<em><strong> 上帝为了救赎人类,付出了这样宝贵的代价,这就证明了上帝的爱是多么美好,也证明了我们的罪多么丑陋。</strong></em></p>
+<p>我们必须把这些真理摆在人面前,他们才能按照圣经来正确认识上帝并正确理解罪:罪就是得罪上帝。一切罪都是邪恶的,根本的原因和首要的原因在于人得罪的对象是一位无限良善的上帝,而这位上帝本配得人完全的崇拜、献身、和顺服。我们讲道的时候,讲上帝讲得越多,人越看见自己的罪何等之大,越觉得自己需要拯救。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

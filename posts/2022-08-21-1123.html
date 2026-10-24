@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 民数记10-13章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 民数记10-13章</h1>
+<div class="meta"><span>2022-08-21</span><span>新旧约查经</span><span class="tag">民数记</span></div>
+<blockquote></blockquote>
+<p>本书亦可名为旷野漂流记，可以帮助我们信徒的灵程，求主开我们的眼睛，使我们看得明白。</p>
+<p><strong> 本书亦为摩西所写的</strong> ——记从红海到约但河边之事。</p>
+<p>本书命名民数记乃二次核算民数。第一次在西乃旷野，十一章。第二次在摩押，二十六章。书中记上帝告诉摩西和亚伦共五十六次。</p>
+<p>由西乃山至迦南只须十一日的路程，他们走了三十八年还走不到。所以非有信心不得进迦南，因为没有信心，漂流三十八年还未进入。前读过以色列人出埃及，过红海，又喝过灵水，吃过灵粮，打死亚玛力人——打死肉体，在西乃山认识上帝的公义及慈爱，并有圣幕可崇拜，在红海经过奋兴会，在西乃又赴培灵会，可惜还在旷野，不向前去，终至退后，而尽死在旷野中。我们每读到他们的死，就为他们十分难过。</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/08/民数记10-13章.mp3">收听音频</a></p>
+<p>（ 民数记10-13章）</p>
+<p><strong> 第十章 顺服灵的指挥</strong></p>
+<p>军队中应当吹号。九节，吹起号来，大家就预备跑路，不吹号，就不知跑路。所以要造成两支银号，好发施号令。上帝预备这两支号，乃是以银制的。如是吹起两支号来，就是会众都齐集过来，如是单吹一支号，只有领袖来。先由南边起，越吹越大声，在交战的时候，更吹起大声。这银号是引领他们前进的号令，大家要顺服灵的指挥。经过旷野时有云柱火柱和两支号令来引导，我们亦有两支号：一支是祷告，一支是圣经。如果遇到交战，就要越发大声祷告，以祷告唱诗的声音来战胜魔鬼。怎么要用银制？银是代表救赎，我们要靠耶稣的宝血才能洁净罪恶。</p>
+<p>他们吹号可以起营，都有秩序，就是居东方的犹太先行，然后居西方南方北方的各族依次起行，不得乱跑，要依灵的指导。上帝管教这二百万人，各样有规则。云彩表明圣灵的指导，两支号，表明祷告查经。敌人如至，则祈祷愈迫切，终必得胜。不识路就要请人于道路的引导。三十至三十四节。摩西的岳父，可以留下为营中的眼目以引路。约柜先走。三十五节。上帝为前导以开路。每日我们所遇到的事，上帝常常先以声音告诉我们。</p>
+<p>我（宋氏）要作事，上帝先警告我，指导我，给我知所适从，约柜前导，先跑三天，然后会众继之，他们事事顺服圣灵引导，上帝为他们开路。</p>
+<p><strong> 第十一章 仍然体恤肉体</strong></p>
+<p>会众起身，由西乃山至迦底斯。忽然发怨言，怨恨上帝。他们恐怕道路不好走，寝食不舒服，所以发出怨言。上帝刑罚他们，他们发火，上帝亦发火来焚烧他们。他备拉在西乃旷野，他们发怨言，发烧热，上帝亦焚烧他们。</p>
+<p>不但如此，他们又贪食。四至五节。没有东西吃亦怨及上帝。我们在这里吃吗哪一一天天查经，又体贴肉体，怨骂摩西，使他非常难过。摩西哭了，在上帝面前哭!“管理这百姓的责任太重，我独自担当不起。你这样待我，我若在你眼前蒙恩，求你立时将我杀了，不叫我见自己的苦恼。”十四至十五节，会众发怨言求吃，连摩西亦失败了。上帝告诉他不要害怕，要选七十人帮助他，把与摩西的灵分赐给那七十人，摩西灵力减少了，因为他向上帝发牢骚，于是上帝叫鹤鹑鸟飞来，供给他们吃，可惜他们贪食，吃得太饱。三十三至三十四节。肉还在牙齿间，上帝发怒了。所以那地名叫基博罗哈他瓦——就是贪吃。他们还是属肉体，真是该死！他们已经被上帝编为军队，还是如此，真可怜啊！</p>
+<p><strong> 第十二章 仍然有所自恃</strong></p>
+<p>摩西又娶古实的女子为妻。一节。摩西联婚外邦人，姊姊米利暗就反对他，可是摩西不跟她争辩。三节。上帝即召米利暗来，责罚她，使她长大麻风。她本是女界的领袖，会以嘴来赞美主，现在她又以这嘴来怨谤人，真是可怜！摩西为她祷告，求上帝赦免她。这是表明人的老自己还未死，仍然有所自恃。她不但长大麻风，又被关在营外七天，会众亦受累七天，不得向前跑路。</p>
+<p><strong> 第十三章 仍然不信服主</strong></p>
+<p>摩西选召十二支派的十二人，叫他们前去窥探迦南地。其中有迦勒与约书亚。由巴兰的旷野窥进迦南，带了累累的葡萄回来，人家看了听了，心是爱迦南，可是没有信心。只有迦勒劝慰众人说:“我们立刻上去得那地吧！我们足能得胜。”三十节。那十人说去不得，那地方人强城高，于是众人害怕了，没一点信心。十个人看自己，看世界，只有迦勒约书亚他们二人看上帝，看天上，十人看人力，只有二人看神力。十个人给民众灰心失意，实在可怜，虽已到了迦底斯，只须一步便进迦南，就到美地了，可惜没有信心，功亏一篑，因此失败了！可怜不可怜！</p>
+<p>-END-</p>
+<blockquote></blockquote>
+<p><strong> △作者简介</strong> ：宋尚节(1901年9月29日－1944年8月18日)），福建莆田人，是二十世纪三十年代在中国教会复兴具有影响力的一个奋兴布道家。二十世纪二十年代的留美化学博士，立志事奉神；把奖章和荣誉证书扔进太平洋，放弃前途似锦的专业和优裕的生活，走上了救人灵魂的艰辛清贫但蒙神祝福的道路.。</p>
+<p>转载自公众号</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

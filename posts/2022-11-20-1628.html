@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>《认识神》巴刻 著 合辑|转载 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>《认识神》巴刻 著 合辑|转载</h1>
+<div class="meta"><span>2022-11-20</span><span>创世纪</span></div>
+<p><img alt="" src="http://3.146.54.178/wp-content/uploads/2022/11/图片-3-1024x1024.png" loading="lazy"></p>
+<p>（<strong> 转载自公众号</strong>）</p>
+<p><strong> 原著序</strong></p>
+<p>正如小丑们不自量力，渴想串演《哈姆雷特》；我也一直想有系统的写一本关于神的书。然而，这一本却不如理想。它的厚度或许令人以为我在尝试写那么一本书，但任何人若那么想，必会失望。充其量，它只是一串珠子：一连串大题目的小研究，大部分在《福音杂志》上最先发表。它们原本是零散的信息，现在汇集成书，因为它们好像都融合成一个信息：关于神和我们的生活，书中题材的取舍和处理方法是符合实际目的。</p>
+<p>在《基督教神学序言》一书中，约翰·麦基把两种对基督教事物不同的态度，作了个比喻：有些人坐在西班牙式房子的高高露台上，浏览下面过路的旅客。“台上人”可以听见旅客的谈话，也可以和他们聊天。他们或批评旅客走路的姿态，或讨论道路的问题，诸如道路怎么会存在？它通到哪里去？沿途在不同地方会看见什么？……等等。但他们始终是旁观者；他们的问题只是理论而已。相反，旅客们面对的问题，虽然也有理论的成份，大致上却很实际—— “往那里去”和“如何上路”的问题，不但需要明白了解，还要抉择和行动。</p>
+<p>台上人和旅客们或许忖思相同事物，他们的问题却不同。因此(举例说)若谈到邪恶，台上人的问题是：在神的主权和恩慈中，如何在理论上解释罪恶的存在？旅客们的问题却是如何驾驭邪恶，使恶变善？又再举例：若谈到罪恶，台上人就问：种族的罪恶和个人的败坏是否真有其事？至于旅客们，既从自己里面认识罪，就问：有得救的盼望吗？或以“神性”为例；台上人问：神怎么会有三位？三位如何成为一体？成为一体的三位又如何有位格？旅客们却想知道：如何好好的尊崇、敬爱、以及信靠那位已合力把他们从罪恶带进荣耀的三一神。例子不胜枚举。本书是为旅客们而写的，所针对的也是旅客的问题。</p>
+<p><strong> 写本书的信念是</strong> ：对神无知——无知于他的作为和与他相交的方法——是今天大多数教会的软弱的根由。这种情形，似乎由两种不幸的趋势造成：</p>
+<p>第一：基督徒的思想己顺从了现代精神——这种精神是产生人类伟大的思想，而只容纳有关神的渺小思想。现代人应付神的方法，若不乾脆否定他，也敬而远之；可笑的是，现代基督徒忙着在不敬虔的世界中维持宗教活动，到头来也把神拒于千里之外。明眼人有见及此，倒想从教会中引退，不屑同流合污，宁可自行寻求神。这也不能全怪他们，因为教会中人既把望远镜倒转来看神，以致把神看成侏儒，自己也就不过是侏儒基督徒；明眼人很自然不会就此满足。再者，对现代人来说，有关死亡、永恒、审判、灵魂之伟大、今生的抉择有永存的效果等思想，都属无稽；可悲的是，基督教会不但没有大声疾呼，提醒世界所遗忘的事，竟一同把这些事不了了之。对基督徒生活来说，推崇现代精神，无疑等于自杀。</p>
+<p>第二：基督徒思想己给现代怀疑主义迷惑了。三个多世纪以来，文艺复兴中自然主义的酵母，在西方思想中如癌蔓延。圣经和基督教历史上很多划时代的事件，都猛受炮火围攻。信仰的基要事实，备受质疑。神在西乃山与以色列相遇吗？耶稣不过是一个很属灵的人吗？福音书的神迹真发生过吗？福音书中的耶稣大致上岂非构想的人物吗？——诸如此类。还有，对属天启示和基督徒的始源两事的怀疑，也繁衍了更广泛的怀疑，而摒弃真理统一的观念，随之摒弃人类知识统一的希望。因此，现在普遍的假定是：我的宗教感悟，与我对身外事物的科学知识无关，因为神并不在世界的“那边”，只在思维“里面”。目前刻划时代的是对神的怀疑和混淆，比什么都更糟！</p>
+<p>今天常有人说，神学比从前更坚牢；从学术上的专门知识和出版书籍的质量来看，这或许是真的。但在教会持守福音的真实性这基本工作上，神学长久以来却十分脆弱而别扭。九十年前，司布真就提醒教会人士对圣经、救恩和人类命运等教义立场摇晃，以“走下坡”去形容其危机。他今天若观察基督教对神的观念，我想他或会呼之曰 &quot;突然下降&quot;吧！</p>
+<ul><li>“<strong> 你们当站在路上察看，访问古道，那是善道，便行在其间。这样，你们心里必得安息。</strong> ”(耶六16)<em> 这也是本书发出的邀请。除非间接地，本书并不批判新路，而是直接重提古道，因为善道终究是善道。我不要求读者以为我已透彻知道书中所说的。鲁益师曾说：“像我这样想象力远胜于服从力的人，应受公平的惩罚；我们往往幻想一些超乎实际所能攀及的情景。如果把幻想的描述出来，就会使别人和自己相信已臻此境”——那是自欺欺人(参鲁氏著《四爱》一书第一二八页。泉源出版社出版)。所有培灵书刊的读者和作者，若能斟酌鲁氏的话，必大有裨益。然而，</em> ‘我<strong> 们既有信心，正如经上记著说，“我因信，所以如此说话。”我们也信，所以也说话。</strong> ’(林后四13)* ——如果这本书能够帮助任何人，正如我在默想字里行间时有所得着，这劳苦就大有价值。</li></ul>
+<p>原著者巴刻序于</p>
+<p>一九七二年七月</p>
+<p>布里斯托三一学院</p>
+<p><strong> 目录如下：</strong></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484360&amp;idx=3&amp;sn=74ddd59e5bd45b307a1760ca86d7927a&amp;chksm=fbb3735fccc4fa492055dca138b66c18cad27f3988d044bd5145646e353aa0753f737a79e129&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜原著序</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484360&amp;idx=4&amp;sn=59b7d0c5f1bec5510cf337a69cefe441&amp;chksm=fbb3735fccc4fa4983b9b4085657382d66ff4e7312d91bc280f663a6aa60a4489838d24706fa&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第一章 认识神</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484360&amp;idx=5&amp;sn=09a0e18b70f3ff3eb9e39038fe955d36&amp;chksm=fbb3735fccc4fa497533827c71d77cda9511c68563b7c3aec54244a2e9a057d785576d75d8cd&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第二章 认识神的人</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484360&amp;idx=6&amp;sn=d0a093888ac0fb6418f264842590db72&amp;chksm=fbb3735fccc4fa4934c93e0d00e354e6cea4a1b6e01ad6f13a08e7209628f180705f0d1da17e&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第三章 知与被知</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484360&amp;idx=7&amp;sn=a1e437ac4a3f1ef8f6e2fdd51f186f1c&amp;chksm=fbb3735fccc4fa4900b7181c9e050aa98984c6fb671b4f416b9b9df22b47111c077308ab62f7&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第四章 独一的真神</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484360&amp;idx=8&amp;sn=bbaf2dea7cc620ec554d5419803a12e4&amp;chksm=fbb3735fccc4fa49f243ef6edfe6d9a621c485e3e5e7e0d9e330f144bc50cee5d5608f67613c&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第五章 神成为人</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484469&amp;idx=4&amp;sn=427eba7e360352b81a1d8b30819cab1b&amp;chksm=fbb374a2ccc4fdb40acb004126ee707799c4038242ad4d36686aaa9fc7ee17a387f1d0e47021&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第六章 祂必作证</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484469&amp;idx=5&amp;sn=6a36a3f30e9597beafb800608b1cdd34&amp;chksm=fbb374a2ccc4fdb4467c95cbe3f1c73e317cc7454e071f613c992017b1a981bcabe45683b3f1&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第七章 不变的神</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484469&amp;idx=6&amp;sn=57ca3bf85cd6cf794cb5914a7e1fcb5b&amp;chksm=fbb374a2ccc4fdb4d478078109e0d572288689b42c3bed31c44da84c17b0b6b88c0473a0eb85&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第八章 神的威严</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484469&amp;idx=7&amp;sn=88e0a80af83af4665c7fb2ceccae2fa5&amp;chksm=fbb374a2ccc4fdb46c95c6c2f2c14319148bc5cce28cf0109f2a63ddd81eeaa4901b7169b336&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第九章 唯神是智</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484469&amp;idx=8&amp;sn=13998f68e9b0fe43757dc16dd62260a3&amp;chksm=fbb374a2ccc4fdb44085a74fcbcde5381007fb44e41cc6b60812b6d936dc26a84b7228b9e358&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十章 神智与人智</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484573&amp;idx=3&amp;sn=2b12a0e9d6a8ea635522953b234a05d3&amp;chksm=fbb3740accc4fd1cfb2359ae0faaafd88b37d000b165351ace4913a898cefea80a024dbecfc9&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十一章 祢话是真理</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484573&amp;idx=4&amp;sn=c701d4cd65b0698ba9ff9b61cba55b96&amp;chksm=fbb3740accc4fd1cc9424d2223284729b984d9cc220cb650c4b40ac02a1d6753131235d1ed81&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十二章 神的爱</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484573&amp;idx=5&amp;sn=263c5051634fbcb1987e9d504a1771c6&amp;chksm=fbb3740accc4fd1cb6e0cd5428a15585f287bafdc161ca04f4fed0fe6a7b270cfa3e15f2b477&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十三章 神的恩典</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484573&amp;idx=6&amp;sn=edc2f5be417abd9076a98c411b4d0c28&amp;chksm=fbb3740accc4fd1c4fe76acd47e93b0285032a4a57b9c117f64a79fcc464d40984cb69e811a1&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十四章 神是审判者</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484573&amp;idx=7&amp;sn=9f05d07e887331e2dfa74209c08b3068&amp;chksm=fbb3740accc4fd1cb4f418b6b262c9f780a1c96f2ba1a7223b82c287d70af47740bf579c5c3a&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十五章 神的忿怒</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484573&amp;idx=8&amp;sn=ae6e0bdd187d2ce2f4e50524aeaed222&amp;chksm=fbb3740accc4fd1c1c838e48307f1c1d1fa64624fc94705ecdf7dd51922f1dbed8828351427a&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十六章 恩慈和严厉</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484703&amp;idx=3&amp;sn=fd448fc3bd27859c794cb1d843d6c7f8&amp;chksm=fbb37588ccc4fc9e4d5ae80bbd4ec974857ca83d0cd16a1207c8e0dcd5e889d0f7dcffeb7a41&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十七章 嫉妒的神</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484703&amp;idx=4&amp;sn=a1825aadbc82741a8b9a484b41d15811&amp;chksm=fbb37588ccc4fc9e9710976fe70c620252753fd6ec84fae9a67d315d3bc20ffc042b83a87048&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十八章 福音的中心</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484703&amp;idx=5&amp;sn=c5412965ef1ec53b10402b470f491502&amp;chksm=fbb37588ccc4fc9e39caa5d44e3b1ba6e440bf47f6b2250bea743e709cf6235f975dd9c6b763&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第十九章 神的儿子</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484703&amp;idx=6&amp;sn=ecb68069438be6478d27ab0e70456d1f&amp;chksm=fbb37588ccc4fc9efe0896196616efa968f9ae21e931a953fb71e4395ffa8a55567cc37966a6&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第二十章 祢是我们的引导</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484703&amp;idx=7&amp;sn=bfcfd4ae83c8e2e9c41c80aa74b63b6f&amp;chksm=fbb37588ccc4fc9e5032b0d26fa65aa1e58b50cb35cf14f39145c035709a4a0777fd187db29a&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第二十一章 内在的试炼</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU0OTI4NDM0NA==&amp;mid=2247484703&amp;idx=8&amp;sn=11bccb82cd19620d329a694591c3bb0b&amp;chksm=fbb37588ccc4fc9e3b2e177d80fda4fe96a4af14f9bedbc6015ef590145dc53727698bdbe958&amp;scene=21#wechat_redirect"> 《认识神》 巴刻｜第二十二章 神的丰裕</a></p>
+<blockquote></blockquote>
+<p>免责声明:素材来源于公众号，感谢整理发布，如有侵权，请联系删除！</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

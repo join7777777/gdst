@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>砍下歌利亚的头（对付罪） · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>砍下歌利亚的头（对付罪）</h1>
+<div class="meta"><span>2022-07-03</span><span>砍下歌利亚的头</span></div>
+<p>▶ <a href="http://3.146.54.178/wp-content/uploads/2022/07/砍下歌利亚的头 - Bob Jennings (Chinese">观看视频</a>-_高清.mp4)</p>
+<p>砍下歌利亚的头</p>
+<blockquote></blockquote>
+<p>鲍勃詹宁斯牧师 — 转自我会诚实网https://illbehonest.com/chinese/</p>
+<p>（神要求基督徒全力以赴地脱去他们生命中所有的容易缠累的罪，那些看起来好像不可能被消灭的罪。）</p>
+<p>视频部分内容如下：</p>
+<p>主，在于罪的征战中，我们求你能继续喜悦地装备我们。用你的怜悯武装我们，让我们活在你的面前。主求你使仆人们在审判的日子可以交一本严密的账。主，我们称颂你的名，我们知道强胜，荣耀，威严都是你的。直到永永远远，阿门。</p>
+<p>鼓起勇气，在于罪的斗争中要勇敢无畏，你有没有缠在你的罪呢?或许是晚睡晚起，或许是不祷告，或许是贪食，或许是妄语，或许是懒惰，也可能是其他的私欲。我不知道，也无需知道。根据“缠累我们的罪的定义”，你知道它是什么。无论他是什么。</p>
+<p>它如歌利亚一样站在你面前，抵抗永生基督的能力。你会让它继续亵渎神的名吗?何不起来鼓起勇气击中他的额头，像大卫一样。或者像大卫对耶布斯人那样，干净利落的解决它。</p>
+<p>大卫和以色列众人到了耶路撒冷，就是耶布斯;那时耶布斯人住在那里。耶布斯人对大卫说，你决不能进这地方，然而，大卫攻取锡安的保障，就是大卫的城。都在这里了，你看到了这次得胜，和之前那次得胜，以及另外一次在迦南美地的得胜，你尝了这奶和蜜，也看到了那些人是如何被赶走的，而现在你遇到了这保障，耶布斯人的保障。他们正向你说，你绝不能进这地方，你不会攻取这里。你不可能征服此处。在这里你不会得胜，你进不来的。</p>
+<p>魔鬼也正是这样对你说的，如那些耶布斯人一样。好看，下一个词是什么 “然而”，然而大卫攻取了它。他进去了，一点儿也没有受到干扰。</p>
+<p>我们要战胜这罪，就像我们之前战胜其他的罪那样。 鼓起勇气，记住大卫对付耶布斯人的榜样。 在和缠累你的罪的斗争中彻底得胜。要彻底。而且我也喜欢大卫在诗篇第十八章所说的。他说“我要追赶我的仇敌，并要追上他们”“不将他们灭绝，我总不归回”“我要打伤他们，使他们不能起来，他们必倒在我的脚下”记住他是如何对付歌利亚的。他不仅击中了他的前额。而且又用刀砍下他的头。确保他再也站不起来了。彻底!</p>
+<p>我要打伤他们，使他们不能起来。 不要把它当做儿戏，不要追求一半的得胜。 不要放纵它。</p>
+<p>有一个人他有暴食和肥胖的问题。他该怎么处理呢？去几次减肥中心控制一下饮食? 而不是彻底找到问题的根源，把这恶草连根拔起? 为什么不禁食呢？! 为什么不把白旗降下来。 然后解决它! 你去找一个医生，他会给你开药，对不对坎贝尔医生? 他给你开完药，会说:你一定要确保，病人，确保把它们吃完 不要吃了半瓶就停了 否则你的病有可能复发 把这些药都吃了，确保你所有的病都被杀死 要彻底 要坚持不懈。 为了生活缠累你的罪，要坚持不懈。</p>
+<p>若你的手臂上有一处溃烂或是别的什么痛处，仅仅涂抹一天的药膏是不够的 你必须坚持涂抹，涂抹，再涂抹，让这件事成为定期的，坚持不懈的。 天天涂抹，一直到全愈 保持下去，坚持下去 解决它。</p>
+<p>另外若想战胜缠累你的罪，你还要儆醒。记住在列王记上第二十章里，亚兰人的例子神不可置信的让以色列王，亚哈，一个恶人 胜过了亚兰人以及之后的便哈达。然后呢?那先知来见以色列王对他说: 你当自强，留心怎样防备;因为明年这时候亚兰王比上来攻击你。这就是魔鬼行事的方法。他离开神直到发现合适的时机为止。查明，当心，警醒。</p>
+<p>因为魔鬼还会回来。 设法让你救病复发，并且在你身上找到立足之处，而且若让他得逞，很可能会比以前更严重七倍。弟兄们，我想要说的是我们要为了神全力以赴。为了祂全力以赴!在天国的事上竭尽所能。彻底的追求神，彻底的行圣洁的事。</p>
+<p>你不知道你有多么分别为圣，除非你胜过这缠累你的罪。除非你去征战，否则刀兵的重灾会持续下去。你也不知道神给你的富，直到解决这缠累你的罪。在平安，荣耀，良善，喜乐上富有。你不知道神给你的富有，直到你将一切献在坛上不再存为己。</p>
+<p>我好像曾经听过一个故事，关于成吉思汗的。他正带领着他的军队攻城略地，席卷欧亚大陆。然后他们来到了一座城池，他们掠夺了城里所有的东西，除了一座寺庙，佛教寺庙，或者别的什么寺庙，他们进了那寺庙，来到内殿，看到一群僧侣对着一个巨像顶礼膜拜。寺庙主持站起来，走到成吉思汗旁边，苦苦哀求。“全部都拿走，什么都可以，但是务必留下这座像!”成吉思汗一开始答应了，但是稍后又有命令，“不，把她砍下来!”士兵们于是开始敲这巨像，巨像被劈开了，结果从里面掉出一桶桶的珠宝。</p>
+<p>魔鬼一定要在我们的生命中留下哪怕仅仅一个罪的保障，他知道他在阻挡，从父那里来的富有。在缠累你的罪上要得胜，只不过意味着要相信神。你们当信服神。</p>
+<p>这是希伯来书来书第十一章中所有见证人要表达的。 因着信！因着信！因着信！你们当信服神。 有什么罪，大的连神都战胜不了呢？难道主来不是为了让他的子民从罪里得释放吗？提多前书2：14难道没有说 他为我们舍了自己，要赎我们脱离一切罪恶！一切罪恶!（一切不法的事）又洁净我们，特作自己的子民。热心为善。</p>
+<p>提摩太后书4:18， 主必救我们脱离诸般的凶恶，也必救我进他的天国。 我的意思是–-原文说了诸般也就是所有。</p>
+<p>难道基督宝血的大能，不能解决在你生命中 你认为不可能的事吗？在你生命中，你认为无法战胜的罪。 神不够吗？耶和华不够吗？十字架也不能战胜它吗？ 说实话，你一再耽延、容忍缠累你的罪的这种行为，在某种程度上，是渎神，是对基督十字架的侮辱。</p>
+<p>莱特弟兄一直在讲重生的教义，它是什么意思呢？若它不传讲存在对罪的得胜，那就无所谓它是什么意思。若他不传讲存在对罪的得胜，那就无所谓他是什么意思。</p>
+<p>神给了我们一颗新心，所以脱离罪的束缚。自然而然的与罪争战，自然而然的看到这些罪消失。这是很自然的事，神就是这样造我们的。所以你不用，你不用搁置它，也不用容忍它，不用和它妥协。得胜就在你指尖旁边。也经真切的在你身上了。</p>
+<p>相信神，运用它。把神已经放在你面前的支票填写好。很自然地，你就能尝到神的恩典。就在现在，是什么样的恩典在教训你呢？提多书2：11-12说：”因为神救众人的恩典已经显明出来，教训我们 除去不敬虔的心和世俗的情欲 在今世自守、公义、敬虔度日”这就是神恩典的作为。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

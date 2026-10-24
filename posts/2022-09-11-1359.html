@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>天路历程-四窄门 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>天路历程-四窄门</h1>
+<div class="meta"><span>2022-09-11</span><span>天路历程</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/09/天路历程-四窄门.mp3">收听音频</a></p>
+<p>（ 天路历程-四窄门）</p>
+<p>四、 窄门</p>
+<p>最后，一个名叫好心、态度严肃的人来到门旁，问门外是谁？他从哪儿来？要什么？</p>
+<p>基督徒说：我是个可怜的负罪的人。我从毁灭城来，要到锡安山[1]去，为了要逃避将来的忿怒。先生，因为我知道到那儿去得经过这扇门，所以我要知道你肯不肯让我进去？</p>
+<p>好心说：我完全愿意让你进来；说着他就开了门。</p>
+<p>基督徒的脚刚踏进门槛，那个人一把把他拉了进去。基督徒就问，这是什么意思？那个人说，离开这门不远，有一座堡垒由魔王掌管着；在那儿，他和他手下的人对所有到这门前来的人放冷箭，企图不等他们进门就把他们射死。</p>
+<p>于是基督徒说，我真是万幸，不过想起来还要发抖。他走进去以后，开门的那个人问他，是谁指点他来的。</p>
+<p>基督徒说：宣道师教我到这儿来敲门，我就真的照办了；他还说，你，先生，会告诉我该怎么办。</p>
+<p>好心说：门是向你开着的，谁也不能把它关起来。</p>
+<p>基督徒说：现在我开始获得我冒险的好处了。</p>
+<p>好心说：可是你怎么独个儿来呢？</p>
+<p>基督徒说：因为我的邻居里面没有一个人像我那样看出了自己所处的险境。</p>
+<p>好心说：他们有人知道你来吗？</p>
+<p>基督徒说：有，我的妻子和儿女首先看见我，叫我回去； 还有些邻居也站在那里喊我回去；可是我用手指头塞住耳朵，就这样子来啦。</p>
+<p>好心说：难道没有人跟着你，要劝你回去吗？</p>
+<p>基督徒说： 有，顽固和柔顺都追上了我；不过他们眼见怎么样也不能说服我，顽固就先走了回去，一面还奚落着我，柔 顺却跟我走了一小段路。</p>
+<p>好心又问道：那么那一个又为什么也没有跟你到底呢？</p>
+<p>基督徒说：我们本来是一块儿走的，后来走到灰心沼，两个人都忽然跌了进去。然后我的邻居柔顺就失去勇气，不愿再往前去了。因此他从靠近他家的一边爬出泥沼，对我说我可以单独占有那个好地方，他可不干啦；他就这样走掉，而我就来 了他步了顽固的后尘，我就找上这扇门来啦。</p>
+<p>好心接着说：哎呀，可怜的人！难道他这样轻看天国的荣耀，而认为不值得冒一些艰险去得到它吗？</p>
+<p>基督徒说：的确，我把柔顺的事都实实在在地对你说了，如果我也完全老老实实地把我自己的事说出来，显然我不比他好多少。不错，他回家去了；然而我听了老世故先生一番世俗的话，也掉头往死亡的道路走去。</p>
+<p>好心说：唔！原来他碰到你啦？啊！他会叫你到合法先生那儿去找安逸的！他们俩都是大骗子。你可听了他的话没有？</p>
+<p>基督徒说：听是听啦，还不敢完全听；我去找合法先生， 我发现在他家附近有一座山，我怕那山会压到我头上来；因此我不得不停止。</p>
+<p>好心说：那座山叫许多人丧命，以后还会叫更多人丧命，幸亏你没有让它把你压得稀烂。</p>
+<p>基督徒说：我正苦闷地思索的时候，要不是幸亏宣道师又 碰见我，咳，我真不知道会有怎样的下场呢；那真是上帝的慈悲，我又碰到了他，不然的话，我就不会走到这儿来了。可是我现在终于来了，其实像我这样一个人，只配死在那座山下，而不配这样站在我的主人面前讲话的；但是，哦，我竟然还能进到这儿来，这对我是多大的恩宠呀！</p>
+<p>好心说：不管到这儿来的人过去的行为怎样，我们对哪一个都不见却。他们到我这里来的，我总不丢弃他[2]；好基督徒，来，跟我走一小段路，我要告诉你关于你必须走的路。看前面；你看到这条狭窄的路吗？这就是你得走的路；这是我们的祖先们，先知们，基督和他的使徒们砌的路；这是像用尺划的那么直的一条路。这是你得走的路。</p>
+<p>基督徒说：难道没有任何弯道曲径，会使得陌生人迷途吗？</p>
+<p>好心说：有，有许多条路都通到这条路上，它们又弯又阔。 不过你就可以凭这个来辨别正路和邪路，只有正的一条又窄又直[3]。</p>
+<p>这时我在梦中看见基督徒又问他能不能把他背上的重负去掉；因为他还没有解脱掉，并且不靠别人的帮助是绝对无法卸除的。</p>
+<p>好心对他说，至于你的负担，在没有到达得救的地方以前，还是安心扛着它吧；因为到了那个地方它自然而然会从你背上 落下来的。</p>
+<p>注：</p>
+<p>[1] 耶路撒冷的圣山，象征天堂。</p>
+<p>[2]《新约全书约翰福音》第6章第37节：</p>
+<p>凡父所赐给我的人，必到我这里来；到我这里来的，我总不丢弃他。</p>
+<p>[3] 《新约全书马太福音》第7章第14节。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

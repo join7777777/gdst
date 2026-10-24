@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 出埃及记24-26 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 出埃及记24-26</h1>
+<div class="meta"><span>2022-08-14</span><span>出埃及记</span><span class="tag">新旧约查经</span></div>
+<blockquote></blockquote>
+<p>本书对基督徒的灵性大有帮助，我（宋氏）得益于此书甚多一一得有分别之灵。</p>
+<p><strong> 本书为摩西所写。</strong> 埃及代表世界。以色列人代表挂名会友，未得重生得救。（有许多牧师长执的子女，不热心，还未重生，为挂名会友。）法老代表魔鬼。出埃及的意思就是由罪恶中出来。摩西代表耶稣把其子女从罪中救出来。</p>
+<p><strong> 本书题目为重生。</strong> 上帝以重生的图摆在我们面前，如慢的活动电影慢慢的放映出来，给我们借镜。</p>
+<p>他们到埃及去是七十人，使徒行传记是七十五人。这是加在埃及地约瑟全家。到二百十五年，他们由七十人生产到二百万人之多。</p>
+<p>本书总题就是马可第八章，马可八章是出埃及记的缩写。（此可参讲义）</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/08/出埃及记24-26章.mp3">收听音频</a></p>
+<p>（ 出埃及记24-26章）</p>
+<p><strong> 第二十四章 亲近主</strong></p>
+<p>人很怕上帝，所以上帝在这章里设法使人亲近他，敬拜他。</p>
+<p>二百万人中间上帝只选七十人，同摩西到上帝那里去敬拜。一节。摩西一人上山朝见上帝，他们都在山下，至于百姓，要远远离开。怎么样这七十人才可亲近上帝呢？摩西要为他们献祭，杀牛羊，把血洒在他们身上。六至八节。然后才得圣，朝见上帝。我们要靠耶穌宝血，才能见上帝，并不是依靠律法或人的行为。靠律法的只在山下，依靠血的，才可以朝见上帝。本来他们十分怕神，现在有血洒在身上，就敢见上帝，称上帝为父亲，又得在上帝面前吃喝。九至十一节。</p>
+<p>上帝开路，使我们靠耶稣宝血而亲近上帝。人灵性极高时，就可如摩西面见上帝。现在有三种信徒：1、是在山下不能见上帝。2、是重生了可以看见上帝。3、是充满圣灵，可快快乐乐和上帝同行。</p>
+<p>摩西预备六天，到第七天上山朝见上帝，四十日夜在山上和上帝谈话。希望我们能像摩西面见上帝。不圣洁的不得亲见上帝，愿主的血洗清我们，使我们得以朝见上帝。上帝愿意亲近我们，可惜我们不配，没有圣洁，不能看见上帝。</p>
+<p><strong> 第二十五章 认识主</strong></p>
+<p>上帝亲身降下来，告诉以色列人要造会幕，会幕的材料不是从天上降下来，是人甘心乐意所献的，要甘心乐意才算为宝贵。一至八节。上帝要我们圣洁，然后上帝的灵可居在我们心中，保罗说，你们的心乃是上帝的殿。上帝爱我们，喜欢居住我们的心中，等我们甘心奉献后，就是上帝的圣殿。上帝要我们把最宝贵的奉献给他，可惜人们都把好的壮的留下，老的病的，才献给上帝，上帝必不喜欢。以色列人是用金银细麻布宝石等奉献给神，他们是认识主，所以上帝接纳他们一切所献的。</p>
+<p><strong> 论会幕</strong></p>
+<p><strong> 会幕</strong> 前头是圣所，后面是至圣所，外面是院子。由东面门进来，就可看见祭坛，铜盆。圣所有金灯台，香坛，桌，至圣所有法柜，法柜上有施恩座，座上有两个基路伯。</p>
+<p><strong> 法柜</strong> 法柜是用皂荚木造的，十节。表明耶稣道成肉身，外面包上精金。十一节。表明耶稣不但道成肉身，且充满荣耀，有扛可抬，在旷野中，天天引导百姓直到迦南地。十三至十五节。</p>
+<p>法柜中有三件宝物：1、法版：就是律法，代表真理。2、吗哪：代表生命。3、亚伦发芽的杖：代表道路。又：1、法版代表审判。2、隐藏吗哪代表留为警戒。3、发芽的杖代表提醒百姓。因为以色列民不顺服亚伦，所以上帝叫他的杖开花，以提醒百姓顺服他。</p>
+<p>基路伯天天在注视律法要审判人，但大祭司以血代赎，他们看见血，就赦免了，不施行审判，我们罪得赦免，是靠耶稣的宝血。赞美主！</p>
+<p>上帝此后要在这里说话的。基路伯与施恩座相连，是上帝的恩赐，要施给我们。二十二节。</p>
+<p><strong> 桌</strong> 所有一切的东西，都是用金包的，表明神圣不可侵犯。二十三至二十四节。桌是以两掌宽的金包边的。二十五节。有扛可抬。桌上有十二个饼，一个饼可供一个人吃两天。十二个饼表明以色列十二支派。这边排六个，那边排六个，湊成六六，就是新旧约六十六卷圣经。我们也有属天的吗哪，就是上帝的圣经。桌上的饼，代表我们日日查经，可以得到天上粮食。饼是磨粉做的，表明耶穌代我受苦。又要经火烘，代表耶稣代我受磨炼。然后排在上帝面前，耶稣也为我们排在上帝面前。</p>
+<p><strong> 金灯台</strong> 金灯台是一块精金锤成的。一节。表明教会是一体，同由于一主所产生。两旁各有三盏，中有一盏。三十十二节。中央的一盏，代表耶稣，每边的三盏，有干，杯，球，花，表明开花结果。耶稣说，我是葡萄树，你们是枝子，能开花结果的。中央四个杯，两旁有三个杯，三十三至三十四节。表明学生不能高过师长。我们与主联合，是要归主发光，好比灯台。枝子彼此联络，表明在耶稣里面，要联络一体，主在我们当中。三十五节，祭司要点灯，发光，三十七节。在耶稣里面，得着圣灵充满，能开花结果，发光，荣耀归主。祭司每日早晚二次要来点灯，一面加油，一面剪心，使它长久发光。圣所内没有窗子，完全靠神光照耀，没有神光就不能做什么。</p>
+<p><strong> 香坛</strong> 代表祈祷。耶稣说，我是光，是葡萄树，是救主，因他能救我们，使我们结果，发光。赞美主！</p>
+<p><strong> 第二十六章 她绝对圣洁</strong></p>
+<p><strong> 十幅幔子作幕</strong> 要用十幅幔子作帐幕。一节。要用细麻，代表耶稣圣洁。蓝色：代表耶稣属天。紫色：代表耶稣做王。朱红色：代表耶稣荣耀，这全地充满了荣耀，每五幅幔子要幅幅相连，又做五十个钮扣，可以连合起来。四至六节。这会幕有四层盖，第一层内层最好看，外层最不好看，表明耶穌在外貌不好看，人们轻视他，内心却是完全无瑕疵。第二层用山羊毛做的，比第一层较大。第三层更大，可延及幕的前后。第四层是用海狗皮做的，最不好看。内层最美丽，表明耶稣的荣耀。第二层的羊毛洁白，表明耶稣使我们圣洁。第三层的染红公羊皮，表明耶穌的血洗清我们的罪。第四层的海狗皮，最不好看，如同耶稣的外观很不好看。七至十四节（以赛亚说他无佳形美容）。所以我们不可看外面，如只看幕外面是不好看，里面却充满了荣耀，绝对圣洁的。</p>
+<p><strong> 以板为墙</strong> 基督徒本是树，圣灵用灵剑砍下来，削成板，成为板墙，合而为一，作为上帝的圣殿，十五至十七节。会幕用的板，两旁各二十块，后面有八块，前面是空的，每块板有两个带卯的银座，使它连合为一。银：代表救赎，板下有带卯的银座，表明与世隔断。十八至二十四节。共有四十块板，每个板有两个座，合共九十六个，再幔子还有四个，廿五节。合共一百个，是完全的。每座是以一他连得银子做成，真是宝贵。这些银子，是百姓为赎自己的生命所交的，每人半舍客勒。一百他连得要六万的舍客勒。六十万人应交六十万的半舍客勒，但是只有六万的半舍客勒，是献十分之一，表明分别为圣。每块板是木的，用金子包裹起来，表明虽然属肉体，但是圣灵把我们包裹起来，联络合一，成为墙壁，使我们连合成为会幕。</p>
+<p>幔子在圣所与至圣所之间，有四根包金的柱子撑着，幔子绣得十分美丽，每根金柱子，下边有银座，挂起帐幕来。至耶稣死时，这幔子才分裂为二。那时每年大祭司在正月十日才得进入里面，很是神圣。三十一至三十五节。耶稣死在十字架上，帐幔裂开，使我们得直接到至圣所祈求，为我们开路。四根柱，表明四福音传。这四传是记载耶稣的生平，幔子是代表耶稣。</p>
+<p>-END-</p>
+<blockquote></blockquote>
+<p><strong> △作者简介</strong> ：宋尚节（1901-1944）一九零一年九月廿七，恰是农历辛丑年的中秋节，在福建省兴化县之一小村庄里，有位宋学连牧师家中，他们第六个孩子呱呱堕地了，这时正逢宋家之境最萧条，生活最贫寒的时代，这孩子的诞生可说又增加一分家中的困难，但因宋家有基督丰盛的生命，反把这初生的男孩赐以嘉名--主恩，这便是后来被视为“中国使徒”--宋尚节博士。</p>
+<p>转载自公众号</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

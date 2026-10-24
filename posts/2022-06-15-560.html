@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>十三章-罪人的亏欠（上） · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>十三章-罪人的亏欠（上）</h1>
+<div class="meta"><span>2022-06-15</span><span>福音的大能和信息</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/06/第十三章-罪人的亏缺（上）.mp3">收听音频</a></p>
+<p>（ 罪人的亏欠（上）（音频为合成））</p>
+<p><strong> 因为世人都犯了罪,亏缺了上帝的荣耀。    --- 罗马书3:23</strong></p>
+<p>“亏缺”这个词来自希腊文&quot; hustereo&quot;,意思是“不足,不达标”。根据这节经文,人所亏缺的,是上帝的荣耀。教会历史上,围绕这节经文有许多不同观点。然而,关于“人亏缺了上帝的荣耀”这句经文,得到<em><strong> 公认的解释是:人本该荣耀上帝,却失败了;他失去了“承受或反映上帝荣耀”的特权。</strong></em></p>
+<p><strong> 荣耀上帝</strong></p>
+<p>圣经告诉我们,上帝造人是为了上帝自己的尊贵、颂赞、和可喜悦的旨意。<em><strong> 我们呼吸,是为了用赞美来回报上帝。我们心跳是为了上帝而跳动,好让他感到满足。我们头脑复杂,是为了思想关于他何等伟大,并且敬畏他。我们的身体让我们能够服侍他,执行他的旨意。简而言之,我们本于他、倚靠他、归于他</strong></em> （<strong> 罗:11:36</strong> ）。</p>
+<p><strong> 我们最大的善就是尽心、尽性、尽意爱他,凡事都为了荣耀上帝而行</strong> （<strong> 人只能在上帝里找到人生的最终目的</strong> 。<strong> 太22:37，林前10:31</strong> ）。人应当完全沉醉于上帝。<strong> 凡是不出于上帝的满足感都是偶像,连最琐碎的吃喝都应当为荣耀他而行,否则就是犯罪</strong> （<strong> 林前10:31</strong> ）。《威斯敏斯特小教理问答》说得很好,“人首要的目的就是永远荣耀上帝，永远以上帝为乐”(Q.1)。 尊重上帝超过万事,完全以上帝为满足,尊重他、感激他、顺服他、敬拜他,一生向他而活一一这是人的特权,也是人的责任。<em><strong> 人堕落之前,原本就是如此;而且他必须回转成为原来的样式,实现上帝造他的目的,才能成为完全</strong></em> 。</p>
+<p><em><strong> 圣经说得明明白白:上帝造人是为了他自己的荣耀,但人故意犯罪,亏缺了上帝的荣耀。</strong></em> 保罗给罗马教会的信生动地说明了这可怕的事实:<strong> “因为他们虽然知道上帝,却不当作上帝荣耀他，也不感谢他。他们的思念变为虚妄,无知的心就昏暗了。自称为聪明,反成了愚拙,将不能朽坏之上帝的荣耀,变为偶像,彷彿必朽坏的人和飞禽走兽昆虫的样式。”</strong> （<strong> 罗1:21-23</strong> ）。<em><strong> 根据这句经文,所有人都知道有一位真上帝,他们的这个知识足以让他们在审判的时候无可推诿。</strong></em> 但人故意阻挡他所明明知道的事实,反对上帝造他的目的一一荣耀上帝、尊崇上帝。他既然转离真理,就被虚妄的思想和虚荣心吞了。他不仅不会改,反而极力抵挡他所明明晓得的真理,堕入更可怕的道德黑暗和属灵败坏,最终变得一无是处。</p>
+<p>每个人生活中都犯的罪就是“荣耀上帝”的反面——不荣耀上帝,这说明人已经变得多么混乱不堪（<em><strong> 罪就是“荣耀上帝”的反面</strong></em> ）。<strong> 他将自己与上帝造他的目的活活扯开,将自己与自己生存的唯一理由一刀两断。他抛弃不能朽坏之上帝的荣耀,反倒为自己造一个偶像来膜拜</strong> （<strong> 罗1:23</strong> ）。<em><strong> 他拒绝上帝的旨意,只服从自己的私欲。难怪他连声哀叹生活没有意义,难怪他寻找生活意义的种种努力尽是荒谬和自毁!</strong></em></p>
+<p>我们应当注意:<em><strong> 人不能荣耀上帝,这不仅导致人的存在失去意义,而且这也是万罪之母。</strong></em> 保罗给罗马人的书信开头所罗列的长长的恶行清单,不过是第一大罪的许多结果而已,<strong> 而这个最大的罪就是不承认上帝,也不当做上帝尊重他</strong> （<strong> 罗1:21-23</strong> ）。这是圣经里的潘多拉盒子,让世界充满混乱和毁坏。</p>
+<p>我们必须先简单讨论一下上帝的荣耀,因为我们经常要面对“善良的无神论者”的神话,人常常用这个神话来反驳基督教的真理主张。*<strong> 他们说,有些无神论者虽然不信上帝也不赞美上帝,但他们道德高尚,努力求别人的益处</strong> 。**<strong> 他们的论点是:仅仅因为这种人看不到足够的证据相信上帝存在就说他们是罪人还要下地狱,这对他们太不公平。</strong>*</p>
+<p>这个论点尽管很流行,却经不起圣经的考验。<strong> 第一</strong> ,<strong> 圣经说世界上没有真正的无神论者。所有人都知道有一位真神,因为关于上帝的知识早就被上帝刻在他们心里了,是明明可知的,嘴里不承认也没用,因为借着一切所造之物就可以知道,叫他们无可推诿</strong> （<strong> 罗1:19-20</strong> ）。</p>
+<p><strong> 第二,圣经说,无神论者的问题不是他们不够聪明或太过聪明,而是道德败坏。诗篇作者说,愚顽人心里说没有上帝。愚顽人说这话,不是因为欠缺智力,而是因为内心败坏,喜爱作恶。他不想要上帝,也不想要上帝的道德,所以这两个他都故意拒绝</strong> （<strong> 诗14:1-3.53:1-3</strong> ）。<strong> 无神论者不相信上帝,不是因为他聪明过头,而是因为他不虔不义,阻挡真理</strong> （<strong> 罗1:18</strong> ）。</p>
+<p><strong> 第三,圣经说,不可能有道德高尚的无神论者,因为若不是上帝的恩典,就“没有义人,连一个也没有”</strong> （<strong> 罗3:10-12</strong> ）。<strong> 夸耀道德,这不能让人具有道德。真正的义人不是听道的,也不是传道的,而是行道的</strong> （<strong> 罗2:13.雅1:22</strong> ）。</p>
+<p><strong> 第四,有人说基督徒不应当谴责那些道德高尚的无神论者这个观念明显反映了人本主义思想,是一种以人为中心的世界观。</strong> 在一个以人为中心的宇宙中,人向人负责,但在一个以上帝为中心的宇宙中, 人首先要向上帝负责,其次才向人负责 。<strong> 即便无神论所自夸的“仁义”是真的,他也没有尽责,因为他没有向上帝尽责,而这是首要的关系和责任,因为他的存在和呼吸都是上帝的恩赐,一切都是上帝的恩赐</strong> （<strong> 徒17:25</strong> ）。 “亏欠上帝”的罪,比“得罪别人”的任何不道德行为都恶劣无数倍。</p>
+<p><strong> 最后,表面上看上去道德高尚的无神论者其实犯了大罪:他不仅不将荣耀归于上帝,而且想窃取上帝的荣耀,据为己有。</strong> 众人都是道德败坏的,是彻底败坏的。 是上帝普遍的恩典约束人邪恶本性并让他们看似拥有些许道德。假如上帝收回这个恩典,假如上帝放任不管,任凭败坏的人心掌权,那人类就会自相残杀,迅速灭绝;地球就会变成真正的地狱一一在人类彻底毁灭它之前。<strong> 上帝普遍的恩典维持着人类社会存在,好让上帝在人类的败坏和绝望中成就他救赎的工作。让一个人没有变成杀人恶魔或让他做好事的,不是无神论者的人本主义思想,也不是人类逐渐进化出来的“高级道德”,而是那位随己意行作万事的上帝用恩典护佑着人类</strong> （<strong> 弗1:11</strong> ）。</p>
+<p>*** 因此,无神论者最大的罪就在于他公然否认上帝存在,而正是这位上帝一直用恩典约束他的恶行并使他看起来像个好人。* 无神论者不仅否认上帝存在,还抢夺上帝的荣耀,认为这一切都是他自己的功劳,把本该归给上帝的荣耀归在他们自己己身上。这真是最邪恶的盗贼,是最可耻的骗子。这等人定罪是该当的<strong> （</strong> 罗3:8** ）。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

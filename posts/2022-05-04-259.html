@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>第五章-传承福音 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>第五章-传承福音</h1>
+<div class="meta"><span>2022-05-04</span><span>福音的大能和信息</span></div>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/05/第五章-传承福音.mp3">收听音频</a></p>
+<p>（ 传承福音-保罗·华许（音频为合成））</p>
+<p><strong> 我当日所领受又传给你们的,第一,就是基督照圣经所说,为我们的罪死了，而且埋葬了，又照圣经所说,第三天复活了。</strong></p>
+<p>一一<strong> 哥林多前书15:3-4</strong></p>
+<p>上面的经文告诉我们两个关于福音的重要真理。<strong> 第一,福音从来不是出于人意,乃是人被圣灵感动,</strong> （<strong> 彼得后书1：2</strong> 1）<strong> 领受上帝所吹气(默示)的信息,因此,福音有圣经全备的权威</strong> 。（<strong> 提摩太后书3：16</strong> ）<strong> 第二,福音是一次托付给一切圣徒的,每代基督徒都有责任继承福音,并不折不扣地把福音传给后人。</strong> （<strong> 犹大书3</strong> ）</p>
+<p><strong> 继承福音</strong></p>
+<p>使徒保罗说他“领受了”福音,他在告诉我们这是一个特殊启示。他并没有捏造这个信息,也不是别人告诉他的。这是耶基督绐他的特殊启示。在<strong> 加拉太书1章11节至12节</strong> ,保罗详细地描述了自己的这场经历:“<strong> 弟兄们,我告诉你们,我素来所传的福音,不是出于人的意思。因为我不是从人领受的,也不是人教导我的,乃是从耶稣基督启示来的</strong> 。”保罗如此描述这场独特经历,目的是表明他所传的福音来自上帝。他不是自夸,也不是暗示他的福音和众使徒或整个教会的福音有所不同。实际上,他在这封信后面说他给耶路撒冷教会那有名望之人说了这福音,但他们并没有纠正他,也没有加增什么（<strong> 加拉太书2：1-10</strong> ）保罗说这些都是为了表明<strong> 只有一个真福音</strong> 。这个福音出于上帝的心意,通过众使徒传给教会。这是永恒不变的圣言,超越一切时代和文化。任何人都不可修订或改动福音来迎合不同文化或时代的口味,人必须把福音视为绝对的真理,不可改变的真理。福音必须得到最高的尊重。</p>
+<p>因此,我们这些领受福音又作福音管家的人,对待福音要谨慎,甚至要敬畏。主的弟兄犹大劝勉我们要为一次交付圣徒的福音真道竭力争辩。使徒保罗告诫我们要好好保守这道,当作上帝所交托的宝贝。保罗甚至咒诅那些更改变福音内容的人和天使:“<strong> 但无论是我们,是天上来的使者,若传福音给你们,与我们所传给你们的不同,他就应当被咒诅。我们已经说了,现在又说,若有人传福音给你们，与你们领受的不同，他就应当受咒诅”</strong> 。（<strong> 加拉太书1:8-9</strong> ）</p>
+<p>每代基督徒必须明白:<strong> 永远的福音已经传给我们了</strong> 。（<strong> 启示录14:6</strong> ）我们作为管家,应当保守好福音,不要有添加、缩减,也不要更改。我们以任何方式改变福音,不但会给我们自己招来咒诅,还会把一个败坏的福音传给后代。因此,使徒保罗警告年轻的提摩太 要努力保守 交托给他的真理，<strong> 这样行又能救自己，又能救听他的人</strong> （<strong> 提摩太前4:15-16</strong> ）我们这些领受福音的人,有一个值得敬畏的责任,就是把福音传递下去,既要完整,又要纯洁,如同使徒当初所传的福音一样。我们不仅要向上帝负责,也要向我们这代人和将来的世代负责。使徒保罗对罗马教会说,“<strong> 无论是希腊人、化外人、聪明人愚拙人,我都欠他们的债。</strong> ”（<strong> 罗马书1:14</strong> ）同样,我们也欠了众人的债,包括现在活在世上的人和将来无数世代的人。<strong> 我们越忠于福音,就越像明灯闪耀在暗处,祝福将来的世代。我们越不忠于福音,就越是基督十字架的仇敌,是国度里的绊脚石,在真道上如同破船一般</strong> （<strong> 腓立比书3:18：马太福音13:41：提摩太前书1:1</strong> 9）作为福音工人,上帝把这么大的事交托给我们,既无比美好,又无比可怕。这样大的事,谁能当得起呢？</p>
+<p><strong> 这事谁能当得起呢？</strong> （<strong> 哥林多后书2:16</strong> ）知道我们的职责之重大，<strong> 我们就当竭力，在上帝面前得蒙喜悦,作无愧的工人,按着正意分解真理的道</strong> 。（<strong> 提摩太后书2:15</strong> ）让我们效法文士以斯拉,他<strong> “定志考究遵行耶和华的律法,又将律例典章教训以色列人。&quot;</strong> （<strong> 以斯拉记7:10</strong> ）让我们跟随先知玛拉基这样圣洁祭司的榜样:<strong> “他总敬畏我,惧怕我的名。真实的律法在他口中,他嘴里没有不义的话。他以平安和正直与我同行,使多人回头离开罪孽。祭司的嘴里当存知识,人也当由他口中寻求律法,因为他是万军之耶和华的使者</strong> （<strong> 玛拉基书2:5-7</strong> ）</p>
+<p>失丧的世人正奔向地狱,我们闭口不言已是大罪,而更大的罪是传另一个福音,异于圣徒所传承的真福音** 。<em> 因此,我们必须拒绝当代福音派的福音,因为这是一个注水的福音,是一个削足适履迎合文化的福音,是一个缺胳膊断腿的福音,</em> 这个福音让人表面承认上帝的圣洁,却不承认福音的大能;它让人自称认识上帝,口称耶稣“主啊主啊”,却不遵行父的旨意。（提摩太后书3:5；提多书1:16；马太福音7:21<strong> ）</strong> 我们若不传福音就有祸了,但我们若乱传福音,祸就更大了!<strong> （</strong> 哥林多前书9:16** ）</p>
+<p><strong> 正确传扬福音旧约律法有许多条例禁止杂交</strong> 。（<strong> 利未记19:19</strong> ）<em> 两种不同的东西混杂以后就难以区分开来,两个都要灭亡。福音也是如此。</em> 福音是基督和圣经的一切;但并非基督教或圣经中的一切都是福音。（福音是最核心的基督教真理和圣经真理）身体得医治、婚姻幸福、上帝的护佑,这些都来自福音,都以福音为依据,但都不是福音。福音工人若以为自己所讲的全是耶稣基督的福音或以为自己所做的一切都是福音工作,那就危险了。<em><strong> 福音是非常具体的圣经信息,这节经文明确地界定什么是福音:</strong></em> “<strong> 我当日所领受又传给你们的,第一,就是基督照圣经所说,为我们的罪死了。而且埋葬了。又照圣经所说,第三天复活了。”</strong> （<strong> 哥林多前书15:3-4</strong> ）</p>
+<p><em><strong> 用保罗自己的话讲,我们晓得耶稣基督的福音有两大支柱:基督的受死和复活。经文提到基督被埋葬,这很重要。有两个原因:第一,圣经预言基督的受死,这个预言必须全。（以赛亚书53:9；马太福音27:57-60）第二,埋葬证眀耶稣确实死了,这是他复活和升天的基础。他埋葬了,因为他真的死了。既然他真的死了,他的复活也就是真实的。</strong></em></p>
+<p>我们一边读这本书,一边思考这些伟大的福音真理;但现在我们只有一个目标:我们不仅要宣讲这些真理,还要解释这些真理。我们传福音的时候,不管用什么形式,我们都要问自己:福音的核心内容,我们到底传递了多少? 很多人可以背诵经文里面的福音三要素:基督死了,埋葬了,又复活了 。然而,有多少人明白这些话的含义呢?为什么讲台上很少解释这些话呢?是不是我们小看了福音,觉得不值得详细解释呢?或者,我们对福音的看法太肤浅,以为不需要解释?也许我们就是想当然地以为大家都懂福音,不需要解释。</p>
+<p>以福音为中心的救导包含哪些内容?话语的力量在于意义。 光是死记硬背一套福音命题是不够的，我们必须要努力把福音解释清楚 。因此,宣教士必须也是文土，传道人必须也是教师。我们大胆宣扬基督的受死和复活时按照圣经深思熟虑、清楚明白地解释这些事情到底意味着什么！下面四点证明了我们必须这样做。</p>
+<p><strong> 第一,传讲福音要求我们大胆向人宣扬基督是“为他们的罪而死”。</strong> 尽管圣灵可以用这七个词拯救最邪恶的人,但我们不应该认为自己这样讲就够了,不需要详细解释。（<strong> 罗马书1:16；哥林多前书2:2；提摩太后书2:15</strong> ）<em><strong> 人必须认识自己的罪，才能明白基督受死的现实意义。</strong></em> 因此,我们必须竭力向他们证明罪的本质和他们的罪性,而且必须努力教导他们认识上帝公义的品格和他如何审判各种罪恶 。<em><strong> 我们这样做的时候,还必须把握平衡,一方面要讲清楚人的罪,另一方面要怜悯人;正如好医生要告诉病人病情多么严重,才好让病人赶紧把病治好。</strong></em> （<strong> 提摩太后2:25</strong> :<strong> “用温柔劝诫那抵挡的人。或者上帝给他们悔改的心，可以明白真道。”</strong> ）在真正的福音讲道中,这个基础工作,就是“在人心里犁地”的工作是绝对必要的。*** 我们应当记得,耶和华向摩西讲了自己的伟大属性之后,摩西* “急忙伏地下拜。”<strong> （</strong> 出埃及记34:8<strong> ）另外,</strong> 上帝向保罗启示律法公义的要求之后保罗的自义被击得粉碎,回转信主。<strong> （</strong> 罗马书7:9-11** ）</p>
+<p><strong> 第二,传讲福音要求我们按照圣经告诉人基督死了。</strong> 虽然是圣经里最有力的宣告,但它对人心的影响力取决于传道人;如果这个真理得到正确展现,如果人们正确认识“基督死了和我有什么关系”,那么“基督死了”这件事就能深深地感动人心。所以,我们必须努力研究圣经,向人解释清楚基督之死的本质和现实意义。<em><strong> 基督不仅因为我们的罪而死,而且因上帝公义圣洁的品格--上帝是公义的,必须首先满足他惩罚罪恶的公义要求,才能赦免罪人或称他们为义。</strong></em> （<strong> 箴言17:15；出埃及34:6-7；罗马书3:23-26</strong> ）</p>
+<p><strong> 基督不仅死了,而且是替属他的百姓而死,背负了他们的罪疚,承担了上帝的忿怒,流了自己的血</strong> 。（<strong> 希伯来书9:22</strong> ）<strong> 因他受苦,上帝的公义得到了满足,上帝的忿怒得到了平息,现在上帝就能称那些信基督的人为义,而又不失去他公义的品格</strong> 。（<strong> 以赛亚书53:4-6,10</strong> ）几乎每部讲“基督的十字架&quot;的经典神学著作都要讲这些真理教义:<em><strong> 赎罪、替罪、归算、挽回祭、偿罪等等。这些教义不是多余的东西,也不是遥不可及,它们都是福音真理的核心。</strong></em> 我们可以向人讲这些真理,也必须讲。信徒和非信徒都一样。有些人说,这些词太深奥了,普通人听不懂;这些人和古代那些焚毁圣经的邪恶教皇有什么区别?他们也说人太无知,读不懂圣经!</p>
+<p><strong> 第三,传讲福音要求我们讲基督第三天从死里复活。</strong> 然而,要把这个教义向二十一世纪的人讲明白,我们必须解释复活的重要性和现实意义。<strong> 我们必须对人讲,通过复活,上帝向众人表明耶稣真是神的儿子,复活是一个记号,证明上帝接纳基督救赎百姓的工作!</strong> （<strong> 罗马书1:4；4:25</strong> ）<strong> 我们必须解释复活如何为基督升天奠定基础,并且复活证明我们钉在十字架上的这位耶稣,上帝已经立他为主为基了。</strong> （<strong> 使徒行传2:36</strong> ）</p>
+<p><strong> 我们必须向人表明上帝使耶稣升为至高,又赐给他超乎万名之上的名,万膝都要跪拜,万口都要承认耶稣是主</strong> 。（<strong> 腓立比书2:6-9</strong> ）<strong> 我们必须警告人,基督的复活证明世界不仅有一个救主,还有一位字宙的君王,他掌管万有,直等一切仇敌作他的脚凳</strong> 。（<strong> 路加福音20:41-44；使徒行传2:34-35；希伯来书10:12-13</strong> ）<strong> 他还要再来,按公义审判天下。</strong> （<strong> 使徒行传17:31</strong> ）<strong> 因此,众人,不论地位一一乞丐或国王都一样一一必须认识神子,必须尊重他,恐怕他发怒,他们便在道中灭亡。因为他的怒气快要发作,凡投靠他的都是有福的!</strong> （<strong> 诗篇2:10-12</strong> ）</p>
+<p><strong> 最后,传讲福音要求我们呼吁人归向基督。但我们的呼吁必须合乎圣经。</strong><em> 我们不能降低悔改相信的要求,不顾上帝圣洁的命令,只让人作一个决志祷告</em> 。<em><strong> 听众必须明白悔改是心意转变,不仅包括头脑,也包括意志和情感。他们必须理解得救的信心就是</strong></em> “<strong> 所望之事的实底,未见之事的确据”,是上帝在耶稣基督里完全的应许,而上帝所应许的必能作成</strong> 。（<strong> 希伯来书11:1；罗马书4:21</strong> ）不仅如此,我们必须告诉听众真信主有哪些证据。<strong> 我们必须警告他们,真悔改会结出真悔改的果子,信心没有行为是死的</strong> 。（<strong> 马太福音3:8；雅各书2:14-26</strong> ）<strong> 我们必须劝诫他们省察自己试炼自己,看看自己还有信心没有,劝他们努力让自己所蒙的恩召与拣选坚定不移</strong> 。（<strong> 哥林多后书13:5；彼得后书1:10</strong> ）我们不仅要向人传合乎圣经的福音,还要有正确的教导。 我们千万不能把他们孤零零地扔在永恒里,手里只抓住一个决志祷告,耳朵听见的只有我们虚弱的声音说他们是得救的！</p>
+<p>上面简单地解释了耶稣基督那测不透的福音的一些方面,就是我们必须向万邦传扬的奥秘。<em><strong> 我们必须告诉每个人基督做了什么,但我们必须还要解释基督所成就的这些事情究竟意味着什么,人应当做什么来加以回应</strong></em> 。宣告和话语都是重要的,但前提是得到正确界定和应用。福音也是如此。基督徒宣教士有责任作宣讲福音的使者,又作解释福音的文士。（本文中，“基督徒宣教士”是泛指任何传福音的基督徒。）圣经充满了这种例子。<strong> 腓力把以赛亚书的预言向埃塞俄比亚的太监讲解出来,使他归向基督</strong> 。（<strong> 使徒行传8:26-35</strong> ）<strong> 百基拉亚居拉接亚波罗来,将上帝的道给他讲解更加详细。</strong> （<strong> 使徒行传18:26</strong> ）<strong> 使徒保罗连续三个安息日向帖撒罗尼迦的犹太人讲解圣经,“讲解陈明基督必须受害,从死里复活。”</strong> （<strong> 使徒行传17:3</strong> ） 最后,最伟大的解经家,我们主耶稣基督,就是借着自己的道成肉身把上帝向人启示出来的这位基督,他在去以马忤斯的路上亲自向晕头转向的门徒讲解福音 :<strong> “于是从摩西和众先知起,凡经上所指着自己的话,都给他们讲解明白了。”</strong> （<strong> 约翰福音1:18</strong> 。这里的讲解一词是希腊文exegéomai,意思是把某个教义或真理提取出来，展现出来。路加福音24:27：这里的讲解一词是希腊文diermenúo,意思是解开某个东西，讲解，说明。）</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

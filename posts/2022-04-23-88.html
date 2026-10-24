@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 创世记24-29章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 创世记24-29章</h1>
+<div class="meta"><span>2022-04-23</span><span>创世纪</span></div>
+<p><img alt="" src="http://3.146.54.178/wp-content/uploads/2022/04/圣经十字架.jpg" loading="lazy"></p>
+<p><strong> 著者：</strong> 本书著者乃上帝忠仆摩西。内中记载，包括二千五百年的历史。新约引本书的话有六十多次。本书每章都有他的故事。书中记载上帝创造世界，而造人为其创造最大的目标。</p>
+<p><strong> 全书分五段:</strong></p>
+<p>（一）一至五章   上帝的爱</p>
+<p>（二）六至十一章   成圣的步骤</p>
+<p>（三）十二至二十三章   信心生活----五个阻挡</p>
+<p>（四）二十四至三十四章   爱心生活</p>
+<p>甲、二十四至二十九章 —— 五种生活</p>
+<p>乙、三十至三十四章 —— 五种烦恼</p>
+<p>（五）三十五至五十章   盼望（得胜）生活 —— 五种得胜秘诀</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/04/创世记24-29章.mp3">收听音频</a></p>
+<p>（<strong> 点击播放：</strong> 创世纪24-29章）</p>
+<p><strong> 第四段    爱心生活（二十四至三十四章）</strong></p>
+<p>甲、二十四至二十九章  五种生活</p>
+<p>乙、三十至三十四章    五种烦恼</p>
+<p><strong> 第二十四章   我们每日生活有五种</strong></p>
+<p>亚伯拉罕叫他的老仆人，请他放手在他大腿下，对上帝起誓，与主人立约，要到他本族去为他的儿子娶个媳妇，因为上帝曾吩咐亚伯拉罕不可回到本家去，所以他顺服上帝命令，叫老仆人代他奉命而行。</p>
+<p><strong> 1、敬畏上帝的话</strong> 一至九节  仆人顺服主命，为以撒婚事出门去。</p>
+<p><strong> 2、信靠上帝的引导</strong> 十至十七节  仆人信靠主，一路走一路祷告，求上帝的引路。到了拿鹤的城，在那里再祈祷求神引导。他向哪一个女子说，请你拿下水瓶来，给我水喝，又给骆驼喝，她如顺从，那人算是你为以撒所预定的妻子了。果然利百加出来应许他，他靠上帝引导他的路了。</p>
+<p><strong> 3、小心谨行上帝的事</strong> 二十八至四十九节  女子来给他打水，他知主旨已成，满心赞美主。吟诗赞美主！她请他回家里去。他跟她走，且送她许多礼物。她把礼物送给双亲看，知道是亚伯拉罕的仆人来，即请他进来，请他吃饭。仆人不敢先吃，饭碗不打紧，紧要的是说出主人的命令。于是他说明求婚事，请他应许。</p>
+<p><strong> 4、听从上帝的话</strong> 五十至六十节  他们问利百加，利百加乐然依从靠信心，顺从应允。父亲母亲要她再等十天オ去，仆人却说不可延搁，必须即刻起身。</p>
+<p><strong> 5、仰望上帝的应许</strong> 六十一至六十七节  利百加骑驴同仆人归来，她不知以撒长的怎样，是美是丑？她只凭靠信心来跟他，知道忠仆绝不会欺骗她。到了田间，问仆人说，那前面来欢迎的是谁？仆人说，正是主人以撒，她以帕子掩面偕他回去了。现在可把仆人代表圣灵，利百加代表教会，以撒代表耶稣。她并不知丈夫是美是丑，只凭信心，归来跟他。我们只凭信心跟随耶稣吧了。</p>
+<p>以这五种为题。解开下面的五章。</p>
+<p><strong> 第二十五章   敬畏上帝的话</strong></p>
+<p>亚伯拉罕，再娶妻生了许多儿子，他年老时，把这些庶子都赶逐出去，把一切产业尽给以撒，他真敬畏上帝的话。</p>
+<p>以撒无子，就祈求耶和华，这是表明他的敬畏上帝。耶和华应允他的祈求，许他生子。利百加怀孕了，且怀有两个儿子，在腹中有时相打，很是痛苦。上帝安慰她，她也敬畏上帝的话。</p>
+<p>长子以扫轻视长子名分，把这名分卖与次子雅各，本来长子名分非常重要，上帝应允大福赏赐亚伯拉罕，亚伯拉罕传给以撒，以撒传给以扫，以扫贪吃豆汤，把这大福 一 长子名分卖与雅各。唉！不敬畏上帝的话，可怜不可怜！</p>
+<p><strong> 第二十六章   信靠上帝的引导</strong></p>
+<p>那时以撒遇到大饥荒，打算迁到别地方去，上帝告诉他不可这样做。他们顺从上帝的引导，不久就得了丰盛收成。敌人嫉妒他，塞住了他的井，敌人一边塞井，他一边开凿，再三开凿终得成功。他虽然遇到许多阻挡，还信靠上帝引导，终则得胜。上帝又和他立约：“不要惧怕，因为我与你同在，要赐福给你……使你后裔繁多”。</p>
+<p><strong> 第二十七章  小心谨行上帝的事</strong></p>
+<p>以撒年老，叫长子以扫奉上美味，然后要为他们祝福。利百加爱雅各，用羊毛替他包手来欺骗父亲，以撒不小心为他祝福，所以人要行上帝的事，最要小心，于是雅各有属天的福，这是他会体贴灵性，所以得到这福气。以扫只体贴肉体，所以没有福分。</p>
+<p><strong> 第二十八章   听从上帝的话</strong></p>
+<p>以扫发怒，弟弟欺骗父亲，夺去祝福，要杀死他。母亲为此缘故，叫他逃避，且教他不可娶外族女为妇。他温柔顺从父母的话，独自跑到旷野。哦，十分可怜！他的被逐，是因为求属灵的幸福，只可惜用欺骗手段为不适合而已。在伯特利旷野中，以石为枕而睡，上帝来安慰他。那夜上帝显出天梯给他看，有天使升降其间。上帝显现出来告诉他，他是他祖父亚伯拉罕的上帝，所睡的地方，将来要赐给他，又要领他回来。但他不可行属世之路，当走属灵之路，即跑天梯之路。</p>
+<p><strong> 第二十九章   仰望上帝的应许</strong></p>
+<p>雅各到舅父家，遇到拉结，带至其家。拉结十分美丽，雅各被她吸引去了。为拉班做工不要工钱，只要拉结，七年之间受尽苦楚，为有盼望，故七年如一日。但是拉班把利亚给他，利亚眼睛长得难看。拉班欺骗他 一 报还一报，雅各欺骗父亲，拉班欺骗他，但他还爱拉结，又做七年苦工。只要有拉结，什么都不要紧，因为有大盼望的。赞美主！我们的盼望是在天上的。</p>
+<p>利亚虽然不美丽，但是能生子，生四个儿子，拉结没有一个，很是苦心，上帝安慰她，应许她亦要生子（此乃上帝限制拉结，使其不能生子，以免轻视利亚）。</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

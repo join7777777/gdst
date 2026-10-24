@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 申命记5-6章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 申命记5-6章</h1>
+<div class="meta"><span>2022-08-21</span><span>新旧约查经</span><span class="tag">申命记</span></div>
+<blockquote></blockquote>
+<p><strong> 著者：</strong> 本书也是摩西所记的。可称为摩西演讲集，是他多年的演讲汇集起来的，其中数次记载摩西感恩，又记载各种律法。古时教牧都应读此。耶稣对此书，不但是读，且读得十分熟悉。耶稣曾引本书至少三十五次之多，他在旷野战胜魔鬼，就是引用此书以应对。</p>
+<p>本书一是顺服上帝，二是盼望上帝，得到上帝亲身的引导。本书很简单说明一切的记载。</p>
+<p><strong> 背景：</strong> 此书是在约旦河东写的，回想过去的一切，上帝怎样教训我们，越想越觉得主是爱。</p>
+<p><strong> 本书分段如下：</strong></p>
+<p>1、一至四章 第一次演讲集</p>
+<p>2、五至十一章 第二次演讲集</p>
+<p>3、 十二至二十六章 新生活运动</p>
+<p>4、 二十七至二十八章 第一警戒方法 -- 立律刻石</p>
+<p>5、二十九至三十章 第二警戒方法 -- 巴勒斯坦之约</p>
+<p>6、 三十一至三十二章 第三警戒方法 -- 哀歌</p>
+<p>7、 三十三章 第四警戒方法 -- 祝福</p>
+<p>8、三十四章 死别</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/08/申命记5-6章.mp3">收听音频</a></p>
+<p>（ 申命记5-6章）</p>
+<p><em><strong> 第二段 摩西第二次演讲集 五至十一章</strong></em></p>
+<p><strong> 第五章 恒久的敬畏</strong></p>
+<p>回想三十八年前,上帝在何烈山如何传授十诫。</p>
+<p>一节 摩西召集会众前来，叫他们不但听，还要学习，又要遵守，再要遵行。然后再提及上帝以前降临何烈山，何等威严显赫。</p>
+<p>二十二节 上帝传授他两块法版。</p>
+<p>二十六至二十七节 百姓属肉体不敢去听上帝的话，就请摩西代为传达。</p>
+<p>二十八至二十九节 他们口是心非，上帝只要他们常存敬畏之心，遵守他的诫命。</p>
+<p><strong> 第六章 敬神的家教</strong></p>
+<p>摩西回想到上帝在西乃山传十诫的事情，教他们要如何遵守，不但自己遵守，亦当传教子子孙孙。</p>
+<p>三节 要教训子子孙孙永远遵守上帝的律法。</p>
+<p>五至七节 摩西教训他们，上帝的律法，不但自己遵守，还要使全家都遵守，要记在心上，不论是坐，是在家，是行路，是躺下，是起立，不论何时何地，都要宣传，都要遵守。要：尽心，尽性，尽力，爱耶和华你的上帝。</p>
+<p>八至九节 又要系在手上，戴在额上，写在房门框上，书在城门上。这样就好像宣传三民主义，贴标语，使人触目心惊，永远不忘记上帝的诫命典章。</p>
+<p>十到十三节 摩西说，你们到迦南去，那里有城邑，非你所造的，有房屋，非你所建的，有美物，非你所有的，有美果，非你所种的，你们却要安乐享受。但要谨慎，不可忘记领你们出埃及的上帝。</p>
+<p>二十一节 又要告诉你们的子孙，完成家庭宗教教育，给子孙永记不忘。我（宋氏）常想到我的父亲，他告诉我重生的经验，他如何读神学，如何决定一个月的查经祈祷，如何得重生。我做小孩时，常把这事排在我眼前，直到美国时还是记得。 所以我们做父母者，要实施家庭宗教教育，不独自己敬畏上帝，要子子孙孙，一代一代的承接着敬畏上帝オ好 。我（宋氏）因为不能常在家，一年大约只有一个月的时间在家里，以致不能多教训我的儿女，觉得有亏父责。可是亲爱的兄弟姊妹，望你们对子女都能尽责任。</p>
+<p>-END-</p>
+<blockquote></blockquote>
+<p><strong> △作者简介</strong> ：宋尚节(1901年9月29日－1944年8月18日)），福建莆田人，是二十世纪三十年代在中国教会复兴具有影响力的一个奋兴布道家。二十世纪二十年代的留美化学博士，立志事奉神；把奖章和荣誉证书扔进太平洋，放弃前途似锦的专业和优裕的生活，走上了救人灵魂的艰辛清贫但蒙神祝福的道路.。</p>
+<p>转载自公众号</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

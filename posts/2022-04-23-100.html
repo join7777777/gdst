@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 创世记46-50章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 创世记46-50章</h1>
+<div class="meta"><span>2022-04-23</span><span>创世纪</span></div>
+<p><img alt="" src="http://3.146.54.178/wp-content/uploads/2022/04/圣经十字架.jpg" loading="lazy"></p>
+<p><strong> 著者：</strong> 本书著者乃上帝忠仆摩西。内中记载，包括二千五百年的历史。新约引本书的话有六十多次。本书每章都有他的故事。书中记载上帝创造世界，而造人为其创造最大的目标。</p>
+<p><strong> 全书分五段:</strong></p>
+<p>（一）一至五章   上帝的爱</p>
+<p>（二）六至十一章   成圣的步骤</p>
+<p>（三）十二至二十三章   信心生活----五个阻挡</p>
+<p>（四）二十四至三十四章   爱心生活</p>
+<p>甲、二十四至二十九章 —— 五种生活</p>
+<p>乙、三十至三十四章 —— 五种烦恼</p>
+<p>（五）三十五至五十章   盼望（得胜）生活 —— 五种得胜秘诀</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/04/创世记46-50章.mp3">收听音频</a></p>
+<p>（<strong> 点击播放：</strong> 创世纪46-50章）</p>
+<p><strong> 第四十六章   宝贵的救主完全显露出来</strong></p>
+<p>雅各听见儿子们的报告，又看到迎接他的车子也在外面，还有疑心，他去请问上帝，是否可到埃及去？上帝应许他，要和他同去。于是雅各带了全家六十六人 — 代表新旧约六十六卷到埃及去。</p>
+<p>到了埃及，父子相见，抱头痛哭，宝贵的主完全在我心中显露出来了。</p>
+<p><strong> 第四十七章   上帝应许完全应验</strong></p>
+<p>七年大丰收，七年大饥荒，完全应验，人饿得不得了，把牛羊田园都拿来换粮，一切都应验。</p>
+<p>雅各在埃及的第十七年，召约瑟来说，上帝的应许永不改变，将来我死后，你要把我的遗骸送回故土，与父祖同穴，约瑟起誓遵命。</p>
+<p><strong> 第四十八章    信心不落空</strong></p>
+<p>靠信心可见得将来要成就的事。雅各祝福约瑟二子，长子按左手，而次子反按以右手，约瑟看是错了。但是上帝的旨意将来必应验，他又知道将来四百年后，他的子孙必返迦南地。二十一节： “但上帝必与你们同在，领你们回到你列祖之地”。靠信心永不落空。</p>
+<p><strong> 第四十九章   宝贵血非徒然</strong></p>
+<p>他又为他的儿子祝福，后来的事都应验了。其中犹大更为有福，以后的事皆应验。西布伦亦应验。据一九三五年一月七号报上记载，那边的海口有三十多只大船，有十二国的国旗，这海口成为著名的海口了。上帝的话不落空。所以人有爱心则有耶稣的宝血在其中，这是何等荣耀阿!</p>
+<p><strong> 第五十章   宝贵试验完全应验</strong></p>
+<p>雅各死了，他们十分哀痛悲哭。依埃及律例，王死是人民为他哀哭七十二天，雅各死时，埃及人民为他哀哭七十日，只比王少二天。一切手续完竣后，就把雅各遗骸送回故土来。宝贵的试验完全应验着。赞美主</p>
+<p>父亲死后，兄弟怕了，怕弟弟记起前恨，但约瑟安慰他们：“这是上帝的旨意，叫我先受苦，好救得全家。”将来犹太人亦必悔改他们钉死耶稣的罪，完全归顺于主。约瑟临终时，也吩咐他们要把遗骸带出埃及，要同葬于列祖的故土。</p>
+<p>（全书有五步灵程：1、悔改；2、重生；3、成圣；4、跟随主；5、得胜跑天路）</p>
+<p><strong> 结束：</strong> 创世记首先是说上帝造天地，最后是说棺材，很奇妙!</p>
+<p>约瑟知道以色列人日后出埃及，所以把遗骸交带他们。后来果然应验，有六十万人的送葬。人民出埃及，他的棺材出埃及，过红海，四十年在旷野，过约但河，入迦南。人只看眼前，不晓得上帝的应许必成全的。</p>
+<p>本书是包括重生，因信称义，分别为圣，又当有信，有爱，有望。(得胜)</p>
+<p>本书是最宝贵，可知道上帝的意思。上帝创造万人，像自己形状，又吹送灵气，传了许多人，只得约瑟一人。约瑟代表耶稣，所以盼望我们会像他一样，上帝创造万人，只选召一个人像他。现在上帝在万人中间选召我们，要我们像他，我们万不可失掉机会，主到各地方找人，谁要蒙祂选召？要是有人欢喜接纳，主会改变使他们像祂的样子。</p>
+<p>上帝在中国也选召了许多人，这是十分可喜欢的。</p>
+<p>有一个学生，一天,上帝选召他，他听上帝的话，虽然受着许多苦难，并不灰心，还是一直跟主。现在他到处为主作见证，赞美主！主也在万人中选召我们，我们不要忘记</p>
+<p>四年前，在营口，上帝又选召一个学生，上帝选召他，要他到蒙古传道去，他顺服上帝的命令，学习蒙古话，穿蒙古衣服，往蒙古传道去，二年前，他已经领导一千多家的蒙古人归主，我接到他的相片，看得他与前大不相同，他好像蒙古人了，赞美主!</p>
+<p>亲爱的兄弟姊妹!！神在各处找我，我要给他选择么?</p>
+<p>伯特利的一个姊妹，她很时髦，有一次要到北平赴夏令会去，来到上海，当她来听我讲道,我祷告时，神启示我，要我叫她作传道。我告诉她，神要她作传道，她不顺从，但回去后数天吃不下，后来解决要念神学，三年毕业后，到乡村工作去，她现在已经不像以前样子了。赞美主!</p>
+<p>亲爱的兄弟姊妹们，上帝今天亦要选召我们!</p>
+<p>一九二七年之前，我是属世的人，一天，主选召我：小子啊！我赦你的罪，你到全世界去传道。在九年间，主渐渐改变我，一年一年的进步，将来必改变像主一样。前途如何，我不知道，但愿主造就我像祂，愿上帝今天改造我们，选召我们，好像雅各虽然很坏，上帝改造他，愿主改造我们吧。</p>
+<p>——惠安路骆旭庭记</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>

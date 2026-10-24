@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>旧约解经-主仆宋尚节 | 出埃及记1-3章 · 纸间集</title>
+<style>
+:root{--bg:#F4F5F9;--surface:#FFF;--ink:#3B4A68;--head:#32325D;--muted:#8898AA;--line:#E9EDF5;
+--accent:#5E72E4;--accent2:#8965E0;--chip:rgba(94,114,228,.12);--radius:12px;
+--shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E222B;--ink:#C9CFDE;--head:#E6E9F2;
+--muted:#8B94A8;--line:#2B303C;--accent:#8B9BF2;--accent2:#A48BF0;--chip:rgba(139,155,242,.16);
+--shadow:0 4px 6px rgba(0,0,0,.25),0 1px 3px rgba(0,0,0,.18)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:10;background:var(--surface);box-shadow:0 1px 4px rgba(50,50,93,.12)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:900;font-size:20px;color:var(--head);text-decoration:none}
+.brand::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;
+background:var(--accent);margin-right:9px;vertical-align:2px}
+.brand small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
+.nav{font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+.nav a:hover{color:var(--accent)}
+.banner{background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:var(--radius);
+color:#fff;padding:34px 30px;margin:20px 0 6px;box-shadow:var(--shadow)}
+.banner h1{font-size:30px;font-weight:900;margin:0 0 6px;color:#fff}
+.banner p{margin:0;opacity:.92;font-size:15px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input.search{flex:1;min-width:200px;padding:10px 16px;border:1px solid var(--line);
+border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+input.search:focus{border-color:var(--accent)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.chip{padding:6px 16px;border-radius:999px;background:var(--surface);font-size:13px;cursor:pointer;
+border:1px solid var(--line);color:var(--muted)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.card{display:block;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:20px 24px;margin:16px 0;text-decoration:none;color:inherit;
+transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 14px rgba(50,50,93,.15),0 3px 6px rgba(0,0,0,.1)}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.card h2{font-size:19px;font-weight:700;margin:0 0 6px;color:var(--head)}
+.card:hover h2{color:var(--accent)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.tag{font-size:12px;background:var(--chip);border-radius:999px;padding:2px 11px;color:var(--accent)}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:34px 0 44px}
+article.post{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
+padding:34px 38px;margin:26px 0}
+@media(max-width:640px){article.post{padding:24px 20px}.banner{padding:26px 22px}}
+.post h1{font-size:28px;font-weight:900;color:var(--head);margin:0 0 8px;line-height:1.35}
+.post .meta{color:var(--muted);font-size:13px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.post h2{font-size:21px;font-weight:700;color:var(--head);margin:30px 0 10px;
+padding-left:12px;border-left:4px solid var(--accent);line-height:1.4}
+.post h3{font-size:17px;font-weight:700;color:var(--head);margin:24px 0 8px}
+.post img{max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.post blockquote{border-left:3px solid var(--accent);background:var(--chip);margin:18px 0;
+padding:12px 18px;border-radius:0 8px 8px 0;color:var(--ink)}
+.post pre{background:#242A38;color:#E6E9F2;padding:16px;border-radius:10px;overflow:auto}
+.post code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--chip);
+padding:1px 6px;border-radius:6px;color:var(--accent)}
+.post pre code{background:none;padding:0;color:inherit}
+.post a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(94,114,228,.35)}
+.post a:hover{border-bottom-color:var(--accent)}
+.back{display:inline-block;margin:6px 0 0;font-size:14px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+</style></head>
+<body>
+<header class="topbar"><div class="wrap">
+<div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">纸间集</a></div>
+<nav class="nav"><a href="../index.html">首页</a></nav>
+</div></header>
+<main class="wrap">
+<a class="back" href="../index.html">← 返回首页</a>
+<article class="post">
+<h1>旧约解经-主仆宋尚节 | 出埃及记1-3章</h1>
+<div class="meta"><span>2022-08-14</span><span>出埃及记</span><span class="tag">新旧约查经</span></div>
+<blockquote></blockquote>
+<p>本书对基督徒的灵性大有帮助，我（宋氏）得益于此书甚多一一得有分别之灵。</p>
+<p><strong> 本书为摩西所写。</strong> 埃及代表世界。以色列人代表挂名会友，未得重生得救。（有许多牧师长执的子女，不热心，还未重生，为挂名会友。）法老代表魔鬼。出埃及的意思就是由罪恶中出来。摩西代表耶稣把其子女从罪中救出来。</p>
+<p><strong> 本书题目为重生。</strong> 上帝以重生的图摆在我们面前，如慢的活动电影慢慢的放映出来，给我们借镜。</p>
+<p>他们到埃及去是七十人，使徒行传记是七十五人。这是加在埃及地约瑟全家。到二百十五年，他们由七十人生产到二百万人之多。</p>
+<p>本书总题就是马可第八章，马可八章是出埃及记的缩写。（此可参讲义）</p>
+<p>🎧 <a href="http://3.146.54.178/wp-content/uploads/2022/08/出埃及记1-3章.mp3">收听音频</a></p>
+<p>（ 出埃及记1-3章）</p>
+<p><strong> 第一章 基督徒在世上的生活</strong></p>
+<p>上帝很爱他的子女，给他们繁殖众多，七节。信徒在世上活动起来。以色列人生养众多，满了那地，哪知子女越多反做魔鬼的奴隶——十一节。为法老建造两座城。1、比东一一即“劳苦”之意。2、兰塞——即“死亡”之意，然后要自囚于其中。如格拉森犯鬼者以石自伤。魔鬼害人，是叫人自己打自己。他叫我逃罪的重担，在罪恶中生活，一头挑魔鬼罪担，一头是棺材。魔鬼再下令叫上帝的儿子，生了即要投下河死。所以做魔鬼奴隶，不但受苦，还要死亡。人在罪恶中生活，亦是这样。幸得上帝在暗中保护，十二节：“只是越发苦害他们，他们越发多起来，越发蔓延。”以色列人生子十分容易，（牧师传道们亦很多子女）埃及人反不是如此。他们在二一五年中，由七十人增加至二百万人，上帝在暗中保护他们了。</p>
+<p>法老叫收生婆来，一个名施弗拉一一光明，一个名普阿——快乐，她们敬畏上帝，不照埃及王的吩咐行，竟留下男孩的生命。于是法老又下令要尽把男孩投下尼罗河溺死，前是交托收生婆去杀害，现在是交给众人共同进行，怎不怕人?</p>
+<p>人在罪恶中生活，痛苦至于极点，上帝却暗中保护着，默然爱我们。赞美主！</p>
+<p><strong> 第二章 以色列人哀哭求主</strong></p>
+<p>摩西诞生，神要用他拯救以色列民。一至三节。他的父母都是利未人。生了以后，孩子十分俊美，不是属世的美丽，是属灵的美丽。母亲隐藏了三个月，可是用人的方法，终究不能再藏下去，就做个草箱来安置他，放在河边，或许在水中得救，这箱像揶亚方舟的样于，她回想到上帝以前怎样救挪亚，现在亦会照样的拯救她的儿子。上帝让别人死，决不会让摩西死。姐姐在旁边暗暗探望，四节。法老公主来了，她看见木箱，叫人去拿他，上帝使摩西做王女的儿子。姐姐看见便跑过来，要为她叫乳母，于是母亲不但有儿子，且有工价，可见上帝救法，超乎人所意料的。</p>
+<p>摩西二字，意即我由水中救出者。当摩西渐渐长大，他的母亲在暗中教训他，同胞如何受苦，母子当同负责任，母亲的信心和祷告，同时灌入儿子心中。摩西长大，王女引导到宫中去，他得认识世间一切学识，上帝看其子民的苦难，暗中预备了拯救，上帝预备摩西要救他的子民，不过时机未到，他不能做什么。当他四十岁时，自以为长大了，一天，为不平事而杀死人。摩西靠血气，时候未到，虽然有所作为，也不能成功。那时人不但不帮助他，反讥讽他。我们做上帝的工：1、不要靠血气，2、要等待上帝的时候。</p>
+<p>摩西不得已跑到旷野，在那里遇着米甸祭司流珥的七个女儿，摩西帮助她们，驱逐恶仆，同他回见父亲。可见以色列人民不要摩西，外邦人倒要他。犹太人不要耶稣，外邦人倒要他。流珥意即“上帝朋友的仆人”，可见上帝仆人自然喜欢属灵的人。后来且以一个女儿嫁他。摩西娶外女，可知上帝恩典早到外邦人中间。</p>
+<p>摩西灰心，西波拉意即小麻雀，这给摩西知道，虽然小麻雀，上帝也照顾它，所以不必灰心。他在那里生了一个儿子起名革舜，意即“因为我在外邦作了寄居的。”</p>
+<p>摩西跑开后，以色列民更艰苦。二十三节：“以色列民因作苦工，就叹息哀求，他们的哀声达于上帝。”上帝救人在苦难中。因为人在苦难中才要哀求上帝，上帝听见，然后救他。必到无路可走时才救他，这是上帝救人有拯救的时间。有些领袖的儿女平安时不祈祷上帝，及至苦难时才会祷告。感谢主，我在苦难中，他能听我祷告！</p>
+<p>四十年间，摩西非常灰心，想到以前的志向，现在上帝或许忘记了？故而灰心。耶稣为上帝独生子，也须等待三十年，有约翰为他先锋传道，然后才出面工作这样摩西也须等待了。</p>
+<p>上帝以痛苦开其子民的心，及其心开了，就来救他。感谢赞美主！</p>
+<p><strong> 第三章 神下来为要拯救他们</strong></p>
+<p>摩西忽然看见荆棘被火焚着，却没有烧毁。荆棘即是以色列民，被埃及人看如荆棘，虽然欲以火焚灭，但是上帝暗中护他，烧着却不能烧毁。一个人要做上帝的工，见异于众人，众人以我为荆棘，要烧灭了，上帝却暗中护我，就是一根头发也不失掉。那时摩西忽然听说，不要近前来，当把你脚上的鞋脱下来，因为你所站之地是圣地，从今以后，须脱属世的鞋，而且穿上帝的鞋，跑神所引导我的道路。一个人要为主工作，亦必须这样的看见异象。</p>
+<p>“我上来”。表明上帝要亲身拯救他的子民。八至十二节。当以色列民苦声上闻，上帝就亲身拯救，引导他们到迦南地。十至十二节。对摩西说：“我要打发你去见法老，使你可以将我的百姓以色列民从埃及领出来。”摩西对神说，我是什么人？自然摩西没有什么，但上帝和他同在，就有能力了。我们要自知我是什么人，不能做什么，然后上帝要与我同在。这是摩西四十年中受上帝的教训，才能说这句话。上帝管教我，我须谦卑，然后上帝要用我。十三节。那时他还不识上帝。十四节。“上帝对摩西说，我是自有永有的。”这是我的名字，上帝的名是“我是”。照原文：“我是”你要什么，就给你什么，我是能力、真理、生命、道路，要得到什么，就得什么。上帝的名好比支票，上帝已经签名，还未写上数目，我写多少，就可支取多少，一万，或是一块钱，是我自己写的，只要看我的信心而已。</p>
+<p>十五至二十二节，上帝自然有方法，计划，拯救以色列民，摩西无法子，他只是一个器皿而已。</p>
+<p>-END-</p>
+<blockquote></blockquote>
+<p><strong> △作者简介</strong> ：宋尚节（1901-1944）一九零一年九月廿七，恰是农历辛丑年的中秋节，在福建省兴化县之一小村庄里，有位宋学连牧师家中，他们第六个孩子呱呱堕地了，这时正逢宋家之境最萧条，生活最贫寒的时代，这孩子的诞生可说又增加一分家中的困难，但因宋家有基督丰盛的生命，反把这初生的男孩赐以嘉名--主恩，这便是后来被视为“中国使徒”--宋尚节博士。</p>
+<p>转载自公众号</p>
+</article>
+<a class="back" href="../index.html">← 返回首页</a>
+</main>
+<footer>© 2026 jim · 静态博客</footer>
+</body></html>
